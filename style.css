@@ -1,5 +1,5 @@
 /* ==========================================================================
-   NEWPORT HIGH STREET - MAIN STYLESHEET (CLEANED)
+   NEWPORT HIGH STREET - UPDATED STABLE VERSION
    ========================================================================== */
 
 /* --- 1. BASE STYLES --- */
@@ -377,9 +377,11 @@ input:checked + .toggle-slider {
     display: flex;
     flex-direction: column;
     border-bottom: 6px solid #e5a813; 
+    font-family: 'Georgia', 'Times New Roman', serif; /* UPDATED: Serif for card body */
 }
 
 .year-range {
+    font-family: 'Montserrat', sans-serif; /* UPDATED: Keep year sans-serif */
     font-weight: 700;
     color: #666;
     margin: 0 0 8px 0;
@@ -401,7 +403,7 @@ input:checked + .toggle-slider {
 }
 
 .description {
-    font-size: 11px; 
+    font-size: 13px; /* UPDATED: Increased slightly */
     line-height: 1.5;
     margin-bottom: 10px;
     flex-grow: 1;
@@ -878,6 +880,18 @@ input:checked + .toggle-slider {
 
 /* --- MOBILE VIEW (Under 768px) --- */
 @media (max-width: 768px) {
+    /* UPDATED: Scaling cards to 2/3 of desktop (~210px) */
+    .year-box, .research-pattern, .research-card {
+        min-height: 210px !important;
+    }
+
+    .year-box:not(.void-card) .card-content {
+        min-height: 165px; 
+    }
+
+    .void-pattern { height: 100px; }
+    .void-card .card-content { min-height: 110px; }
+
     .header-top-bar {
         flex-direction: column;
         gap: 15px;
