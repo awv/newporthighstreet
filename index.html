@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>The History of Newport High Street</title>
+    <link rel="stylesheet" href="https://use.typekit.net/lko4kva.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-top-bar">
+        <div class="header-left">
+            <a href="https://newportcornucopia.com" target="_blank">
+                <img src="logo.png" alt="Newport Cornucopia" class="site-logo">
+            </a>
+        </div>
+
+        <div class="header-right">
+            <div class="search-wrapper">
+                <div class="search-container">
+                    <input type="text" id="site-search" placeholder="Search businesses or names...">
+                    <button id="clear-search" title="Clear search">&times;</button>
+                </div>
+                <div id="search-results-count"></div>
+            </div>
+            <button id="about-btn" class="about-link">About Project</button>
+        </div>
+    </div> <div class="controls-panel">
+        <div class="controls-title">
+            <h1>The History of Newport High Street</h1>
+        </div>
+        
+        <div class="controls-interactive">
+            <div class="view-toggle">
+                <span class="toggle-label">Timeline View</span>
+                <label class="switch">
+                    <input type="checkbox" id="view-switch">
+                    <span class="toggle-slider round"></span>
+                </label>
+                <span class="toggle-label">Snapshot View</span>
+            </div>
+            
+            <div class="year-slider-container">
+                <label for="year-slider">Select Year: <span id="year-display">1920</span></label>
+                <input type="range" id="year-slider" min="1830" max="2000" value="1920">
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="street-grid" id="street-container">
+
+</div>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+</div>
+<div id="about-modal" class="modal-overlay">
+    <div class="modal-content-box">
+        <span class="modal-close" id="close-about">&times;</span>
+        <h2 class="modal-title">About This Project</h2>
+        <div class="modal-body">
+            <p>Welcome to <strong>The History of Newport High Street</strong>, a digital archive exploring the changing face of our city's commercial heart.</p>
+            <p>This project uses historical records, trade directories, and census data to reconstruct the high street as it was from 1850 to the present day.</p>
+            <p><strong>Created by:</strong> Newport Cornucopia</p>
+            <hr>
+            <p><small>Data accuracy is paramount. If you spot an error, please contact us.</small></p>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+<script src="data.js"></script> 
+<script src="script.js"></script>
+</body>
+</html>
