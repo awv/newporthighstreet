@@ -1,18 +1,3 @@
-/* --- CLEAN HORIZONTAL SCROLL --- */
-const streetGrid = document.querySelector('.street-grid');
-
-streetGrid.addEventListener('wheel', (evt) => {
-    // 1. Detect if it's a trackpad or a shift-key horizontal scroll.
-    // Trackpads almost always have a deltaX. If so, let the browser handle it.
-    if (Math.abs(evt.deltaX) > 0) return;
-
-    // 2. For a traditional vertical mouse wheel:
-    // We stop the page from moving vertically (no more diagonal drifting!)
-    evt.preventDefault();
-
-    // 3. Move the street horizontally instead.
-    streetGrid.scrollLeft += evt.deltaY;
-}, { passive: false }); // We must set passive: false to allow preventDefault
 
 // --- 1. THE STREET BUILDER ---
 const layout = [
