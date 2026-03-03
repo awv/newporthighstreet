@@ -1,3 +1,14 @@
+/* --- HORIZONTAL SCROLL WITH MOUSE WHEEL --- */
+const streetGrid = document.querySelector('.street-grid');
+
+streetGrid.addEventListener('wheel', (evt) => {
+    // Only intercept if they are scrolling up/down with a mouse wheel
+    if (evt.deltaY !== 0) {
+        evt.preventDefault();
+        streetGrid.scrollLeft += evt.deltaY;
+    }
+});
+
 // --- 1. THE STREET BUILDER ---
 const layout = [
     "No. 1",
