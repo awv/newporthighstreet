@@ -1091,12 +1091,72 @@ const historyData = [
   },
   {
     "Address": "No. 32",
-    "Start_Year": 1830,
-    "End_Year": 1848,
+    "Start_Year": 1842,
+    "End_Year": 1853,
+    "Business_Name": "Great Western Clothing Establishment",
+    "Proprietor": "S Polak",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 32",
+    "Start_Year": 1854,
+    "End_Year": 1856,
     "Business_Name": "Unknown",
     "Proprietor": "",
     "Description": "",
     "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 32",
+    "Start_Year": 1857,
+    "End_Year": 1858,
+    "Business_Name": "S Porter (Hats and Coats)",
+    "Proprietor": "S Porter",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 32",
+    "Start_Year": 1859,
+    "End_Year": 1859,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 32",
+    "Start_Year": 1860,
+    "End_Year": 1866,
+    "Business_Name": "Ostler's Hair Cutting Rooms",
+    "Proprietor": "Edward Ostler",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 32",
+    "Start_Year": 1867,
+    "End_Year": 1875,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 32",
+    "Start_Year": 1867,
+    "End_Year": 1878,
+    "Business_Name": "Alfred Taylor (Tailor)",
+    "Proprietor": "Alfred Taylor",
+    "Description": "",
+    "Status": "",
     "Image_URL": ""
   },
   {
