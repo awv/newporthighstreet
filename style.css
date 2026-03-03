@@ -942,3 +942,25 @@ input:checked + .toggle-slider {
     }
 }
 
+/* --- THE STREET SCROLLBAR --- */
+/* This only appears on devices that use a traditional mouse */
+
+.street-grid::-webkit-scrollbar {
+    height: 14px; /* Thick enough to grab easily */
+}
+
+.street-grid::-webkit-scrollbar-track {
+    background: #1a1a1a; /* Dark iron background */
+    border-radius: 10px;
+    margin: 0 40px; /* Keeps it away from the screen edges */
+}
+
+.street-grid::-webkit-scrollbar-thumb {
+    background: #e5a813; /* Newport Gold */
+    border: 3px solid #1a1a1a; /* Creates a nice border effect */
+    border-radius: 10px;
+}
+
+.street-grid::-webkit-scrollbar-thumb:hover {
+    background: #ffca28; /* Brightens when they hover over it */
+}
