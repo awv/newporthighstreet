@@ -1,19 +1,18 @@
-/* --- SMART HORIZONTAL SCROLL --- */
+/* --- CLEAN HORIZONTAL SCROLL --- */
 const streetGrid = document.querySelector('.street-grid');
 
 streetGrid.addEventListener('wheel', (evt) => {
-    // 1. If the user is already scrolling horizontally (common on trackpads), 
-    // we step out of the way and let the browser handle it naturally.
-    if (evt.deltaX !== 0) return;
+    // 1. Detect if it's a trackpad or a shift-key horizontal scroll.
+    // Trackpads almost always have a deltaX. If so, let the browser handle it.
+    if (Math.abs(evt.deltaX) > 0) return;
 
-    // 2. For traditional vertical mouse wheels (where deltaX is 0):
-    // We nudge the street horizontally.
+    // 2. For a traditional vertical mouse wheel:
+    // We stop the page from moving vertically (no more diagonal drifting!)
+    evt.preventDefault();
+
+    // 3. Move the street horizontally instead.
     streetGrid.scrollLeft += evt.deltaY;
-
-    // 3. We REMOVE preventDefault() here. 
-    // This allows the browser to still scroll vertically if the user reaches 
-    // the end of the street or is trying to scroll down a long building column.
-}, { passive: true });
+}, { passive: false }); // We must set passive: false to allow preventDefault
 
 // --- 1. THE STREET BUILDER ---
 const layout = [
