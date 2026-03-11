@@ -18,6 +18,7 @@ const layout = [
     "No. 11",
     "No. 11a",
     "No. 11c",
+    "|ARCADE| Market Arcade (once Fennell's Arcade)",
     "No. 12",
     "No. 13",
     "No. 14",
@@ -163,8 +164,18 @@ layout.forEach(item => {
                     <span class="turn-label">End of<br>Street</span>
                 </div>
             </div>`;
+
+    // 5. ARCADE (Glazed Filigree)
+    } else if (item.startsWith("|ARCADE|")) {
+        const name = item.replace("|ARCADE| ", "");
+        container.innerHTML += `
+            <div class="side-street-divider arcade-style">
+                <div class="street-name-container">
+                    <h2 class="street-name-vertical">${name}</h2>
+                </div>
+            </div>`;
             
-    // 5. STANDARD BUILDING
+    // 6. STANDARD BUILDING
     } else {
         container.innerHTML += `
             <div class="building-column">
