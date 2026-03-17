@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Title | Newport Cornucopia</title>
+    <link rel="stylesheet" href="../wiki.css">
+    <link rel="stylesheet" href="https://use.typekit.net/lko4kva.css">
+</head>
+<body class="wiki-view">
+    <nav class="wiki-nav">
+        <a href="../index.html">← BACK TO HIGH STREET MAP</a>
+    </nav>
+    <main class="wiki-container">
+        <header class="wiki-header">
+            <div class="number-block">
+                <h1>32</h1>
+            </div>
+            <div class="status-badge">STILL EXISTS</div>
+        </header>
+        <article class="wiki-content-area">
+            <p class="wiki-intro-text">Insert intro here.</p>
+            <section class="wiki-section"><h2>Key tenants</h2><ul class="tenant-list"><li><strong>Name</strong> — Year</li></ul></section>
+            <section class="wiki-section"><h2>About the building</h2><p>Description...</p></section>
+            <section class="wiki-section"><h2>Interesting facts</h2><p>Facts...</p></section>
+            <section class="wiki-section"><h2>Human element</h2><p>Stories...</p></section>
+            <section class="wiki-section">
+                <h2>Advert gallery</h2>
+                <div id="adverts-gallery" class="wiki-grid"></div>
+            </section>
+            <section class="wiki-section">
+                <h2>Photo gallery</h2>
+                <div id="photos-gallery" class="wiki-grid"></div>
+            </section>
+        </article>
+    </main>
+    <div id="wiki-lightbox" class="wiki-lightbox-overlay" onclick="closeWikiLightbox()">
+        <span class="close-btn">&times;</span>
+        <div class="lightbox-content">
+            <img id="wiki-lightbox-img" src="">
+            <p id="wiki-lightbox-caption"></p>
+        </div>
+    </div>
+    <script src="../wiki.js"></script>
+    <script>
+        // addImage('folderName', 'type', 'fileName', 'Caption Text')
+        // Example for an advert:
+        addImage('no32', 'adverts', '28-RichardShops-SWA-04051949.jpg', 'Thomas & Sons Merchant Advert, 1892.');
+        // Example for a photo:
+        addImage('no32', 'photos', '28-RichardShops-SWA-19051958.jpg', 'The facade as it appears in 2026.');
+    </script>
+</div>
+</body>
+</html>

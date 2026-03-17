@@ -221,10 +221,40 @@ const historyData = [
   },
   {
     "Address": "No. 5",
+    "Start_Year": 1883,
+    "End_Year": 1885,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 5",
     "Start_Year": 1886,
-    "End_Year": 1914,
+    "End_Year": 1925,
     "Business_Name": "Albert Smith (Chemist & Surgeon Dentist)",
     "Proprietor": "Albert Smith",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 5",
+    "Start_Year": 1926,
+    "End_Year": 1926,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 5",
+    "Start_Year": 1927,
+    "End_Year": 1971,
+    "Business_Name": "Bannister and Thatcher (Chemists)",
+    "Proprietor": "Bannister and Thatcher",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -420,7 +450,7 @@ const historyData = [
     "Image_URL": ""
   },
   {
-    "Address": "Nno. 9",
+    "Address": "No. 9",
     "Start_Year": 1839,
     "End_Year": 1872,
     "Business_Name": "Unknown",
@@ -470,9 +500,319 @@ const historyData = [
     "Image_URL": ""
   },
   {
+    "Address": "No. 10",
+    "Start_Year": 1872,
+    "End_Year": 1894,
+    "Business_Name": "S.J. Jeffs (Butcher)",
+    "Proprietor": "S.J. Jeffs",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 10",
+    "Start_Year": 1895,
+    "End_Year": 1905,
+    "Business_Name": "W.J. Pinnell (Butcher)",
+    "Proprietor": "W.J. Pinnell",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 10",
+    "Start_Year": 1906,
+    "End_Year": 1909,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 10",
+    "Start_Year": 1910,
+    "End_Year": 1910,
+    "Business_Name": "Vacant",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Void",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 10",
+    "Start_Year": 1911,
+    "End_Year": 1924,
+    "Business_Name": "H Phillips (Tobacconist)",
+    "Proprietor": "H Phillips",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 10",
+    "Start_Year": 1925,
+    "End_Year": 1925,
+    "Business_Name": "H Bloom (Jeweller)",
+    "Proprietor": "H Bloom",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 10",
+    "Start_Year": 1926,
+    "End_Year": 1933,
+    "Business_Name": "Thomas Country Dairy",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 10",
+    "Start_Year": 1934,
+    "End_Year": 1970,
+    "Business_Name": "Harry Thomas (Butcher)",
+    "Proprietor": "Harry Thomas",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 10",
+    "Start_Year": 1971,
+    "End_Year": 1972,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 10",
+    "Start_Year": 1973,
+    "End_Year": 1978,
+    "Business_Name": "The Spinning Wheel",
+    "Proprietor": "",
+    "Description": "Welsh Gifts",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 10",
+    "Start_Year": 1979,
+    "End_Year": 1979,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 10",
+    "Start_Year": 1980,
+    "End_Year": 1990,
+    "Business_Name": "Bordercrown",
+    "Proprietor": "",
+    "Description": "Clothing",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 10",
+    "Start_Year": 1991,
+    "End_Year": 1991,
+    "Business_Name": "Windsor Mews",
+    "Proprietor": "",
+    "Description": "Reproduction Furniture",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 10",
+    "Start_Year": 1992,
+    "End_Year": 1995,
+    "Business_Name": "The Welsh Gift Shop",
+    "Proprietor": "Delysia M. Whild",
+    "Description": "Welsh Gifts",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 10",
+    "Start_Year": 1996,
+    "End_Year": 1996,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 10",
+    "Start_Year": 1997,
+    "End_Year": 1997,
+    "Business_Name": "South Wales Engravers",
+    "Proprietor": "",
+    "Description": "Engraving and Printing",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 10",
+    "Start_Year": 1998,
+    "End_Year": 1998,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 10",
+    "Start_Year": 1999,
+    "End_Year": 2001,
+    "Business_Name": "Plaid Cymru",
+    "Proprietor": "",
+    "Description": "Upstairs",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 10",
+    "Start_Year": 2002,
+    "End_Year": 2007,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 10",
+    "Start_Year": 2008,
+    "End_Year": 2012,
+    "Business_Name": "Da Vinci",
+    "Proprietor": "",
+    "Description": "Coffee house then bar and club",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 10",
+    "Start_Year": 2013,
+    "End_Year": 2016,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 10",
+    "Start_Year": 2017,
+    "End_Year": 2026,
+    "Business_Name": "McCann's Rock and Ale Bar",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
     "Address": "No. 10a",
     "Start_Year": 1830,
-    "End_Year": 1848,
+    "End_Year": 1875,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 10a",
+    "Start_Year": 1876,
+    "End_Year": 1878,
+    "Business_Name": "Miss H. Jones (Confectioner)",
+    "Proprietor": "Miss H. Jones",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 10a",
+    "Start_Year": 1879,
+    "End_Year": 1881,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 10a",
+    "Start_Year": 1882,
+    "End_Year": 1886,
+    "Business_Name": "M.A. Rosser (Confectioner)",
+    "Proprietor": "M.A. Rosser",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 10a",
+    "Start_Year": 1887,
+    "End_Year": 1893,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 10a",
+    "Start_Year": 1894,
+    "End_Year": 1914,
+    "Business_Name": "H. Waunters (Confectioner)",
+    "Proprietor": "H. Waunters",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 10a",
+    "Start_Year": 1915,
+    "End_Year": 1928,
+    "Business_Name": "Waunters & De Coninck (Confectioners)",
+    "Proprietor": "Waunters & De Coninck",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 10a",
+    "Start_Year": 1929,
+    "End_Year": 2007,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 10a",
+    "Start_Year": 2008,
+    "End_Year": 2008,
+    "Business_Name": "Mr P's Carribean Cuisine",
+    "Proprietor": "",
+    "Description": "Restaurant & Take Away",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 10a",
+    "Start_Year": 2009,
+    "End_Year": 2026,
     "Business_Name": "Unknown",
     "Proprietor": "",
     "Description": "",
@@ -541,8 +881,168 @@ const historyData = [
   },
   {
     "Address": "No. 11",
-    "Start_Year": 1924,
-    "End_Year": 1925,
+    "Start_Year": 1925,
+    "End_Year": 1936,
+    "Business_Name": "H. Phillips (Tobacconist)",
+    "Proprietor": "H. Phillips",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 11",
+    "Start_Year": 1937,
+    "End_Year": 1939,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 11",
+    "Start_Year": 1940,
+    "End_Year": 1953,
+    "Business_Name": "Bollom of Bristol (Dyers and Cleaners)",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 11",
+    "Start_Year": 1954,
+    "End_Year": 1967,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 11",
+    "Start_Year": 1968,
+    "End_Year": 1971,
+    "Business_Name": "Johnson Cleaners",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 11",
+    "Start_Year": 1972,
+    "End_Year": 1973,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 11",
+    "Start_Year": 1974,
+    "End_Year": 1974,
+    "Business_Name": "John I. Kennedy (Jeweller and Watch and Clock Maker",
+    "Proprietor": "John I. Kennedy",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 11",
+    "Start_Year": 1975,
+    "End_Year": 1976,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 11",
+    "Start_Year": 1977,
+    "End_Year": 1977,
+    "Business_Name": "Vacant",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Void",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 11",
+    "Start_Year": 1978,
+    "End_Year": 2002,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 11",
+    "Start_Year": 2003,
+    "End_Year": 2026,
+    "Business_Name": "Popadoms",
+    "Proprietor": "",
+    "Description": "Indian Restaurant",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 11a",
+    "Start_Year": 1830,
+    "End_Year": 1924,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 11a",
+    "Start_Year": 1925,
+    "End_Year": 1936,
+    "Business_Name": "Henry Cordy & Son (Outfitter)",
+    "Proprietor": "Henry Cordy",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 11a",
+    "Start_Year": 1937,
+    "End_Year": 1939,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 11a",
+    "Start_Year": 1940,
+    "End_Year": 1974,
+    "Business_Name": "H. Phillips (Tobacconist)",
+    "Proprietor": "H. Phillips",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 11a",
+    "Start_Year": 1975,
+    "End_Year": 1976,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 11a",
+    "Start_Year": 1977,
+    "End_Year": 1977,
     "Business_Name": "Vacant",
     "Proprietor": "",
     "Description": "",
@@ -551,8 +1051,58 @@ const historyData = [
   },
   {
     "Address": "No. 11a",
+    "Start_Year": 1975,
+    "End_Year": 2026,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 11b",
     "Start_Year": 1830,
-    "End_Year": 1848,
+    "End_Year": 1967,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 11b",
+    "Start_Year": 1968,
+    "End_Year": 1974,
+    "Business_Name": "Elizabeth Fair (Ladies Hairdresser)",
+    "Proprietor": "Elizabeth Fair",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 11b",
+    "Start_Year": 1975,
+    "End_Year": 2007,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 11b",
+    "Start_Year": 2008,
+    "End_Year": 2008,
+    "Business_Name": "Ice Slice",
+    "Proprietor": "",
+    "Description": "Cafe and Sandwich Bar",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 11b",
+    "Start_Year": 2009,
+    "End_Year": 2026,
     "Business_Name": "Unknown",
     "Proprietor": "",
     "Description": "",
@@ -562,7 +1112,67 @@ const historyData = [
   {
     "Address": "No. 11c",
     "Start_Year": 1830,
-    "End_Year": 1848,
+    "End_Year": 2002,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 11c",
+    "Start_Year": 2003,
+    "End_Year": 2004,
+    "Business_Name": "Chablis Steak and Wine Bar",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 11c",
+    "Start_Year": 2005,
+    "End_Year": 2006,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 11c",
+    "Start_Year": 2007,
+    "End_Year": 2008,
+    "Business_Name": "Por-Do-Sol",
+    "Proprietor": "",
+    "Description": "Portuguese Restaurant",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 11c",
+    "Start_Year": 2009,
+    "End_Year": 2011,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 11c",
+    "Start_Year": 2012,
+    "End_Year": 2012,
+    "Business_Name": "Vineyard Wine Bar",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 11c",
+    "Start_Year": 2013,
+    "End_Year": 2026,
     "Business_Name": "Unknown",
     "Proprietor": "",
     "Description": "",
@@ -581,6 +1191,16 @@ const historyData = [
   },
   {
     "Address": "No. 12",
+    "Start_Year": 1849,
+    "End_Year": 1859,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 13",
     "Start_Year": 1860,
     "End_Year": 1860,
     "Business_Name": "Thomas Davies (Tailor)",
@@ -590,7 +1210,17 @@ const historyData = [
     "Image_URL": ""
   },
   {
-    "Address": "No. 12",
+    "Address": "No. 14",
+    "Start_Year": 1861,
+    "End_Year": 1875,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 15",
     "Start_Year": 1876,
     "End_Year": 1882,
     "Business_Name": "Henry Cromwell (Outfitter)",
@@ -600,13 +1230,33 @@ const historyData = [
     "Image_URL": ""
   },
   {
-    "Address": "No. 12",
+    "Address": "No. 16",
+    "Start_Year": 1883,
+    "End_Year": 1885,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 17",
     "Start_Year": 1886,
     "End_Year": 1886,
     "Business_Name": "R. J. Whitehall (Watchmaker)",
     "Proprietor": "R. J. Whitehall",
     "Description": "Watchmaker and Jeweller",
     "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 18",
+    "Start_Year": 1887,
+    "End_Year": 1894,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
     "Image_URL": ""
   },
   {
@@ -620,9 +1270,229 @@ const historyData = [
     "Image_URL": ""
   },
   {
+    "Address": "No. 12",
+    "Start_Year": 1970,
+    "End_Year": 1970,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 12",
+    "Start_Year": 1971,
+    "End_Year": 1971,
+    "Business_Name": "Vacant",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Void",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 12",
+    "Start_Year": 1972,
+    "End_Year": 1972,
+    "Business_Name": "Newport Society for Mentally Handicapped Children",
+    "Proprietor": "",
+    "Description": "Bargain Shop",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 12",
+    "Start_Year": 1973,
+    "End_Year": 1975,
+    "Business_Name": "Diana\" (Gown Shop)",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 12",
+    "Start_Year": 1976,
+    "End_Year": 1976,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 12",
+    "Start_Year": 1977,
+    "End_Year": 1977,
+    "Business_Name": "Vacant",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Void",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 12",
+    "Start_Year": 1978,
+    "End_Year": 1979,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 12",
+    "Start_Year": 1980,
+    "End_Year": 1984,
+    "Business_Name": "Andy's Bar",
+    "Proprietor": "",
+    "Description": "Bar and Restaurant",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 12",
+    "Start_Year": 1985,
+    "End_Year": 1990,
+    "Business_Name": "Simpsons",
+    "Proprietor": "",
+    "Description": "Traditional Pub",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 12",
+    "Start_Year": 1991,
+    "End_Year": 1999,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 12",
+    "Start_Year": 2000,
+    "End_Year": 2002,
+    "Business_Name": "Harvey's of Newport",
+    "Proprietor": "",
+    "Description": "Bar",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 12",
+    "Start_Year": 2003,
+    "End_Year": 2004,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 12",
+    "Start_Year": 2005,
+    "End_Year": 2005,
+    "Business_Name": "Louisville Bar?",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 12",
+    "Start_Year": 2006,
+    "End_Year": 2007,
+    "Business_Name": "Harley Bar?",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 12",
+    "Start_Year": 2008,
+    "End_Year": 2014,
+    "Business_Name": "Cupcakes and Cocktails",
+    "Proprietor": "",
+    "Description": "Vintage Tea Room",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 12",
+    "Start_Year": 2016,
+    "End_Year": 2017,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 12",
+    "Start_Year": 2018,
+    "End_Year": 2018,
+    "Business_Name": "Wy Da (Food and Drink)",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 12",
+    "Start_Year": 2019,
+    "End_Year": 2026,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
     "Address": "No. 13",
     "Start_Year": 1830,
-    "End_Year": 1848,
+    "End_Year": 1875,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 13",
+    "Start_Year": 1876,
+    "End_Year": 1882,
+    "Business_Name": "Henry Cromwell (Outfitter)",
+    "Proprietor": "Henry Cromwell",
+    "Description": "Hosier, Glover, Outfitter",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 13",
+    "Start_Year": 1883,
+    "End_Year": 1885,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 13",
+    "Start_Year": 1886,
+    "End_Year": 1886,
+    "Business_Name": "R. J. Whitehall (Watchmaker)",
+    "Proprietor": "R. J. Whitehall",
+    "Description": "Watchmaker and Jeweller",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 13",
+    "Start_Year": 1887,
+    "End_Year": 1894,
     "Business_Name": "Unknown",
     "Proprietor": "",
     "Description": "",
@@ -1572,11 +2442,61 @@ const historyData = [
   {
     "Address": "No. 59",
     "Start_Year": 1830,
-    "End_Year": 1848,
+    "End_Year": 1868,
     "Business_Name": "Unknown",
     "Proprietor": "",
     "Description": "",
     "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 59",
+    "Start_Year": 1869,
+    "End_Year": 1886,
+    "Business_Name": "Edward Ostler (Hairdresser)",
+    "Proprietor": "Edward Ostler",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 59",
+    "Start_Year": 1887,
+    "End_Year": 1901,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 59",
+    "Start_Year": 1902,
+    "End_Year": 1902,
+    "Business_Name": "Vacant",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Void",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 59",
+    "Start_Year": 1903,
+    "End_Year": 1903,
+    "Business_Name": "T. Heath (Florist)",
+    "Proprietor": "T. Heath",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 59",
+    "Start_Year": 1904,
+    "End_Year": 1905,
+    "Business_Name": "C.H. Burcham (Hosier and Hatter)",
+    "Proprietor": "C.H. Burcham",
+    "Description": "Took over from Thomas Lewis who was next door until 1903",
+    "Status": "",
     "Image_URL": ""
   },
   {
@@ -1617,6 +2537,66 @@ const historyData = [
     "Proprietor": "Joseph Grout",
     "Description": "",
     "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 63",
+    "Start_Year": 1849,
+    "End_Year": 1859,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 63",
+    "Start_Year": 1860,
+    "End_Year": 1860,
+    "Business_Name": "Berlin Wool Repository",
+    "Proprietor": "",
+    "Description": "Also Mudie's Branch Library",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 63",
+    "Start_Year": 1861,
+    "End_Year": 1868,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 63",
+    "Start_Year": 1869,
+    "End_Year": 1869,
+    "Business_Name": "Mr Williams?",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 63",
+    "Start_Year": 1870,
+    "End_Year": 1870,
+    "Business_Name": "T.C. Parsons (Dentist)",
+    "Proprietor": "T.C. Parsons",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 63",
+    "Start_Year": 1871,
+    "End_Year": 1875,
+    "Business_Name": "Unknown",
+    "Proprietor": "",
+    "Description": "",
+    "Status": "Researching",
     "Image_URL": ""
   },
   {
