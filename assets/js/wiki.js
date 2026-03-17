@@ -7,7 +7,7 @@ function addImage(building, type, filename, caption) {
     if (!container) return;
 
     // Path assumes wiki pages are in /properties/ folder
-    const src = `../../images/properties/${building}/${type}/${filename}`;
+    const src = `../images/properties/${building}/${type}/${filename}`;
 
     container.innerHTML += `
         <div class="gallery-item">
