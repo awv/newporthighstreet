@@ -292,6 +292,17 @@ input:checked + .toggle-slider {
     z-index: 100;
 }
 
+.address-header a {
+    color: #fff !important; /* Forces it to stay white */
+    text-decoration: none !important; /* Removes the underline */
+    display: block; /* Makes the whole black sign clickable */
+    width: 100%;
+}
+
+.address-header a:hover {
+    color: #e5a813 !important; /* Turns gold when you hover */
+}
+
 .address-header::before, .address-header::after {
     content: '•';
     position: absolute;
@@ -316,13 +327,17 @@ input:checked + .toggle-slider {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+    /* Remove the transition if you want the hover to stop entirely */
+    transition: none; 
+    /* Set cursor to default so it doesn't look clickable */
+    cursor: default;
 }
 
+/* Disable the lift animation and shadow change */
 .year-box:hover {
-    transform: translateY(-4px);
-    z-index: 10; 
-    cursor: pointer;
+    transform: none;
+    box-shadow: none;
+    cursor: default;
 }
 
 .snapshot-view .year-box:not(.active-year) {

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property History | Newport Cornucopia</title>
+    <link rel="stylesheet" href="assets/css/wiki.css">
+    <link rel="stylesheet" href="https://use.typekit.net/lko4kva.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body class="wiki-view">
+    <nav class="wiki-nav">
+        <a href="index.html">← BACK TO HIGH STREET MAP</a>
+    </nav>
+
+    <main class="wiki-container">
+        <header class="wiki-header">
+            <div class="number-block">
+                <h1 id="bldg-number">--</h1>
+            </div>
+            <div id="bldg-status" class="status-badge"></div>
+        </header>
+
+        <article class="wiki-content-area">
+            <div id="property-content"></div>
+
+            <section class="wiki-section">
+                <h2>Advert gallery</h2>
+                <div id="adverts-gallery" class="wiki-grid"></div>
+            </section>
+            
+            <section class="wiki-section">
+                <h2>Photo gallery</h2>
+                <div id="photos-gallery" class="wiki-grid"></div>
+            </section>
+        </article>
+    </main>
+
+    <div id="wiki-lightbox" class="wiki-lightbox-overlay" onclick="closeWikiLightbox()">
+        <span class="close-btn">&times;</span>
+        <div class="lightbox-content">
+            <img id="wiki-lightbox-img" src="">
+            <p id="wiki-lightbox-caption"></p>
+        </div>
+    </div>
+
+    <script src="assets/js/wiki.js"></script>
+</body>
+</html>
