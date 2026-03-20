@@ -1,14 +1,11 @@
 ---
-status: Original
+status: Original Fabric
 photo: no9.jpg
-key use: TBC
-year: TBC
-architect: TBC
-listing: TBC
+year: 1890
+architect: Benjamin Lawrence
+tenants: 1881 | John Williams | Master Grocer, 1895 | Thomas & Sons | Drapers & Outfitters, 1910 | The London & Provincial Bank | Branch Office
 ---
 
-<p class="wiki-intro-text">Research in progress</p>
+# 9 High Street
 
-## Key tenants
-* **John Dobell & Co. (Wine and Spirit Merchant)**
-* **Carpenters Arms (Public House)** 
+No. 9 is one of the finer examples of Victorian commercial architecture remaining on the street...

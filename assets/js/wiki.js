@@ -1,7 +1,3 @@
-/* ==========================================================================
-   NEWPORT CORNUCOPIA: WIKI LOGIC
-   ========================================================================== */
-
 async function loadPropertyHistory() {
     const params = new URLSearchParams(window.location.search);
     const propertyId = params.get('id');
@@ -10,24 +6,19 @@ async function loadPropertyHistory() {
     const numberHeader = document.getElementById('bldg-number');
 
     if (!propertyId || !contentArea) return;
-
-    if (numberHeader) {
-        numberHeader.innerText = propertyId.replace('no', '');
-    }
+    if (numberHeader) { numberHeader.innerText = propertyId.replace('no', ''); }
 
     try {
         const response = await fetch(`/content/${propertyId}.md`);
         if (!response.ok) throw new Error("File not found");
         let text = await response.text();
 
-        // --- RESTORED METADATA EXTRACTOR ---
         const frontmatterRegex = /^---\s*\n([\s\S]*?)\n---/;
         const match = text.match(frontmatterRegex);
 
         if (match) {
             const metadata = match[1];
             const lines = metadata.split('\n');
-
             const getMetaValue = (keyName) => {
                 const pattern = new RegExp(`^${keyName}\\s*:\\s*(.*)`, 'i');
                 for (let line of lines) {
@@ -37,7 +28,7 @@ async function loadPropertyHistory() {
                 return null;
             };
 
-            // 1. Status Badge
+            // 1. Status
             const statusValue = getMetaValue('status');
             if (statusValue && statusBadge) {
                 statusBadge.innerText = statusValue;
@@ -49,8 +40,7 @@ async function loadPropertyHistory() {
             const photoContainer = document.getElementById('infobox-photo');
             if (photoContainer) {
                 if (photoValue && photoValue.toLowerCase() !== 'placeholder.jpg') {
-                    const photoSrc = `/assets/images/properties/${propertyId}/present/${photoValue}`;
-                    photoContainer.innerHTML = `<img src="${photoSrc}" alt="Present day view of ${propertyId}">`;
+                    photoContainer.innerHTML = `<img src="/assets/images/properties/${propertyId}/present/${photoValue}" alt="View of ${propertyId}">`;
                 } else {
                     photoContainer.innerHTML = `<div class="photo-placeholder">No Photo Available</div>`;
                 }
@@ -60,7 +50,7 @@ async function loadPropertyHistory() {
             const table = document.getElementById('infobox-table');
             if (table) {
                 let tableHTML = '';
-                const ignoredKeys = ['status', 'photo', 'title', 'id'];
+                const ignoredKeys = ['status', 'photo', 'title', 'id', 'tenants'];
                 lines.forEach(line => {
                     const parts = line.split(':');
                     if (parts.length >= 2) {
@@ -74,70 +64,79 @@ async function loadPropertyHistory() {
                 table.innerHTML = tableHTML;
                 document.getElementById('property-infobox').style.display = 'block';
             }
+
+            // 4. Merchants & Residents
+            const tenantsValue = getMetaValue('tenants');
+            const tenantsSection = document.getElementById('tenants-section');
+            const tenantsList = document.getElementById('tenants-list');
+
+            if (tenantsValue && tenantsList) {
+                tenantsSection.style.display = 'block';
+                const entries = tenantsValue.split(',');
+                let listHTML = '';
+                entries.forEach(entry => {
+                    const parts = entry.split('|');
+                    if (parts.length >= 2) {
+                        const date = parts[0].trim();
+                        const name = parts[1].trim();
+                        const trade = parts[2] ? parts[2].trim() : '';
+                        listHTML += `
+                            <li>
+                                <span class="ledger-date">${date}</span>
+                                <div class="ledger-detail">
+                                    <strong>${name}</strong>
+                                    ${trade ? `<p>${trade}</p>` : ''}
+                                </div>
+                            </li>`;
+                    }
+                });
+                tenantsList.innerHTML = listHTML;
+            } else if (tenantsSection) {
+                tenantsSection.style.display = 'none';
+            }
+
             text = text.replace(frontmatterRegex, '');
         }
 
         contentArea.innerHTML = marked.parse(text);
 
-        // --- AUTOMATED GALLERY LOADING ---
+        // --- AUTOMATED GALLERIES ---
         const ledgerResponse = await fetch('/research_ledger.json');
         const ledgerData = await ledgerResponse.json();
         const propertyData = ledgerData.find(p => p.id === propertyId);
 
         if (propertyData) {
-            // Adverts Section
+            // Adverts
             const advertSection = document.getElementById('adverts-section');
             const hasAdverts = (propertyData.adverts && propertyData.adverts.length > 0) || propertyId === 'no32';
-
             if (hasAdverts) {
                 advertSection.style.display = 'block';
                 const gallery = document.getElementById('adverts-gallery');
-                gallery.innerHTML = ''; 
+                gallery.innerHTML = '';
                 if (propertyData.adverts) {
-                    propertyData.adverts.forEach(filename => {
-                        const caption = filename.replace(/\.[^/.]+$/, "").replace(/-/g, " ");
-                        addImage(propertyId, 'adverts', filename, caption);
-                    });
+                    propertyData.adverts.forEach(f => addImage(propertyId, 'adverts', f, f.replace(/\.[^/.]+$/, "").replace(/-/g, " ")));
                 }
-                if (propertyId === 'no32') {
-                    addImage('no32', 'adverts', '28-RichardShops-SWA-04051949.jpg', 'South Wales Argus, May 1949');
-                }
-            } else {
-                advertSection.style.display = 'none';
-            }
+                if (propertyId === 'no32') addImage('no32', 'adverts', '28-RichardShops-SWA-04051949.jpg', 'South Wales Argus, May 1949');
+            } else { advertSection.style.display = 'none'; }
 
-            // Photos Section
+            // Photos
             const presentSection = document.getElementById('present-section');
             if (propertyData.photos && propertyData.photos.length > 0) {
                 presentSection.style.display = 'block';
                 const gallery = document.getElementById('present-gallery');
                 gallery.innerHTML = '';
-                propertyData.photos.forEach(filename => {
-                    const caption = filename.replace(/\.[^/.]+$/, "").replace(/-/g, " ");
-                    addImage(propertyId, 'present', filename, caption);
-                });
-            } else {
-                presentSection.style.display = 'none';
-            }
+                propertyData.photos.forEach(f => addImage(propertyId, 'present', f, f.replace(/\.[^/.]+$/, "").replace(/-/g, " ")));
+            } else { presentSection.style.display = 'none'; }
         }
-
-    } catch (err) {
-        contentArea.innerHTML = `<h2>Research in progress...</h2>`;
-    }
+    } catch (err) { console.error(err); }
 }
 
 document.addEventListener("DOMContentLoaded", loadPropertyHistory);
 
 function addImage(building, type, filename, caption) {
-    const targetId = type === 'present' ? 'present-gallery' : 'adverts-gallery';
-    const container = document.getElementById(targetId);
+    const container = document.getElementById(`${type === 'present' ? 'present' : 'adverts'}-gallery`);
     if (!container) return;
-    const src = `/assets/images/properties/${building}/${type}/${filename}`;
-    container.innerHTML += `
-        <div class="gallery-item">
-            <img src="${src}" alt="${caption}" onclick="openWikiLightbox('${src}', '${caption}')">
-            <p class="gallery-caption">${caption}</p>
-        </div>`;
+    container.innerHTML += `<div class="gallery-item"><img src="/assets/images/properties/${building}/${type}/${filename}" alt="${caption}" onclick="openWikiLightbox(this.src, '${caption}')"><p class="gallery-caption">${caption}</p></div>`;
 }
 
 function openWikiLightbox(src, caption) {
@@ -146,6 +145,4 @@ function openWikiLightbox(src, caption) {
     document.getElementById('wiki-lightbox').style.display = 'flex';
 }
 
-function closeWikiLightbox() {
-    document.getElementById('wiki-lightbox').style.display = 'none';
-}
+function closeWikiLightbox() { document.getElementById('wiki-lightbox').style.display = 'none'; }

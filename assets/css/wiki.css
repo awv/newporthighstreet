@@ -42,16 +42,16 @@ body {
 
 /* --- 5. CONTENT & SIDEBAR --- */
 #property-content, .wiki-section {
-    display: flow-root; /* Keeps content contained and prevents sidebar overlap */
+    display: flow-root; 
 }
 
 .wiki-intro-text {
     font-size: 1.3em !important; line-height: 1.3 !important;
     color: #111 !important; margin: 40px 0 50px 0 !important;
+    display: block !important;
 }
 
 .wiki-section {
-    /* REMOVED border-top to eliminate rogue lines */
     padding-top: 20px;
     margin-top: 40px;
 }
@@ -62,8 +62,10 @@ body {
 #property-content h3,
 .wiki-section h2 {
     font-family: serif; font-weight: 900; color: #111;
-    border-bottom: 2px solid #e5a813; /* This is your gold line */
+    border-bottom: 2px solid #e5a813;
     padding-bottom: 12px; margin-top: 40px; margin-bottom: 20px;
+    /* FIX: This stops the gold line from hitting the sidebar image */
+    display: flow-root; 
 }
 
 .wiki-section h2 { margin-top: 0; font-size: 1.7em; }
@@ -83,7 +85,6 @@ body {
 .status-badge { display: block; width: 100%; text-align: center; padding: 10px 0; font-size: 0.75em; font-weight: 900; text-transform: uppercase; margin-bottom: 20px; }
 .infobox-photo img { width: 100%; height: auto; display: block; margin-bottom: 20px; }
 
-/* Placeholder for missing photos */
 .photo-placeholder {
     width: 100%; height: 200px; background-color: #f9f8f6; border: 1px dashed #e2ded5;
     display: flex; align-items: center; justify-content: center;
@@ -101,16 +102,25 @@ body {
 .property-infobox th { text-align: left; font-size: 0.65em; text-transform: uppercase; color: #999; padding: 12px 0; border-bottom: 1px solid #f9f8f6; }
 .property-infobox td { text-align: right; font-size: 0.9em; color: #222; padding: 12px 0; border-bottom: 1px solid #f9f8f6; font-weight: 600; }
 
-/* --- 8. GALLERIES & GRID --- */
+/* --- 8. MERCHANTS LEDGER --- */
+.ledger-list { list-style: none; padding: 0; margin: 0; }
+.ledger-list li { display: flex; gap: 40px; padding: 25px 0; border-bottom: 1px solid #f0eee9; align-items: flex-start; }
+.ledger-list li:last-child { border-bottom: none; }
+.ledger-date { font-weight: 800; color: #b58d3d; min-width: 120px; font-size: 0.95em; letter-spacing: 1px; }
+.ledger-detail strong { font-family: serif; font-size: 1.25em; display: block; margin-bottom: 6px; color: #111; }
+.ledger-detail p { margin: 0; font-size: 1em; color: #555; font-style: italic; }
+
+/* --- 9. GALLERIES & GRID --- */
 .wiki-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; margin-top: 25px; }
 .gallery-item { background: #fff; padding: 15px; border: 1px solid #e2ded5; box-shadow: 5px 5px 0px rgba(0,0,0,0.02); }
 .gallery-item img { width: 100%; height: auto; cursor: pointer; }
 .gallery-caption { margin-top: 15px; font-family: serif; font-size: 0.85em; font-style: italic; color: #555; border-top: 1px solid #f0eee9; padding-top: 10px; }
 
-/* --- 9. LIGHTBOX & MOBILE --- */
+/* --- 10. LIGHTBOX & MOBILE --- */
 .wiki-lightbox-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.95); z-index: 9999; justify-content: center; align-items: center; }
 
 @media (max-width: 900px) {
     .property-infobox { float: none; width: 100%; margin: 0 0 40px 0; }
     .wiki-container { padding: 0 30px 40px 30px; }
+    .ledger-list li { flex-direction: column; gap: 10px; }
 }
