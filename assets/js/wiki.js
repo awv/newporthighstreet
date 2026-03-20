@@ -2,7 +2,6 @@
    NEWPORT CORNUCOPIA: WIKI LOGIC (wiki.js)
    ========================================================================== */
 
-// 1. THE LOADER: Fetches the Markdown file and puts it on the page
 async function loadPropertyHistory() {
     const params = new URLSearchParams(window.location.search);
     const propertyId = params.get('id');
@@ -12,7 +11,6 @@ async function loadPropertyHistory() {
 
     if (!propertyId || !contentArea) return;
 
-    // Set the building number in the gold block immediately
     if (numberHeader) {
         numberHeader.innerText = propertyId.replace('no', '');
     }
@@ -22,24 +20,81 @@ async function loadPropertyHistory() {
         if (!response.ok) throw new Error("File not found");
         let text = await response.text();
 
-        // --- STATUS EXTRACTOR ---
-        // Looks for the --- status: text --- at the top
+        // --- METADATA EXTRACTOR ---
         const frontmatterRegex = /^---\s*\n([\s\S]*?)\n---/;
         const match = text.match(frontmatterRegex);
 
         if (match) {
+            console.log("✔ Metadata block found for " + propertyId);
             const metadata = match[1];
-            const statusLine = metadata.split('\n').find(line => line.startsWith('status:'));
-            
-            if (statusLine && statusBadge) {
-                const statusValue = statusLine.replace('status:', '').trim();
+            const lines = metadata.split('\n');
+
+            // Robust helper that uses a pattern search
+            const getMetaValue = (keyName) => {
+                const pattern = new RegExp(`^${keyName}\\s*:\\s*(.*)`, 'i');
+                for (let line of lines) {
+                    const found = line.trim().match(pattern);
+                    if (found) return found[1].trim();
+                }
+                return null;
+            };
+
+            // 1. Update Status Badge
+            const statusValue = getMetaValue('status');
+            if (statusValue && statusBadge) {
                 statusBadge.innerText = statusValue;
+                statusBadge.className = 'status-badge ' + statusValue.toLowerCase();
             }
-            // Remove the metadata block so it doesn't print on the page
+
+            // 2. Handle Infobox Photo
+            const photoValue = getMetaValue('photo');
+            const photoContainer = document.getElementById('infobox-photo');
+
+            if (photoValue && photoContainer) {
+                // Path assumes a 'present' subfolder for these contemporary shots
+                const photoSrc = `/assets/images/properties/${propertyId}/present/${photoValue}`;
+                photoContainer.innerHTML = `<img src="${photoSrc}" alt="Present day view of ${propertyId}">`;
+                console.log("✔ Infobox photo added: " + photoValue);
+            } else if (photoContainer) {
+                photoContainer.innerHTML = ''; // Clear it if no photo is listed
+            }
+
+            // 3. Populate Fast Facts Table
+            const infobox = document.getElementById('property-infobox');
+            const table = document.getElementById('infobox-table');
+
+            if (infobox && table) {
+                const fields = [
+                    { key: 'key use', label: 'Key Use' },
+                    { key: 'year', label: 'Year Built' },
+                    { key: 'architect', label: 'Architect' },
+                    { key: 'listing', label: 'Listing' }
+                ];
+
+                let tableHTML = '';
+                fields.forEach(field => {
+                    const val = getMetaValue(field.key);
+                    if (val) {
+                        console.log(`+ Found field: ${field.label} = ${val}`);
+                        tableHTML += `<tr><th>${field.label}</th><td>${val}</td></tr>`;
+                    }
+                });
+
+                if (tableHTML !== '') {
+                    table.innerHTML = tableHTML;
+                    infobox.style.display = 'block'; 
+                    console.log("✔ Table injected and revealed.");
+                } else {
+                    console.warn("⚠ No table fields (key use, year, etc.) were recognised.");
+                }
+            } else {
+                console.error("✖ Could not find 'property-infobox' or 'infobox-table' in the HTML.");
+            }
+
+            // Remove metadata from the text
             text = text.replace(frontmatterRegex, '');
         }
 
-        // Parse the remaining Markdown into the content area
         contentArea.innerHTML = marked.parse(text);
 
         // --- ADD IMAGES MANUALLY ---
@@ -49,19 +104,16 @@ async function loadPropertyHistory() {
 
     } catch (err) {
         contentArea.innerHTML = `<h2>Research in progress...</h2>`;
+        console.error("Wiki Load Error:", err);
     }
 }
 
-// Fire the loader once when the page is ready
 document.addEventListener("DOMContentLoaded", loadPropertyHistory);
 
-// 2. GALLERY & LIGHTBOX
 function addImage(building, type, filename, caption) {
     const container = document.getElementById(`${type}-gallery`);
     if (!container) return;
-
     const src = `/assets/images/properties/${building}/${type}/${filename}`;
-
     container.innerHTML += `
         <div class="gallery-item">
             <img src="${src}" alt="${caption}" onclick="openWikiLightbox('${src}', '${caption}')" style="cursor:pointer">

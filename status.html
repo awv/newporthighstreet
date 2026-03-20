@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <title>Research Ledger | Newport Cornucopia</title>
+    <link rel="stylesheet" href="assets/css/wiki.css">
+    <style>
+        .wiki-container { padding-top: 80px !important; }
+
+        /* The Search Bar - Darker border for visibility */
+        .search-box {
+            width: 100%;
+            padding: 15px;
+            margin: 20px 0;
+            border: 2px solid #bbb; 
+            background-color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1em;
+            outline: none;
+            box-sizing: border-box;
+            display: block;
+        }
+        .search-box:focus { border-color: #e5a813; }
+
+        /* Progress Bar */
+        .progress-container { 
+            background: #eee; border-radius: 4px; height: 30px; 
+            margin-bottom: 40px; position: relative; overflow: hidden; border: 1px solid #ddd; 
+        }
+        .progress-bar { background: #e5a813; height: 100%; width: 0%; transition: width 1s ease-in-out; }
+        .progress-text { position: absolute; width: 100%; text-align: center; line-height: 30px; font-weight: 900; font-size: 0.85em; color: #000; z-index: 2; }
+
+        /* Table */
+        .ledger-table { width: 100%; border-collapse: collapse; margin-top: 10px; font-family: sans-serif; }
+        .ledger-table th { text-align: left; padding: 12px; border-bottom: 2px solid #e5a813; text-transform: uppercase; font-size: 0.75em; color: #666; }
+        .ledger-table td { padding: 12px; border-bottom: 1px solid #eee; font-size: 0.9em; vertical-align: middle; }
+        
+        .intro-cell { max-width: 350px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #777; font-style: italic; }
+        .stat-badge { padding: 4px 8px; border-radius: 3px; font-size: 0.7em; font-weight: 800; color: #fff; text-transform: uppercase; }
+        .status-original { background: #3e5a47; }
+        .status-tbc { background: #999; }
+        .status-demolished { background: #8c3b3b; }
+        .status-redeveloped { background: #4a5a6e; }
+    </style>
+</head>
+<body class="wiki-view">
+    <div class="wiki-container">
+        <h1>Research Progress Ledger</h1>
+        <p>Tracking the historical record of Newport High Street.</p>
+        
+        <input type="text" id="ledger-search" class="search-box" placeholder="Search by number, name, or year...">
+
+        <div class="progress-container">
+            <div class="progress-text" id="progress-label">Calculating...</div>
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+
+        <table class="ledger-table">
+            <thead>
+                <tr>
+                    <th>Bldg</th>
+                    <th>Status</th>
+                    <th>Intro Summary</th>
+                    <th>Key Use</th>
+                    <th>Year</th>
+                    <th>Photo</th>
+                </tr>
+            </thead>
+            <tbody id="ledger-body"></tbody>
+        </table>
+    </div>
+
+    <script>
+        fetch('research_ledger.json')
+            .then(response => response.json())
+            .then(data => {
+                const body = document.getElementById('ledger-body');
+                const searchInput = document.getElementById('ledger-search');
+                
+                const renderTable = (filter = "") => {
+                    body.innerHTML = "";
+                    let completedCount = 0;
+                    
+                    data.forEach(item => {
+                        const searchStr = `${item.id} ${item.key_use} ${item.year} ${item.status} ${item.intro}`.toLowerCase();
+                        if (searchStr.includes(filter.toLowerCase())) {
+                            body.innerHTML += `
+                                <tr>
+                                    <td><strong>${item.id.replace('no', '')}</strong></td>
+                                    <td><span class="stat-badge status-${item.status.toLowerCase()}">${item.status}</span></td>
+                                    <td class="intro-cell" title="${item.intro}">${item.intro}</td>
+                                    <td>${item.key_use}</td>
+                                    <td>${item.year}</td>
+                                    <td>${item.has_photo === 'Yes' ? '📸' : '❌'}</td>
+                                </tr>`;
+                        }
+                        if (item.status.toLowerCase() !== 'tbc') completedCount++;
+                    });
+
+                    // Update Bar
+                    const percent = Math.round((completedCount / data.length) * 100);
+                    document.getElementById('progress-bar').style.width = percent + '%';
+                    document.getElementById('progress-label').innerText = `${percent}% Researched (${completedCount} of ${data.length} buildings)`;
+                };
+
+                renderTable();
+                searchInput.addEventListener('input', (e) => renderTable(e.target.value));
+            });
+    </script>
+</body>
+</html>
