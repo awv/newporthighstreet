@@ -1,12 +1,14 @@
 ---
-status: TBC
-photo: placeholder.jpg
+status: Original
+photo: no9.jpg
 key use: TBC
 year: TBC
 architect: TBC
 listing: TBC
 ---
 
-# History of No. 9 High Street
+<p class="wiki-intro-text">Research in progress</p>
 
-Research in progress.
+## Key tenants
+* **John Dobell & Co. (Wine and Spirit Merchant)**
+* **Carpenters Arms (Public House)** 

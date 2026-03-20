@@ -87,7 +87,7 @@
                             body.innerHTML += `
                                 <tr>
                                     <td><strong>${item.id.replace('no', '')}</strong></td>
-                                    <td><span class="stat-badge status-${item.status.toLowerCase()}">${item.status}</span></td>
+                                    <td><span class="stat-badge status-${item.status.toLowerCase().replace(/\s+/g, '-')}">${item.status}</span></td>
                                     <td class="intro-cell" title="${item.intro}">${item.intro}</td>
                                     <td>${item.key_use}</td>
                                     <td>${item.year}</td>

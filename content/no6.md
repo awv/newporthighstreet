@@ -1,5 +1,5 @@
 ---
-status: TBC
+status: Demolished
 photo: placeholder.jpg
 key use: TBC
 year: TBC

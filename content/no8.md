@@ -1,5 +1,5 @@
 ---
-status: TBC
+status: Redeveloped
 photo: placeholder.jpg
 key use: TBC
 year: TBC

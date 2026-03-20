@@ -1,5 +1,5 @@
 ---
-status: TBC
+status: Demolished
 photo: placeholder.jpg
 key use: TBC
 year: TBC
@@ -7,6 +7,7 @@ architect: TBC
 listing: TBC
 ---
 
-# History of No. 3 High Street
+<p class="wiki-intro-text">Research in progress</p>
 
-Research in progress.
+## Key tenants
+* **Old Green Hotel** — 1880s-1970s

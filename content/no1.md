@@ -1,8 +1,8 @@
 ---
-status: TBC
+status: Demolished
 photo: placeholder.jpg
-key use: TBC
-year: TBC
+key use: Public House
+year: ~1611-1898
 architect: TBC
 listing: TBC
 ---

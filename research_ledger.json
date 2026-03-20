@@ -1,75 +1,95 @@
 [
     {
         "id": "no1",
-        "status": "TBC",
+        "status": "Demolished",
         "intro": "No intro written yet.",
-        "key_use": "TBC",
-        "year": "TBC",
-        "has_photo": "No"
+        "key_use": "Public House",
+        "year": "~1611-1898",
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no2",
-        "status": "TBC",
+        "status": "Demolished",
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no3",
-        "status": "TBC",
-        "intro": "No intro written yet.",
+        "status": "Demolished",
+        "intro": "Research in progress",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no4",
-        "status": "TBC",
+        "status": "Demolished",
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no5",
-        "status": "TBC",
+        "status": "Demolished",
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no6",
-        "status": "TBC",
+        "status": "Demolished",
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no7",
-        "status": "TBC",
+        "status": "Redeveloped",
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no8",
-        "status": "TBC",
+        "status": "Redeveloped",
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no9",
-        "status": "TBC",
-        "intro": "No intro written yet.",
+        "status": "Original",
+        "intro": "Research in progress",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "Yes",
+        "adverts": [],
+        "photos": [
+            "no9.jpg"
+        ]
     },
     {
         "id": "no10",
@@ -77,15 +97,23 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "Yes",
+        "adverts": [],
+        "photos": [
+            "no10.jpg"
+        ]
     },
     {
         "id": "no11",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Research in progress",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "Yes",
+        "adverts": [],
+        "photos": [
+            "no11.jpg"
+        ]
     },
     {
         "id": "no12",
@@ -93,7 +121,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no13",
@@ -101,7 +131,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no14",
@@ -109,7 +141,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no15",
@@ -117,7 +151,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no16",
@@ -125,7 +161,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no17",
@@ -133,7 +171,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no18",
@@ -141,7 +181,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no19",
@@ -149,7 +191,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no20",
@@ -157,7 +201,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no21",
@@ -165,7 +211,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no22",
@@ -173,7 +221,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no23",
@@ -181,7 +231,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no24",
@@ -189,7 +241,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no25",
@@ -197,7 +251,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no26",
@@ -205,7 +261,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no27",
@@ -213,7 +271,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no28",
@@ -221,7 +281,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no29",
@@ -229,7 +291,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no30",
@@ -237,7 +301,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no31",
@@ -245,15 +311,23 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no32",
-        "status": "Original",
+        "status": "Redeveloped",
         "intro": "This prominent building on Commercial Street is best known to modern residents as the long-term home of Richard Shops, but its history stretches back much further into Newport's Victorian mercantile boom.",
-        "key_use": "Ironmongers",
-        "year": "c.1890",
-        "has_photo": "Yes"
+        "key_use": "TBC",
+        "year": "TBC",
+        "has_photo": "Yes",
+        "adverts": [
+            "28-RichardShops-SWA-04051949.jpg"
+        ],
+        "photos": [
+            "no32.jpg"
+        ]
     },
     {
         "id": "no33",
@@ -261,7 +335,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no34",
@@ -269,7 +345,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no35",
@@ -277,7 +355,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no36",
@@ -285,7 +365,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no37",
@@ -293,7 +375,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no38",
@@ -301,7 +385,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no39",
@@ -309,7 +395,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no40",
@@ -317,7 +405,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no41",
@@ -325,7 +415,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no42",
@@ -333,7 +425,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no43",
@@ -341,7 +435,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no44",
@@ -349,7 +445,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no45",
@@ -357,7 +455,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no46",
@@ -365,7 +465,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no47",
@@ -373,7 +475,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no48",
@@ -381,7 +485,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no49",
@@ -389,7 +495,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no50",
@@ -397,7 +505,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no51",
@@ -405,7 +515,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no52",
@@ -413,7 +525,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no53",
@@ -421,7 +535,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no54",
@@ -429,7 +545,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no55",
@@ -437,7 +555,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no56",
@@ -445,7 +565,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no57",
@@ -453,7 +575,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no58",
@@ -461,7 +585,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no59",
@@ -469,7 +595,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no60",
@@ -477,7 +605,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no61",
@@ -485,7 +615,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no62",
@@ -493,7 +625,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no63",
@@ -501,7 +635,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no64",
@@ -509,7 +645,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no65",
@@ -517,7 +655,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no66",
@@ -525,7 +665,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no67",
@@ -533,7 +675,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no68",
@@ -541,7 +685,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no69",
@@ -549,7 +695,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no70",
@@ -557,7 +705,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no71",
@@ -565,7 +715,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no72",
@@ -573,7 +725,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no73",
@@ -581,7 +735,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no74",
@@ -589,7 +745,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no75",
@@ -597,7 +755,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no76",
@@ -605,7 +765,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no77",
@@ -613,7 +775,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no78",
@@ -621,7 +785,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no79",
@@ -629,7 +795,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no80",
@@ -637,7 +805,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no81",
@@ -645,7 +815,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no82",
@@ -653,7 +825,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no83",
@@ -661,7 +835,9 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     },
     {
         "id": "no84",
@@ -669,6 +845,8 @@
         "intro": "No intro written yet.",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "No"
+        "has_photo": "No",
+        "adverts": [],
+        "photos": []
     }
 ]
