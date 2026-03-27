@@ -1,41 +1,11 @@
 const historyData = [
   {
     "Address": "No. 1",
-    "Start_Year": 1833,
-    "End_Year": 1840,
-    "Business_Name": "Heathcock Inn",
-    "Proprietor": "",
-    "Description": "",
-    "Status": "",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 1",
-    "Start_Year": 1841,
-    "End_Year": 1844,
-    "Business_Name": "Heathcock Inn",
-    "Proprietor": "John Church",
-    "Description": "",
-    "Status": "",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 1",
-    "Start_Year": 1845,
-    "End_Year": 1845,
-    "Business_Name": "Heathcock Inn",
-    "Proprietor": "John & Sarah Church",
-    "Description": "",
-    "Status": "",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 1",
-    "Start_Year": 1846,
+    "Start_Year": 1744,
     "End_Year": 1848,
     "Business_Name": "Heathcock Inn",
-    "Proprietor": "Sarah Church",
-    "Description": "",
+    "Business_Type": "Public House",
+    "Description": "Various owners including William Morgan, John Church and Sarah Church",
     "Status": "",
     "Image_URL": ""
   },
@@ -44,7 +14,7 @@ const historyData = [
     "Start_Year": 1849,
     "End_Year": 1856,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -52,90 +22,10 @@ const historyData = [
   {
     "Address": "No. 1",
     "Start_Year": 1857,
-    "End_Year": 1857,
-    "Business_Name": "Bridge Hotel",
-    "Proprietor": "Mrs Allen?",
-    "Description": "",
-    "Status": "",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 1",
-    "Start_Year": 1858,
-    "End_Year": 1875,
-    "Business_Name": "Bridge Hotel",
-    "Proprietor": "",
-    "Description": "",
-    "Status": "",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 1",
-    "Start_Year": 1876,
-    "End_Year": 1877,
-    "Business_Name": "Bridge Hotel",
-    "Proprietor": "J.H. Young",
-    "Description": "",
-    "Status": "",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 1",
-    "Start_Year": 1878,
-    "End_Year": 1878,
-    "Business_Name": "Bridge Hotel",
-    "Proprietor": "W.J. Herbert",
-    "Description": "",
-    "Status": "",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 1",
-    "Start_Year": 1878,
-    "End_Year": 1881,
-    "Business_Name": "Bridge Hotel",
-    "Proprietor": "",
-    "Description": "",
-    "Status": "",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 1",
-    "Start_Year": 1882,
-    "End_Year": 1882,
-    "Business_Name": "Bridge Hotel",
-    "Proprietor": "Henry Duckham",
-    "Description": "",
-    "Status": "",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 1",
-    "Start_Year": 1883,
-    "End_Year": 1885,
-    "Business_Name": "Bridge Hotel",
-    "Proprietor": "",
-    "Description": "",
-    "Status": "",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 1",
-    "Start_Year": 1886,
-    "End_Year": 1886,
-    "Business_Name": "Bridge Hotel",
-    "Proprietor": "David Jenkins",
-    "Description": "",
-    "Status": "",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 1",
-    "Start_Year": 1889,
     "End_Year": 1897,
     "Business_Name": "Bridge Hotel",
-    "Proprietor": "",
-    "Description": "",
+    "Business_Type": "Public House",
+    "Description": "Various owners including Mrs Allen, J.H. Young, W.J. Herbert, Henry Duckham and David Jenkins",
     "Status": "",
     "Image_URL": ""
   },
@@ -144,7 +34,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -154,7 +44,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -164,7 +54,7 @@ const historyData = [
     "Start_Year": 1848,
     "End_Year": 1848,
     "Business_Name": "George Masters",
-    "Proprietor": "Wine & Spirit Merchants",
+    "Business_Type": "Wine & Spirit Merchants",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -174,7 +64,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -184,7 +74,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -194,7 +84,7 @@ const historyData = [
     "Start_Year": 1848,
     "End_Year": 1848,
     "Business_Name": "S Munday (Grocers)",
-    "Proprietor": "S Munday",
+    "Business_Type": "S Munday",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -204,7 +94,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1867,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -214,7 +104,7 @@ const historyData = [
     "Start_Year": 1868,
     "End_Year": 1882,
     "Business_Name": "James Edmunds (Chemist)",
-    "Proprietor": "James Edmunds",
+    "Business_Type": "James Edmunds",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -224,7 +114,7 @@ const historyData = [
     "Start_Year": 1883,
     "End_Year": 1885,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -234,7 +124,7 @@ const historyData = [
     "Start_Year": 1886,
     "End_Year": 1925,
     "Business_Name": "Albert Smith (Chemist & Surgeon Dentist)",
-    "Proprietor": "Albert Smith",
+    "Business_Type": "Albert Smith",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -244,7 +134,7 @@ const historyData = [
     "Start_Year": 1926,
     "End_Year": 1926,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -254,7 +144,7 @@ const historyData = [
     "Start_Year": 1927,
     "End_Year": 1971,
     "Business_Name": "Bannister and Thatcher (Chemists)",
-    "Proprietor": "Bannister and Thatcher",
+    "Business_Type": "Bannister and Thatcher",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -264,7 +154,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1868,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -272,160 +162,10 @@ const historyData = [
   {
     "Address": "No. 6",
     "Start_Year": 1869,
-    "End_Year": 1869,
-    "Business_Name": "Great Western Eating House",
-    "Proprietor": "James Thomas",
-    "Description": "",
-    "Status": "",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 6",
-    "Start_Year": 1870,
-    "End_Year": 1870,
-    "Business_Name": "Great Western Eating House",
-    "Proprietor": "Edward Samuels",
-    "Description": "",
-    "Status": "",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 6",
-    "Start_Year": 1871,
-    "End_Year": 1875,
-    "Business_Name": "Great Western Eating House",
-    "Proprietor": "",
-    "Description": "",
-    "Status": "",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 6",
-    "Start_Year": 1876,
-    "End_Year": 1876,
-    "Business_Name": "Great Western Eating House",
-    "Proprietor": "J. Spencer",
-    "Description": "",
-    "Status": "",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 6",
-    "Start_Year": 1877,
-    "End_Year": 1877,
-    "Business_Name": "Great Western Eating House",
-    "Proprietor": "",
-    "Description": "",
-    "Status": "",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 6",
-    "Start_Year": 1878,
-    "End_Year": 1878,
-    "Business_Name": "Great Western Eating House",
-    "Proprietor": "W Spencer",
-    "Description": "",
-    "Status": "",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 6",
-    "Start_Year": 1879,
-    "End_Year": 1881,
-    "Business_Name": "Great Western Eating House",
-    "Proprietor": "",
-    "Description": "",
-    "Status": "",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 6",
-    "Start_Year": 1882,
-    "End_Year": 1882,
-    "Business_Name": "Great Western Eating House",
-    "Proprietor": "Edward Samuel",
-    "Description": "",
-    "Status": "",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 6",
-    "Start_Year": 1883,
-    "End_Year": 1885,
-    "Business_Name": "Great Western Eating House",
-    "Proprietor": "",
-    "Description": "",
-    "Status": "",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 6",
-    "Start_Year": 1886,
-    "End_Year": 1886,
-    "Business_Name": "Great Western Eating House",
-    "Proprietor": "Alex Ross",
-    "Description": "",
-    "Status": "",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 6",
-    "Start_Year": 1889,
-    "End_Year": 1896,
-    "Business_Name": "Great Western Eating House",
-    "Proprietor": "",
-    "Description": "",
-    "Status": "",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 6",
-    "Start_Year": 1897,
-    "End_Year": 1914,
-    "Business_Name": "Great Western Eating House",
-    "Proprietor": "Henry Dowdall",
-    "Description": "",
-    "Status": "",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 6",
-    "Start_Year": 1915,
-    "End_Year": 1926,
-    "Business_Name": "Great Western Eating House",
-    "Proprietor": "",
-    "Description": "",
-    "Status": "",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 6",
-    "Start_Year": 1927,
-    "End_Year": 1927,
-    "Business_Name": "Great Western Eating House",
-    "Proprietor": "Frank Welsher",
-    "Description": "",
-    "Status": "",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 6",
-    "Start_Year": 1928,
-    "End_Year": 1932,
-    "Business_Name": "Great Western Eating House",
-    "Proprietor": "",
-    "Description": "",
-    "Status": "",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 6",
-    "Start_Year": 1933,
     "End_Year": 1946,
     "Business_Name": "Great Western Eating House",
-    "Proprietor": "William George",
-    "Description": "",
+    "Business_Type": "James Thomas",
+    "Description": "Various owners including James Thomas, Edward Samuels, J. Spencer, W. Spencer, Alex Ross, Frank Welsher, William George and Henry Dowdall",
     "Status": "",
     "Image_URL": ""
   },
@@ -434,7 +174,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -444,7 +184,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -454,7 +194,7 @@ const historyData = [
     "Start_Year": 1839,
     "End_Year": 1872,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -464,7 +204,7 @@ const historyData = [
     "Start_Year": 1873,
     "End_Year": 1957,
     "Business_Name": "John Dobell & Co.",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "Wines and Spirits",
     "Status": "",
     "Image_URL": ""
@@ -474,7 +214,7 @@ const historyData = [
     "Start_Year": 1848,
     "End_Year": 1848,
     "Business_Name": "Joseph Capon (Fishmonger)",
-    "Proprietor": "Joseph Capon",
+    "Business_Type": "Joseph Capon",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -484,7 +224,7 @@ const historyData = [
     "Start_Year": 1856,
     "End_Year": 1870,
     "Business_Name": "Edward Howard (Butcher)",
-    "Proprietor": "Edward Howard",
+    "Business_Type": "Edward Howard",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -494,7 +234,7 @@ const historyData = [
     "Start_Year": 1871,
     "End_Year": 1871,
     "Business_Name": "H Greene and Company?",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "Guns and Ammunition",
     "Status": "",
     "Image_URL": ""
@@ -504,7 +244,7 @@ const historyData = [
     "Start_Year": 1872,
     "End_Year": 1894,
     "Business_Name": "S.J. Jeffs (Butcher)",
-    "Proprietor": "S.J. Jeffs",
+    "Business_Type": "S.J. Jeffs",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -514,7 +254,7 @@ const historyData = [
     "Start_Year": 1895,
     "End_Year": 1905,
     "Business_Name": "W.J. Pinnell (Butcher)",
-    "Proprietor": "W.J. Pinnell",
+    "Business_Type": "W.J. Pinnell",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -524,7 +264,7 @@ const historyData = [
     "Start_Year": 1906,
     "End_Year": 1909,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -534,7 +274,7 @@ const historyData = [
     "Start_Year": 1910,
     "End_Year": 1910,
     "Business_Name": "Vacant",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Void",
     "Image_URL": ""
@@ -544,7 +284,7 @@ const historyData = [
     "Start_Year": 1911,
     "End_Year": 1924,
     "Business_Name": "H Phillips (Tobacconist)",
-    "Proprietor": "H Phillips",
+    "Business_Type": "H Phillips",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -554,7 +294,7 @@ const historyData = [
     "Start_Year": 1925,
     "End_Year": 1925,
     "Business_Name": "H Bloom (Jeweller)",
-    "Proprietor": "H Bloom",
+    "Business_Type": "H Bloom",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -564,7 +304,7 @@ const historyData = [
     "Start_Year": 1926,
     "End_Year": 1933,
     "Business_Name": "Thomas Country Dairy",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -574,7 +314,7 @@ const historyData = [
     "Start_Year": 1934,
     "End_Year": 1970,
     "Business_Name": "Harry Thomas (Butcher)",
-    "Proprietor": "Harry Thomas",
+    "Business_Type": "Harry Thomas",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -584,7 +324,7 @@ const historyData = [
     "Start_Year": 1971,
     "End_Year": 1972,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -594,7 +334,7 @@ const historyData = [
     "Start_Year": 1973,
     "End_Year": 1978,
     "Business_Name": "The Spinning Wheel",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "Welsh Gifts",
     "Status": "",
     "Image_URL": ""
@@ -604,7 +344,7 @@ const historyData = [
     "Start_Year": 1979,
     "End_Year": 1979,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -614,7 +354,7 @@ const historyData = [
     "Start_Year": 1980,
     "End_Year": 1990,
     "Business_Name": "Bordercrown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "Clothing",
     "Status": "",
     "Image_URL": ""
@@ -624,7 +364,7 @@ const historyData = [
     "Start_Year": 1991,
     "End_Year": 1991,
     "Business_Name": "Windsor Mews",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "Reproduction Furniture",
     "Status": "",
     "Image_URL": ""
@@ -634,7 +374,7 @@ const historyData = [
     "Start_Year": 1992,
     "End_Year": 1995,
     "Business_Name": "The Welsh Gift Shop",
-    "Proprietor": "Delysia M. Whild",
+    "Business_Type": "Delysia M. Whild",
     "Description": "Welsh Gifts",
     "Status": "",
     "Image_URL": ""
@@ -644,7 +384,7 @@ const historyData = [
     "Start_Year": 1996,
     "End_Year": 1996,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -654,7 +394,7 @@ const historyData = [
     "Start_Year": 1997,
     "End_Year": 1997,
     "Business_Name": "South Wales Engravers",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "Engraving and Printing",
     "Status": "",
     "Image_URL": ""
@@ -664,7 +404,7 @@ const historyData = [
     "Start_Year": 1998,
     "End_Year": 1998,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -674,7 +414,7 @@ const historyData = [
     "Start_Year": 1999,
     "End_Year": 2001,
     "Business_Name": "Plaid Cymru",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "Upstairs",
     "Status": "",
     "Image_URL": ""
@@ -684,7 +424,7 @@ const historyData = [
     "Start_Year": 2002,
     "End_Year": 2007,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -694,7 +434,7 @@ const historyData = [
     "Start_Year": 2008,
     "End_Year": 2012,
     "Business_Name": "Da Vinci",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "Coffee house then bar and club",
     "Status": "",
     "Image_URL": ""
@@ -704,7 +444,7 @@ const historyData = [
     "Start_Year": 2013,
     "End_Year": 2016,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -714,7 +454,7 @@ const historyData = [
     "Start_Year": 2017,
     "End_Year": 2026,
     "Business_Name": "McCann's Rock and Ale Bar",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -724,7 +464,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1875,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -734,7 +474,7 @@ const historyData = [
     "Start_Year": 1876,
     "End_Year": 1878,
     "Business_Name": "Miss H. Jones (Confectioner)",
-    "Proprietor": "Miss H. Jones",
+    "Business_Type": "Miss H. Jones",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -744,7 +484,7 @@ const historyData = [
     "Start_Year": 1879,
     "End_Year": 1881,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -754,7 +494,7 @@ const historyData = [
     "Start_Year": 1882,
     "End_Year": 1886,
     "Business_Name": "M.A. Rosser (Confectioner)",
-    "Proprietor": "M.A. Rosser",
+    "Business_Type": "M.A. Rosser",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -764,7 +504,7 @@ const historyData = [
     "Start_Year": 1887,
     "End_Year": 1893,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -774,7 +514,7 @@ const historyData = [
     "Start_Year": 1894,
     "End_Year": 1914,
     "Business_Name": "H. Waunters (Confectioner)",
-    "Proprietor": "H. Waunters",
+    "Business_Type": "H. Waunters",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -784,7 +524,7 @@ const historyData = [
     "Start_Year": 1915,
     "End_Year": 1928,
     "Business_Name": "Waunters & De Coninck (Confectioners)",
-    "Proprietor": "Waunters & De Coninck",
+    "Business_Type": "Waunters & De Coninck",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -794,7 +534,7 @@ const historyData = [
     "Start_Year": 1929,
     "End_Year": 2007,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -804,7 +544,7 @@ const historyData = [
     "Start_Year": 2008,
     "End_Year": 2008,
     "Business_Name": "Mr P's Carribean Cuisine",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "Restaurant & Take Away",
     "Status": "",
     "Image_URL": ""
@@ -814,7 +554,7 @@ const historyData = [
     "Start_Year": 2009,
     "End_Year": 2026,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -824,7 +564,7 @@ const historyData = [
     "Start_Year": 1841,
     "End_Year": 1851,
     "Business_Name": "Thomas Davies (Tailor)",
-    "Proprietor": "Thomas Davies",
+    "Business_Type": "Thomas Davies",
     "Description": "Shop opened in 1841 and closed and moved to 24 High Street in 1851",
     "Status": "",
     "Image_URL": ""
@@ -834,7 +574,7 @@ const historyData = [
     "Start_Year": 1852,
     "End_Year": 1852,
     "Business_Name": "J. J. Evans and Co. (Indian Rubber)",
-    "Proprietor": "J. J. Evans and Co.",
+    "Business_Type": "J. J. Evans and Co.",
     "Description": "India Rubber and Gutta Percha Depot",
     "Status": "",
     "Image_URL": ""
@@ -844,7 +584,7 @@ const historyData = [
     "Start_Year": 1853,
     "End_Year": 1854,
     "Business_Name": "Cornellius Evans (Musical Instruments)",
-    "Proprietor": "Cornellius Evans",
+    "Business_Type": "Cornellius Evans",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -854,7 +594,7 @@ const historyData = [
     "Start_Year": 1855,
     "End_Year": 1855,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -864,7 +604,7 @@ const historyData = [
     "Start_Year": 1856,
     "End_Year": 1856,
     "Business_Name": "Auction",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "Large amount of shoes belonging to W. S. Fair being auctioned on this site in Feb, 1856.",
     "Status": "",
     "Image_URL": ""
@@ -874,7 +614,7 @@ const historyData = [
     "Start_Year": 1857,
     "End_Year": 1924,
     "Business_Name": "Edgar Fennell (Fishmonger)",
-    "Proprietor": "Edgar Fennell",
+    "Business_Type": "Edgar Fennell",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -884,7 +624,7 @@ const historyData = [
     "Start_Year": 1925,
     "End_Year": 1936,
     "Business_Name": "H. Phillips (Tobacconist)",
-    "Proprietor": "H. Phillips",
+    "Business_Type": "H. Phillips",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -894,7 +634,7 @@ const historyData = [
     "Start_Year": 1937,
     "End_Year": 1939,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -904,7 +644,7 @@ const historyData = [
     "Start_Year": 1940,
     "End_Year": 1953,
     "Business_Name": "Bollom of Bristol (Dyers and Cleaners)",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -914,7 +654,7 @@ const historyData = [
     "Start_Year": 1954,
     "End_Year": 1967,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -924,7 +664,7 @@ const historyData = [
     "Start_Year": 1968,
     "End_Year": 1971,
     "Business_Name": "Johnson Cleaners",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -934,7 +674,7 @@ const historyData = [
     "Start_Year": 1972,
     "End_Year": 1973,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -944,7 +684,7 @@ const historyData = [
     "Start_Year": 1974,
     "End_Year": 1974,
     "Business_Name": "John I. Kennedy (Jeweller and Watch and Clock Maker",
-    "Proprietor": "John I. Kennedy",
+    "Business_Type": "John I. Kennedy",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -954,7 +694,7 @@ const historyData = [
     "Start_Year": 1975,
     "End_Year": 1976,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -964,7 +704,7 @@ const historyData = [
     "Start_Year": 1977,
     "End_Year": 1977,
     "Business_Name": "Vacant",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Void",
     "Image_URL": ""
@@ -974,7 +714,7 @@ const historyData = [
     "Start_Year": 1978,
     "End_Year": 2002,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -984,7 +724,7 @@ const historyData = [
     "Start_Year": 2003,
     "End_Year": 2026,
     "Business_Name": "Popadoms",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "Indian Restaurant",
     "Status": "",
     "Image_URL": ""
@@ -994,7 +734,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1924,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1004,7 +744,7 @@ const historyData = [
     "Start_Year": 1925,
     "End_Year": 1936,
     "Business_Name": "Henry Cordy & Son (Outfitter)",
-    "Proprietor": "Henry Cordy",
+    "Business_Type": "Henry Cordy",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -1014,7 +754,7 @@ const historyData = [
     "Start_Year": 1937,
     "End_Year": 1939,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1024,7 +764,7 @@ const historyData = [
     "Start_Year": 1940,
     "End_Year": 1974,
     "Business_Name": "H. Phillips (Tobacconist)",
-    "Proprietor": "H. Phillips",
+    "Business_Type": "H. Phillips",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -1034,7 +774,7 @@ const historyData = [
     "Start_Year": 1975,
     "End_Year": 1976,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1044,7 +784,7 @@ const historyData = [
     "Start_Year": 1977,
     "End_Year": 1977,
     "Business_Name": "Vacant",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Void",
     "Image_URL": ""
@@ -1054,7 +794,7 @@ const historyData = [
     "Start_Year": 1975,
     "End_Year": 2026,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1064,7 +804,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1967,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1074,7 +814,7 @@ const historyData = [
     "Start_Year": 1968,
     "End_Year": 1974,
     "Business_Name": "Elizabeth Fair (Ladies Hairdresser)",
-    "Proprietor": "Elizabeth Fair",
+    "Business_Type": "Elizabeth Fair",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -1084,7 +824,7 @@ const historyData = [
     "Start_Year": 1975,
     "End_Year": 2007,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1094,7 +834,7 @@ const historyData = [
     "Start_Year": 2008,
     "End_Year": 2008,
     "Business_Name": "Ice Slice",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "Cafe and Sandwich Bar",
     "Status": "",
     "Image_URL": ""
@@ -1104,7 +844,7 @@ const historyData = [
     "Start_Year": 2009,
     "End_Year": 2026,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1114,7 +854,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 2002,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1124,7 +864,7 @@ const historyData = [
     "Start_Year": 2003,
     "End_Year": 2004,
     "Business_Name": "Chablis Steak and Wine Bar",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -1134,7 +874,7 @@ const historyData = [
     "Start_Year": 2005,
     "End_Year": 2006,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1144,7 +884,7 @@ const historyData = [
     "Start_Year": 2007,
     "End_Year": 2008,
     "Business_Name": "Por-Do-Sol",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "Portuguese Restaurant",
     "Status": "",
     "Image_URL": ""
@@ -1154,7 +894,7 @@ const historyData = [
     "Start_Year": 2009,
     "End_Year": 2011,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1164,7 +904,7 @@ const historyData = [
     "Start_Year": 2012,
     "End_Year": 2012,
     "Business_Name": "Vineyard Wine Bar",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -1174,7 +914,7 @@ const historyData = [
     "Start_Year": 2013,
     "End_Year": 2026,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1184,7 +924,7 @@ const historyData = [
     "Start_Year": 1848,
     "End_Year": 1848,
     "Business_Name": "W.H. Bryant (Tailor)",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -1194,7 +934,7 @@ const historyData = [
     "Start_Year": 1849,
     "End_Year": 1859,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1204,7 +944,7 @@ const historyData = [
     "Start_Year": 1860,
     "End_Year": 1860,
     "Business_Name": "Thomas Davies (Tailor)",
-    "Proprietor": "Thomas Tailor",
+    "Business_Type": "Thomas Tailor",
     "Description": "Became insolvent",
     "Status": "",
     "Image_URL": ""
@@ -1214,7 +954,7 @@ const historyData = [
     "Start_Year": 1861,
     "End_Year": 1875,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1224,7 +964,7 @@ const historyData = [
     "Start_Year": 1876,
     "End_Year": 1882,
     "Business_Name": "Henry Cromwell (Outfitter)",
-    "Proprietor": "Henry Cromwell",
+    "Business_Type": "Henry Cromwell",
     "Description": "Hosier, Glover, Outfitter",
     "Status": "",
     "Image_URL": ""
@@ -1234,7 +974,7 @@ const historyData = [
     "Start_Year": 1883,
     "End_Year": 1885,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1244,7 +984,7 @@ const historyData = [
     "Start_Year": 1886,
     "End_Year": 1886,
     "Business_Name": "R. J. Whitehall (Watchmaker)",
-    "Proprietor": "R. J. Whitehall",
+    "Business_Type": "R. J. Whitehall",
     "Description": "Watchmaker and Jeweller",
     "Status": "",
     "Image_URL": ""
@@ -1254,7 +994,7 @@ const historyData = [
     "Start_Year": 1887,
     "End_Year": 1894,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1264,7 +1004,7 @@ const historyData = [
     "Start_Year": 1895,
     "End_Year": 1969,
     "Business_Name": "W. Evans & Co. (Shoes)",
-    "Proprietor": "W. Evans & Co.",
+    "Business_Type": "W. Evans & Co.",
     "Description": "Boots and Shoes",
     "Status": "",
     "Image_URL": ""
@@ -1274,7 +1014,7 @@ const historyData = [
     "Start_Year": 1970,
     "End_Year": 1970,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1284,7 +1024,7 @@ const historyData = [
     "Start_Year": 1971,
     "End_Year": 1971,
     "Business_Name": "Vacant",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Void",
     "Image_URL": ""
@@ -1294,7 +1034,7 @@ const historyData = [
     "Start_Year": 1972,
     "End_Year": 1972,
     "Business_Name": "Newport Society for Mentally Handicapped Children",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "Bargain Shop",
     "Status": "",
     "Image_URL": ""
@@ -1304,7 +1044,7 @@ const historyData = [
     "Start_Year": 1973,
     "End_Year": 1975,
     "Business_Name": "Diana\" (Gown Shop)",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -1314,7 +1054,7 @@ const historyData = [
     "Start_Year": 1976,
     "End_Year": 1976,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1324,7 +1064,7 @@ const historyData = [
     "Start_Year": 1977,
     "End_Year": 1977,
     "Business_Name": "Vacant",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Void",
     "Image_URL": ""
@@ -1334,7 +1074,7 @@ const historyData = [
     "Start_Year": 1978,
     "End_Year": 1979,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1344,7 +1084,7 @@ const historyData = [
     "Start_Year": 1980,
     "End_Year": 1984,
     "Business_Name": "Andy's Bar",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "Bar and Restaurant",
     "Status": "",
     "Image_URL": ""
@@ -1354,7 +1094,7 @@ const historyData = [
     "Start_Year": 1985,
     "End_Year": 1990,
     "Business_Name": "Simpsons",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "Traditional Pub",
     "Status": "",
     "Image_URL": ""
@@ -1364,7 +1104,7 @@ const historyData = [
     "Start_Year": 1991,
     "End_Year": 1999,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1374,7 +1114,7 @@ const historyData = [
     "Start_Year": 2000,
     "End_Year": 2002,
     "Business_Name": "Harvey's of Newport",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "Bar",
     "Status": "",
     "Image_URL": ""
@@ -1384,7 +1124,7 @@ const historyData = [
     "Start_Year": 2003,
     "End_Year": 2004,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1394,7 +1134,7 @@ const historyData = [
     "Start_Year": 2005,
     "End_Year": 2005,
     "Business_Name": "Louisville Bar?",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -1404,7 +1144,7 @@ const historyData = [
     "Start_Year": 2006,
     "End_Year": 2007,
     "Business_Name": "Harley Bar?",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -1414,7 +1154,7 @@ const historyData = [
     "Start_Year": 2008,
     "End_Year": 2014,
     "Business_Name": "Cupcakes and Cocktails",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "Vintage Tea Room",
     "Status": "",
     "Image_URL": ""
@@ -1424,7 +1164,7 @@ const historyData = [
     "Start_Year": 2016,
     "End_Year": 2017,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1434,7 +1174,7 @@ const historyData = [
     "Start_Year": 2018,
     "End_Year": 2018,
     "Business_Name": "Wy Da (Food and Drink)",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -1444,7 +1184,7 @@ const historyData = [
     "Start_Year": 2019,
     "End_Year": 2026,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1454,7 +1194,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1875,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1464,7 +1204,7 @@ const historyData = [
     "Start_Year": 1876,
     "End_Year": 1882,
     "Business_Name": "Henry Cromwell (Outfitter)",
-    "Proprietor": "Henry Cromwell",
+    "Business_Type": "Henry Cromwell",
     "Description": "Hosier, Glover, Outfitter",
     "Status": "",
     "Image_URL": ""
@@ -1474,7 +1214,7 @@ const historyData = [
     "Start_Year": 1883,
     "End_Year": 1885,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1484,7 +1224,7 @@ const historyData = [
     "Start_Year": 1886,
     "End_Year": 1886,
     "Business_Name": "R. J. Whitehall (Watchmaker)",
-    "Proprietor": "R. J. Whitehall",
+    "Business_Type": "R. J. Whitehall",
     "Description": "Watchmaker and Jeweller",
     "Status": "",
     "Image_URL": ""
@@ -1494,7 +1234,7 @@ const historyData = [
     "Start_Year": 1887,
     "End_Year": 1894,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1504,9 +1244,169 @@ const historyData = [
     "Start_Year": 1895,
     "End_Year": 1969,
     "Business_Name": "W. Evans & Co. (Shoes)",
-    "Proprietor": "W. Evans & Co.",
+    "Business_Type": "W. Evans & Co.",
     "Description": "Boots and Shoes",
     "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 13",
+    "Start_Year": 1970,
+    "End_Year": 1970,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 13",
+    "Start_Year": 1971,
+    "End_Year": 1971,
+    "Business_Name": "Vacant",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Void",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 13",
+    "Start_Year": 1972,
+    "End_Year": 1972,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 13",
+    "Start_Year": 1973,
+    "End_Year": 1975,
+    "Business_Name": "Diana\" (Gown Shop)",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 13",
+    "Start_Year": 1977,
+    "End_Year": 1977,
+    "Business_Name": "Vacant",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Void",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 13",
+    "Start_Year": 1978,
+    "End_Year": 1979,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 13",
+    "Start_Year": 1980,
+    "End_Year": 1984,
+    "Business_Name": "Andy's Bar",
+    "Business_Type": "",
+    "Description": "Bar and Restaurant",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 13",
+    "Start_Year": 1985,
+    "End_Year": 1990,
+    "Business_Name": "Simpsons",
+    "Business_Type": "",
+    "Description": "Traditional Pub",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 13",
+    "Start_Year": 1991,
+    "End_Year": 1999,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 13",
+    "Start_Year": 2000,
+    "End_Year": 2002,
+    "Business_Name": "Harvey's of Newport",
+    "Business_Type": "",
+    "Description": "Bar",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 13",
+    "Start_Year": 2003,
+    "End_Year": 2004,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 13",
+    "Start_Year": 2005,
+    "End_Year": 2005,
+    "Business_Name": "Louisville Bar?",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 13",
+    "Start_Year": 2006,
+    "End_Year": 2007,
+    "Business_Name": "Harley Bar?",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 13",
+    "Start_Year": 2008,
+    "End_Year": 2017,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 13",
+    "Start_Year": 2018,
+    "End_Year": 2018,
+    "Business_Name": "Wy Da (Food and Drink)",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 13",
+    "Start_Year": 2019,
+    "End_Year": 2026,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
     "Image_URL": ""
   },
   {
@@ -1514,8 +1414,138 @@ const historyData = [
     "Start_Year": 1848,
     "End_Year": 1848,
     "Business_Name": "William Clark (Grocer)",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "Grocer, Flour Dealer and Baker",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 14",
+    "Start_Year": 1849,
+    "End_Year": 1853,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 14",
+    "Start_Year": 1854,
+    "End_Year": 1854,
+    "Business_Name": "P.H. Morris (Chemist)",
+    "Business_Type": "P.H. Morris",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 14",
+    "Start_Year": 1855,
+    "End_Year": 1862,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 14",
+    "Start_Year": 1863,
+    "End_Year": 1877,
+    "Business_Name": "Henry Cromwell (Outfitter)",
+    "Business_Type": "Henry Cromwell",
+    "Description": "Hosier, Glover, Outfitter",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 14",
+    "Start_Year": 1878,
+    "End_Year": 1886,
+    "Business_Name": "E. Dixon (Milliner and General Draper)",
+    "Business_Type": "E. Dixon",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 14",
+    "Start_Year": 1887,
+    "End_Year": 1894,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 14",
+    "Start_Year": 1895,
+    "End_Year": 1895,
+    "Business_Name": "J (Andrews?) Jones (Draper, dressmaker)",
+    "Business_Type": "J. Jones",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 14",
+    "Start_Year": 1896,
+    "End_Year": 1896,
+    "Business_Name": "Auction — Fine Art Paintings",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 14",
+    "Start_Year": 1897,
+    "End_Year": 1968,
+    "Business_Name": "South Wales Argus",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 14",
+    "Start_Year": 1969,
+    "End_Year": 1979,
+    "Business_Name": "For Sale",
+    "Business_Type": "",
+    "Description": "Unknown if building vacant or still occupied by SWA.",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "",
+    "Start_Year": "",
+    "End_Year": "",
+    "Business_Name": "",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "",
+    "Start_Year": "",
+    "End_Year": "",
+    "Business_Name": "",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "",
+    "Start_Year": "",
+    "End_Year": "",
+    "Business_Name": "",
+    "Business_Type": "",
+    "Description": "",
     "Status": "",
     "Image_URL": ""
   },
@@ -1524,7 +1554,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1534,7 +1564,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1544,7 +1574,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1554,7 +1584,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1564,7 +1594,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1574,7 +1604,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1862,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1584,7 +1614,7 @@ const historyData = [
     "Start_Year": 1863,
     "End_Year": 1863,
     "Business_Name": "John Meredith (Ironmonger)",
-    "Proprietor": "John Meredith",
+    "Business_Type": "John Meredith",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -1594,7 +1624,7 @@ const historyData = [
     "Start_Year": 1864,
     "End_Year": 1876,
     "Business_Name": "H. Greene & Co. (Ironmonger)",
-    "Proprietor": "H. Greene & Co.",
+    "Business_Type": "H. Greene & Co.",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -1604,7 +1634,7 @@ const historyData = [
     "Start_Year": 1877,
     "End_Year": 1877,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1614,7 +1644,7 @@ const historyData = [
     "Start_Year": 1878,
     "End_Year": 1882,
     "Business_Name": "Waters & Arnold (Ironmongers)",
-    "Proprietor": "Waters & Arnold",
+    "Business_Type": "Waters & Arnold",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -1624,7 +1654,7 @@ const historyData = [
     "Start_Year": 1883,
     "End_Year": 1885,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1634,7 +1664,7 @@ const historyData = [
     "Start_Year": 1886,
     "End_Year": 1901,
     "Business_Name": "A. G. Arnold & Co. (Ironmongers)",
-    "Proprietor": "A. G. Arnold & Co.",
+    "Business_Type": "A. G. Arnold & Co.",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -1644,7 +1674,7 @@ const historyData = [
     "Start_Year": 1902,
     "End_Year": 1902,
     "Business_Name": "Auction",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "Auction of A.G. Arnold's stock",
     "Status": "",
     "Image_URL": ""
@@ -1654,7 +1684,7 @@ const historyData = [
     "Start_Year": 1902,
     "End_Year": 1923,
     "Business_Name": "E.P. Lawlor (House Furniture)",
-    "Proprietor": "E.P. Lawlor",
+    "Business_Type": "E.P. Lawlor",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -1664,7 +1694,7 @@ const historyData = [
     "Start_Year": 1923,
     "End_Year": 1924,
     "Business_Name": "John H. Dean (Tailor)",
-    "Proprietor": "John H. Dean",
+    "Business_Type": "John H. Dean",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -1674,7 +1704,7 @@ const historyData = [
     "Start_Year": 1925,
     "End_Year": 1925,
     "Business_Name": "Empty",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Void",
     "Image_URL": ""
@@ -1684,7 +1714,7 @@ const historyData = [
     "Start_Year": 1926,
     "End_Year": 1926,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1694,7 +1724,7 @@ const historyData = [
     "Start_Year": 1927,
     "End_Year": 1927,
     "Business_Name": "Thomas' Dairy",
-    "Proprietor": "The PIe Shop of Newport",
+    "Business_Type": "The PIe Shop of Newport",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -1704,7 +1734,7 @@ const historyData = [
     "Start_Year": 1927,
     "End_Year": 1929,
     "Business_Name": "The London Hosiery Co.",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -1714,7 +1744,7 @@ const historyData = [
     "Start_Year": 1930,
     "End_Year": 1953,
     "Business_Name": "The Fifty Shilling Tailors",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -1724,7 +1754,7 @@ const historyData = [
     "Start_Year": 1954,
     "End_Year": 1966,
     "Business_Name": "John Collier (Tailor)",
-    "Proprietor": "John Collier",
+    "Business_Type": "John Collier",
     "Description": "(ex. Fifty Shilling Tailors)",
     "Status": "",
     "Image_URL": ""
@@ -1734,7 +1764,7 @@ const historyData = [
     "Start_Year": 1967,
     "End_Year": 1978,
     "Business_Name": "The Famous Army Stores",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -1744,7 +1774,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1754,7 +1784,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1764,7 +1794,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1774,7 +1804,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1784,7 +1814,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1794,7 +1824,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1804,7 +1834,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1814,7 +1844,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1824,7 +1854,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1834,7 +1864,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1844,7 +1874,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1854,7 +1884,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1864,7 +1894,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1874,7 +1904,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1884,7 +1914,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1894,7 +1924,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1904,7 +1934,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1914,7 +1944,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1924,7 +1954,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1934,7 +1964,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1944,7 +1974,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1954,7 +1984,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1964,7 +1994,7 @@ const historyData = [
     "Start_Year": 1842,
     "End_Year": 1853,
     "Business_Name": "Great Western Clothing Establishment",
-    "Proprietor": "S Polak",
+    "Business_Type": "S Polak",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -1974,7 +2004,7 @@ const historyData = [
     "Start_Year": 1854,
     "End_Year": 1856,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -1984,7 +2014,7 @@ const historyData = [
     "Start_Year": 1857,
     "End_Year": 1858,
     "Business_Name": "S Porter (Hats and Coats)",
-    "Proprietor": "S Porter",
+    "Business_Type": "S Porter",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -1994,7 +2024,7 @@ const historyData = [
     "Start_Year": 1859,
     "End_Year": 1859,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2004,7 +2034,7 @@ const historyData = [
     "Start_Year": 1860,
     "End_Year": 1866,
     "Business_Name": "Ostler's Hair Cutting Rooms",
-    "Proprietor": "Edward Ostler",
+    "Business_Type": "Edward Ostler",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -2014,7 +2044,7 @@ const historyData = [
     "Start_Year": 1867,
     "End_Year": 1875,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2024,7 +2054,7 @@ const historyData = [
     "Start_Year": 1867,
     "End_Year": 1878,
     "Business_Name": "Alfred Taylor (Tailor)",
-    "Proprietor": "Alfred Taylor",
+    "Business_Type": "Alfred Taylor",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -2034,7 +2064,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2044,7 +2074,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2054,7 +2084,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2064,7 +2094,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2074,7 +2104,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2084,7 +2114,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2094,7 +2124,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2104,7 +2134,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2114,7 +2144,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2124,7 +2154,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2134,7 +2164,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2144,7 +2174,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2154,7 +2184,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2164,7 +2194,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2174,7 +2204,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2184,7 +2214,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2194,7 +2224,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2204,7 +2234,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2214,7 +2244,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2224,7 +2254,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2234,7 +2264,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2244,7 +2274,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2254,7 +2284,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2264,7 +2294,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2274,7 +2304,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2284,7 +2314,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2294,7 +2324,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2304,7 +2334,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2314,7 +2344,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2324,7 +2354,7 @@ const historyData = [
     "Start_Year": 1849,
     "End_Year": 1849,
     "Business_Name": "Mrs M. S Holmes (Millinery)",
-    "Proprietor": "Mrs M. S Holmes",
+    "Business_Type": "Mrs M. S Holmes",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -2334,7 +2364,7 @@ const historyData = [
     "Start_Year": 1850,
     "End_Year": 1859,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2344,7 +2374,7 @@ const historyData = [
     "Start_Year": 1860,
     "End_Year": 1860,
     "Business_Name": "Jones's (Grocery)",
-    "Proprietor": "Jones's",
+    "Business_Type": "Jones's",
     "Description": "Gorcey and Provisions Warehouse",
     "Status": "",
     "Image_URL": ""
@@ -2354,7 +2384,7 @@ const historyData = [
     "Start_Year": 1861,
     "End_Year": 1871,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2364,7 +2394,7 @@ const historyData = [
     "Start_Year": 1872,
     "End_Year": 1886,
     "Business_Name": "Mrs Tadd (Millinery)",
-    "Proprietor": "Mrs Tadd",
+    "Business_Type": "Mrs Tadd",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -2374,7 +2404,7 @@ const historyData = [
     "Start_Year": 1887,
     "End_Year": 1894,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2384,7 +2414,7 @@ const historyData = [
     "Start_Year": 1895,
     "End_Year": 1895,
     "Business_Name": "Alfred Duckham? (Butcher)",
-    "Proprietor": "Alfred Duckham",
+    "Business_Type": "Alfred Duckham",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -2394,7 +2424,7 @@ const historyData = [
     "Start_Year": 1896,
     "End_Year": 1896,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2404,7 +2434,7 @@ const historyData = [
     "Start_Year": 1897,
     "End_Year": 1902,
     "Business_Name": "Vivian T. Fudge & Co. (Grocer)",
-    "Proprietor": "Vivian T. Fudge & Co.",
+    "Business_Type": "Vivian T. Fudge & Co.",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -2414,7 +2444,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2424,7 +2454,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2434,7 +2464,7 @@ const historyData = [
     "Start_Year": 1848,
     "End_Year": 1878,
     "Business_Name": "William Compton (Provisions)",
-    "Proprietor": "William Compton",
+    "Business_Type": "William Compton",
     "Description": "Provisions and Tallow Chandler",
     "Status": "",
     "Image_URL": ""
@@ -2444,7 +2474,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1868,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2454,7 +2484,7 @@ const historyData = [
     "Start_Year": 1869,
     "End_Year": 1886,
     "Business_Name": "Edward Ostler (Hairdresser)",
-    "Proprietor": "Edward Ostler",
+    "Business_Type": "Edward Ostler",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -2464,7 +2494,7 @@ const historyData = [
     "Start_Year": 1887,
     "End_Year": 1901,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2474,7 +2504,7 @@ const historyData = [
     "Start_Year": 1902,
     "End_Year": 1902,
     "Business_Name": "Vacant",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Void",
     "Image_URL": ""
@@ -2484,7 +2514,7 @@ const historyData = [
     "Start_Year": 1903,
     "End_Year": 1903,
     "Business_Name": "T. Heath (Florist)",
-    "Proprietor": "T. Heath",
+    "Business_Type": "T. Heath",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -2494,7 +2524,7 @@ const historyData = [
     "Start_Year": 1904,
     "End_Year": 1905,
     "Business_Name": "C.H. Burcham (Hosier and Hatter)",
-    "Proprietor": "C.H. Burcham",
+    "Business_Type": "C.H. Burcham",
     "Description": "Took over from Thomas Lewis who was next door until 1903",
     "Status": "",
     "Image_URL": ""
@@ -2504,7 +2534,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2514,7 +2544,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2524,7 +2554,7 @@ const historyData = [
     "Start_Year": 1848,
     "End_Year": 1848,
     "Business_Name": "Marmaduke Brewer (Postmaster)",
-    "Proprietor": "Marmaduke Brewer",
+    "Business_Type": "Marmaduke Brewer",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -2534,7 +2564,7 @@ const historyData = [
     "Start_Year": 1848,
     "End_Year": 1848,
     "Business_Name": "Joseph Grout (Fancy Goods)",
-    "Proprietor": "Joseph Grout",
+    "Business_Type": "Joseph Grout",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -2544,7 +2574,7 @@ const historyData = [
     "Start_Year": 1849,
     "End_Year": 1859,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2554,7 +2584,7 @@ const historyData = [
     "Start_Year": 1860,
     "End_Year": 1860,
     "Business_Name": "Berlin Wool Repository",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "Also Mudie's Branch Library",
     "Status": "",
     "Image_URL": ""
@@ -2564,7 +2594,7 @@ const historyData = [
     "Start_Year": 1861,
     "End_Year": 1868,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2574,7 +2604,7 @@ const historyData = [
     "Start_Year": 1869,
     "End_Year": 1869,
     "Business_Name": "Mr Williams?",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -2584,7 +2614,7 @@ const historyData = [
     "Start_Year": 1870,
     "End_Year": 1870,
     "Business_Name": "T.C. Parsons (Dentist)",
-    "Proprietor": "T.C. Parsons",
+    "Business_Type": "T.C. Parsons",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -2594,7 +2624,7 @@ const historyData = [
     "Start_Year": 1871,
     "End_Year": 1875,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2604,7 +2634,7 @@ const historyData = [
     "Start_Year": 1848,
     "End_Year": 1848,
     "Business_Name": "Miss Morgan (Clothing)",
-    "Proprietor": "Miss Morgan",
+    "Business_Type": "Miss Morgan",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -2614,7 +2644,7 @@ const historyData = [
     "Start_Year": 1848,
     "End_Year": 1848,
     "Business_Name": "Charles Napper (Grocer)",
-    "Proprietor": "Grocer",
+    "Business_Type": "Grocer",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -2624,7 +2654,7 @@ const historyData = [
     "Start_Year": 1848,
     "End_Year": 1848,
     "Business_Name": "Surgeon and County Coroner",
-    "Proprietor": "William Brewer",
+    "Business_Type": "William Brewer",
     "Description": "Edgar Brewer Esq. also on this site",
     "Status": "",
     "Image_URL": ""
@@ -2634,7 +2664,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2644,7 +2674,7 @@ const historyData = [
     "Start_Year": 1848,
     "End_Year": 1848,
     "Business_Name": "Chief Engineer to Canal Company",
-    "Proprietor": "H Colson Esq.",
+    "Business_Type": "H Colson Esq.",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -2654,7 +2684,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2664,7 +2694,7 @@ const historyData = [
     "Start_Year": 1848,
     "End_Year": 1848,
     "Business_Name": "Henry Gwyther (Tailor)",
-    "Proprietor": "Henry Gwyther",
+    "Business_Type": "Henry Gwyther",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -2674,7 +2704,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2684,7 +2714,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2694,7 +2724,7 @@ const historyData = [
     "Start_Year": 1848,
     "End_Year": 1848,
     "Business_Name": "Britannia Coffee and Chop House",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -2704,7 +2734,7 @@ const historyData = [
     "Start_Year": 1848,
     "End_Year": 1848,
     "Business_Name": "B Morgan (Grocer)",
-    "Proprietor": "B Morgan",
+    "Business_Type": "B Morgan",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -2714,7 +2744,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2724,7 +2754,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2734,7 +2764,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2744,7 +2774,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2754,7 +2784,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2764,7 +2794,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2774,7 +2804,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2784,7 +2814,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2794,7 +2824,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2804,7 +2834,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2814,7 +2844,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -2824,7 +2854,7 @@ const historyData = [
     "Start_Year": 1830,
     "End_Year": 1848,
     "Business_Name": "Unknown",
-    "Proprietor": "",
+    "Business_Type": "",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""

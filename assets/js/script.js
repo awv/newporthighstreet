@@ -59,19 +59,26 @@ layout.forEach(item => {
                     <h2 class="street-name-vertical">${name}</h2>
                 </div>
             </div>`;
-    } else {
+} else {
             const cleanNo = item.replace("No. ", "").trim();
+            
+            // This regex finds the digits and any following letters separately
+            const numberMatch = cleanNo.match(/^(\d+)([a-zA-Z]*)$/);
+            let displayNo = cleanNo;
+            
+            if (numberMatch) {
+                const digits = numberMatch[1];
+                const alpha = numberMatch[2];
+                // Wrap the letter in a span if it exists
+                displayNo = alpha ? `${digits}<span class="number-suffix">${alpha}</span>` : digits;
+            }
+
             container.innerHTML += `
                 <div class="building-column">
-                    <div class="building-number"></div>
+                    <div class="building-number-modern">${displayNo}</div>
                     
-                    <h2 class="address-header">
-                        <a href="property.html?id=no${cleanNo}" title="View History of ${item}">
-                            ${item}
-                        </a>
-                    </h2>
                     <div class="column-content" id="col-${item.replace(/\s+/g, '-').toLowerCase()}">
-                        </div>
+                    </div>
                 </div>`;
         }
 });
@@ -81,19 +88,23 @@ historyData.forEach(entry => {
     const targetId = "col-" + entry.Address.trim().replace(/\s+/g, '-').toLowerCase();
     const targetColumn = document.getElementById(targetId);
     const status = entry.Status ? entry.Status.toLowerCase() : '';
+    
+    // UPDATED: entry.Proprietor changed to entry.Business_Type
     const hasData = (entry.Business_Name && entry.Business_Name.toLowerCase() !== "unknown") || 
-                    entry.Proprietor || status === 'void' || status === 'researching';
+                    entry.Business_Type || status === 'void' || status === 'researching';
 
     if (targetColumn && hasData) {
         const yearDisplay = (entry.Start_Year == entry.End_Year) ? entry.Start_Year : `${entry.Start_Year}–${entry.End_Year}`;
         let cardHTML = '';
 
-        if (status === 'void') {
+    if (status === 'void') {
             cardHTML = `
                 <div class="year-box void-card" data-start="${entry.Start_Year}" data-end="${entry.End_Year}">
-                    <div class="void-pattern"><h3>TO LET</h3></div>
                     <div class="card-content">
-                        <p class="year-range">${yearDisplay}</p> <p class="owner">No Occupant</p>
+                        <p class="year-range">${yearDisplay}</p>
+                        <h3 class="business-name" style="color: #999;">To Let</h3>
+                        <p class="business-type">Vacant Premises</p>
+                        <p class="description">No recorded occupant for this period.</p>
                     </div>
                 </div>`;
         } else if (status === 'researching') {
@@ -102,20 +113,25 @@ historyData.forEach(entry => {
                      <div class="date-range">${yearDisplay}</div> <p>Records for this address<br>are currently being researched.</p>
                 </div>`;
         } else {
-            const proprietorHTML = entry.Proprietor && entry.Proprietor.trim() !== "" ? `<p class="owner">${entry.Proprietor}</p>` : '';
-            const imageHTML = entry.Image_URL ? `<div class="image-gallery"><img src="assets/${entry.Image_URL}" alt="Historical image" class="thumbnail" onclick="openLightbox(this.src)"></div>` : '';
+            const businessTypeHTML = entry.Business_Type && entry.Business_Type.trim() !== "" ? `<p class="business-type">${entry.Business_Type}</p>` : '';
+            const cleanId = entry.Address.replace("No. ", "no").toLowerCase();
+
             cardHTML = `
-                <div class="year-box" data-start="${entry.Start_Year}" data-end="${entry.End_Year}">
-                    <div class="card-roof">
-                        <div class="chimney chimney-left"></div><div class="chimney chimney-right"></div>
-                        <div class="roof-pitch"></div>
+                <a href="property.html?id=${cleanId}" class="year-box-link">
+                    <div class="year-box" data-start="${entry.Start_Year}" data-end="${entry.End_Year}">
+                        <div class="card-content">
+                            <p class="year-range">${yearDisplay}</p>
+                            <h3 class="business-name">${entry.Business_Name || 'Unknown'}</h3>
+                            ${businessTypeHTML}
+                            <p class="description">${entry.Description || ''}</p>
+                            
+                            <div class="card-footer">
+                                <span class="view-record-text">View Record</span>
+                                <span class="view-record-arrow">→</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-content">
-                        <p class="year-range">${yearDisplay}</p>
-                        <h3 class="business-name">${entry.Business_Name || 'Unknown'}</h3>
-                        ${proprietorHTML}<p class="description">${entry.Description || ''}</p>${imageHTML}
-                    </div>
-                </div>`;
+                </a>`;
         }
         targetColumn.innerHTML += cardHTML;
     }
@@ -228,7 +244,8 @@ function performSearch() {
     clearBtn.style.display = isSearchActive ? "block" : "none";
 
     allCards.forEach(card => {
-        const elementsToSearch = [card.querySelector('.business-name'), card.querySelector('.owner'), card.querySelector('.description')];
+        // UPDATED: selector .owner changed to .business-type
+        const elementsToSearch = [card.querySelector('.business-name'), card.querySelector('.business-type'), card.querySelector('.description')];
         let isMatch = false;
         elementsToSearch.forEach(el => {
             if (!el) return;
@@ -258,3 +275,36 @@ function performSearch() {
 }
 searchInput.addEventListener('input', performSearch);
 clearBtn.addEventListener('click', () => { searchInput.value = ""; performSearch(); searchInput.focus(); });
+
+// --- 9. SCROLL MEMORY LOGIC ---
+
+// 1. Save the building ID when a user clicks a card
+document.addEventListener('click', function(e) {
+    const link = e.target.closest('.year-box-link');
+    if (link) {
+        const urlParams = new URLSearchParams(link.href.split('?')[1]);
+        const propertyId = urlParams.get('id');
+        if (propertyId) {
+            sessionStorage.setItem('returnToProperty', propertyId);
+        }
+    }
+});
+
+// 2. Scroll back to the building when returning to the map
+window.addEventListener('load', function() {
+    const returnId = sessionStorage.getItem('returnToProperty');
+    if (returnId) {
+        // This matches the ID format used in your layout loop (e.g., 'col-no.-50')
+        const targetColId = "col-" + returnId.replace('no', 'no.-');
+        const targetElement = document.getElementById(targetColId);
+
+        if (targetElement) {
+            const column = targetElement.closest('.building-column');
+            // 'inline: center' ensures the building is in the middle of the screen
+            column.scrollIntoView({ behavior: 'auto', inline: 'center' });
+            
+            // Clear the memory so it doesn't jump every time you refresh
+            sessionStorage.removeItem('returnToProperty');
+        }
+    }
+});

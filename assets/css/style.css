@@ -271,48 +271,37 @@ input:checked + .toggle-slider {
     height: auto; 
 }
 
-.address-header {
-    background-color: #1a1a1a; 
-    color: #ffffff;            
-    text-align: center;
-    padding: 8px 18px;
-    margin: 0 auto 20px auto;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 1.1em;
-    border: 3px solid #777777; 
-    border-radius: 4px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
-    display: table; 
-    min-width: 70px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+.building-number-modern {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 3.5rem;
+    font-weight: 400;
+    /* Updated to Newport Gold */
+    color: #e5a813; 
+    margin-bottom: 20px;
+    padding-left: 5px;
     position: sticky;
     top: 10px;
     z-index: 100;
+    line-height: 1;
+    background-color: transparent;
 }
 
-.address-header a {
-    color: #fff !important; /* Forces it to stay white */
-    text-decoration: none !important; /* Removes the underline */
-    display: block; /* Makes the whole black sign clickable */
-    width: 100%;
+.number-suffix {
+    font-size: 0.5em;
+    vertical-align: baseline;
+    margin-left: 2px;
+    text-transform: lowercase;
+    font-style: italic;
+    /* Suffix inherits the gold but we can make it slightly 
+       darker/softer if you prefer, otherwise it stays pure gold */
+    color: inherit; 
+    opacity: 0.9;
 }
-
-.address-header a:hover {
-    color: #e5a813 !important; /* Turns gold when you hover */
+@media (max-width: 768px) {
+    .building-number-modern {
+        font-size: 2.5rem;
+    }
 }
-
-.address-header::before, .address-header::after {
-    content: '•';
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #555; 
-    font-size: 12px;
-}
-.address-header::before { left: 6px; }
-.address-header::after { right: 6px; }
 
 .column-content {
     background: transparent;
@@ -322,22 +311,36 @@ input:checked + .toggle-slider {
 
 /* --- 5. THE BUILDING CARDS --- */
 .year-box {
-    margin-bottom: 25px; 
-    min-height: 280px; 
+    background: #fff;
+    min-height: 200px; 
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    /* Remove the transition if you want the hover to stop entirely */
-    transition: none; 
-    /* Set cursor to default so it doesn't look clickable */
-    cursor: default;
+    border-left: 5px solid transparent; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    border-radius: 12px; 
+    overflow: hidden; 
+    cursor: pointer; 
 }
 
-/* Disable the lift animation and shadow change */
 .year-box:hover {
     transform: none;
     box-shadow: none;
-    cursor: default;
+}
+
+.year-box-link {
+    text-decoration: none !important;
+    color: inherit !important;
+    display: block;
+    margin-bottom: 25px;
+    cursor: pointer; 
+}
+
+.year-box-link:hover .year-box {
+    border-left-color: #e5a813;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.08);
+    transform: translateY(-2px);
 }
 
 .snapshot-view .year-box:not(.active-year) {
@@ -355,48 +358,37 @@ input:checked + .toggle-slider {
     min-height: 235px; 
 }
 
+.void-card {
+    background: #fff;
+    border-radius: 12px;
+    margin-bottom: 25px; /* This fixes the clashing margin */
+    cursor: default;
+    border-left: 5px solid #e2ded5; /* A muted grey instead of gold */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Ensure the 'To Let' text follows the same font as business names */
+.void-card .business-name {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
 .void-card .card-content {
     min-height: 130px;
 }
 
-.card-roof {
-    position: relative;
-    height: 45px;
-    flex-shrink: 0;
-}
-
-.roof-pitch {
-    position: absolute;
-    bottom: 0; left: 0; right: 0;
-    height: 45px;
-    background-color: #2c2c2c; 
-    clip-path: polygon(0 100%, 100% 100%, 100% 35%, 92% 10%, 8% 10%, 0 35%);
-    z-index: 2;
-}
-
-.chimney {
-    position: absolute;
-    bottom: 28px;
-    width: 14px;
-    height: 18px;
-    background-color: #e5a813; 
-    z-index: 1;
-}
-.chimney-left { left: 8%; }
-.chimney-right { right: 8%; }
-
 .card-content {
-    background: #fff;
-    padding: 15px;
+    padding: 25px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    border-bottom: 6px solid #e5a813; 
-    font-family: 'Georgia', 'Times New Roman', serif; /* UPDATED: Serif for card body */
+    /* Removed the old gold bottom border */
+    border-bottom: none; 
 }
 
 .year-range {
-    font-family: 'Montserrat', sans-serif; /* UPDATED: Keep year sans-serif */
+    font-family: 'Montserrat', sans-serif; 
     font-weight: 700;
     color: #666;
     margin: 0 0 8px 0;
@@ -404,119 +396,144 @@ input:checked + .toggle-slider {
 }
 
 .business-name {
-    margin: 0 0 2px 0;
-    font-size: 1.2em;
-    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: #111;
+    margin: 5px 0;
     text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
-.owner {
+.business-type {
+    font-family: 'Georgia', serif;
     font-style: italic;
-    font-size: 0.85em;
-    color: #666;
-    margin: 0 0 10px 0;
+    font-size: 0.95rem;
+    color: #b58d3d; /* Soft gold for the business type */
+    margin: 0 0 15px 0;
 }
 
 .description {
-    font-size: 13px; /* UPDATED: Increased slightly */
-    line-height: 1.5;
-    margin-bottom: 10px;
-    flex-grow: 1;
-    padding-right: 5px;
+    font-family: 'Georgia', serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
 }
 
-/* Void / To Let Pattern */
-.void-pattern {
-    height: 150px;
-    background-color: #3b2e2a;
-    background-image: 
-        linear-gradient(335deg, rgba(255,255,255,0.05) 23px, transparent 23px),
-        linear-gradient(155deg, rgba(255,255,255,0.05) 23px, transparent 23px),
-        linear-gradient(335deg, rgba(255,255,255,0.05) 23px, transparent 23px),
-        linear-gradient(155deg, rgba(255,255,255,0.05) 23px, transparent 23px);
-    background-size: 58px 58px;
-    background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+.card-footer {
+    margin-top: auto;
     display: flex;
     align-items: center;
-    justify-content: center;
-    border-bottom: 5px solid #221a18;
-    overflow: hidden;
-    position: relative;
+    gap: 8px;
+    padding-top: 15px;
+    border-top: 1px solid #f0eee9;
 }
 
-.void-pattern h3 {
-    background-color: #f3f0e1;
-    color: #1a1a1a;
-    font-family: 'Times New Roman', serif;
-    font-weight: 900;
-    font-size: 2em;
+.view-record-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding: 15px 40px;
-    margin: 0;
-    transform: none;
-    border: none;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.4);
-    background-image: linear-gradient(to bottom, rgba(255,255,255,0.5), rgba(0,0,0,0.02));
+    color: #999;
+    transition: color 0.3s ease;
 }
 
-/* Researching Placeholders */
+.view-record-arrow {
+    color: #999;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+/* Footer Hover Effects */
+.year-box-link:hover .view-record-text {
+    color: #e5a813;
+}
+
+.year-box-link:hover .view-record-arrow {
+    color: #e5a813;
+    transform: translateX(5px); /* The subtle right-move animation */
+}
+
+/* --- 5.2 RESEARCHING PLACEHOLDERS --- */
 .research-pattern, 
 .research-card {
-    min-height: 316px !important; 
+    min-height: 200px; 
+    margin-bottom: 25px; /* Matches the standard cards */
+    border-radius: 12px;
 }
 
 .research-pattern {
     width: 100%;
-    margin: 0 0 20px 0; 
-    padding: 20px;
+    min-height: 200px;
+    margin-bottom: 25px !important;
+    padding: 30px 20px;
     box-sizing: border-box; 
-    background-color: rgba(244, 240, 230, 0.5);
+    background-color: rgba(0, 0, 0, 0.02);
     border: 3px dashed #d1c7b7;
-    border-radius: 4px;
+    border-radius: 12px; 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
     text-align: center;
+    /* NEW: Removes the hand/pointer cursor */
+    cursor: default; 
 }
 
 .research-pattern::before {
     content: '?';
-    font-family: 'Times New Roman', serif;
-    font-size: 6em;
-    color: rgba(0,0,0,0.05); 
+    font-family: 'Georgia', serif;
+    font-size: 5rem;
+    color: rgba(0,0,0,0.03); 
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
     pointer-events: none;
 }
 
+/* Internal text styling for Researching cards */
+.research-pattern .date-range {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #666;
+    margin-bottom: 8px;
+    font-size: 0.85em;
+    z-index: 1;
+}
+
+.research-pattern h3 {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 1.15rem;
+    color: #999;
+    margin: 0 0 10px 0;
+    z-index: 1;
+}
+
 .research-pattern p {
-    font-family: 'Times New Roman', italic;
-    font-size: 1.1em;
+    font-family: 'Georgia', serif;
+    font-size: 0.9rem;
+    line-height: 1.5;
     color: #888;
     margin: 0;
     z-index: 1;
 }
 
-.research-pattern h3 {
-    color: #999; 
-    font-family: 'Times New Roman', serif;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 1.1em;
-    margin: 0;
+/* Simple fallback card for empty columns */
+.research-card {
+    border: 2px dashed #ccc; 
+    background-color: rgba(0,0,0,0.03); 
+    color: #888;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    z-index: 2;
-}
-
-.research-pattern .date-range {
-    font-weight: bold;
-    color: #666;
-    margin-bottom: 5px;
-    font-style: normal;
+    padding: 20px;
 }
 
 .research-card {
@@ -720,15 +737,13 @@ input:checked + .toggle-slider {
         rgba(255, 255, 255, 0.6) 50%, 
         rgba(220, 230, 240, 0.9) 100%
     );
-    border-left: 5px solid #444; /* Darker 'iron' ribs */
+    border-left: 5px solid #444; 
     border-right: 5px solid #444;
     position: relative;
     overflow: hidden;
-    /* This next line hides the dotted road line if it's a background on the parent */
     z-index: 2; 
 }
 
-/* Ensure the glass spans the full width and covers the road marks */
 .arcade-style::before {
     content: "";
     position: absolute;
@@ -738,25 +753,19 @@ input:checked + .toggle-slider {
         rgba(0, 0, 0, 0.03),
         rgba(0, 0, 0, 0.03) 1px,
         transparent 1px,
-        transparent 20px /* Wider spacing for better legibility */
+        transparent 20px 
     );
     pointer-events: none;
     z-index: -1;
 }
 
-/* Adjust the text inside the Arcade for better contrast */
 .arcade-style .street-name-vertical {
-    /* REMOVE the black background */
     background-color: transparent; 
-    
-    /* ADD a 'glass plaque' effect */
     background: rgba(255, 255, 255, 0.7); 
-    color: #222; /* Dark grey/black text */
+    color: #222; 
     padding: 15px 5px;
-    border-top: 2px solid #444; /* Iron-style frame top/bottom */
+    border-top: 2px solid #444; 
     border-bottom: 2px solid #444;
-    
-    /* Optional: subtle text shadow to help it lift off the diagonal lines */
     text-shadow: 1px 1px 0px rgba(255,255,255,0.8);
     box-shadow: none;
 }
@@ -948,7 +957,6 @@ input:checked + .toggle-slider {
 
 /* --- MOBILE VIEW (Under 768px) --- */
 @media (max-width: 768px) {
-    /* UPDATED: Scaling cards to 2/3 of desktop (~210px) */
     .year-box, .research-pattern, .research-card {
         min-height: 210px !important;
     }
@@ -1025,25 +1033,22 @@ input:checked + .toggle-slider {
 }
 
 /* --- THE STREET SCROLLBAR --- */
-/* This only appears on devices that use a traditional mouse */
-
 .street-grid::-webkit-scrollbar {
-    height: 14px; /* Thick enough to grab easily */
+    height: 14px; 
 }
 
 .street-grid::-webkit-scrollbar-track {
-    background: #1a1a1a; /* Dark iron background */
+    background: #1a1a1a; 
     border-radius: 10px;
-    margin: 0 40px; /* Keeps it away from the screen edges */
+    margin: 0 40px; 
 }
 
 .street-grid::-webkit-scrollbar-thumb {
-    background: #e5a813; /* Newport Gold */
-    border: 3px solid #1a1a1a; /* Creates a nice border effect */
+    background: #e5a813; 
+    border: 3px solid #1a1a1a; 
     border-radius: 10px;
 }
 
 .street-grid::-webkit-scrollbar-thumb:hover {
-    background: #ffca28; /* Brightens when they hover over it */
+    background: #ffca28; 
 }
-
