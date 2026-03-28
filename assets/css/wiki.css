@@ -91,6 +91,52 @@ body {
     color: #999; font-size: 0.8em; text-transform: uppercase; letter-spacing: 1px;
 }
 
+#infobox-table tr.long-text-row {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+#infobox-table tr.long-text-row th {
+    width: 100%;
+    border-bottom: none;
+    padding-bottom: 5px;
+    color: #777;
+}
+
+#infobox-table tr.long-text-row td {
+    width: 100%;
+    padding-top: 0;
+    font-style: italic;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.infobox-description {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f4f1ea; /* Slightly darker parchment than the table */
+    border-left: 3px solid #e5a813; /* Newport Gold accent line */
+    border-radius: 0 4px 4px 0;
+}
+
+.infobox-description h4 {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #888;
+    margin: 0 0 8px 0;
+    font-weight: 700;
+}
+
+.infobox-description p {
+    font-family: 'Georgia', serif;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: #444;
+    margin: 0;
+}
+
 /* Status Colours */
 .status-badge.original-fabric { background-color: #3e5a47; color: #fff; } 
 .status-badge.victorian-rebuild { background-color: #7a4a3a; color: #fff; } 
@@ -244,17 +290,46 @@ body {
     text-decoration: underline;
 }
 
-/* Mobile responsiveness */
+/* --- MOBILE REFINEMENTS (Max 600px) --- */
 @media screen and (max-width: 600px) {
-    .timeline-table thead { display: none; }
-    .timeline-table tr { display: block; margin-bottom: 15px; border: 1px solid #ddd; }
-    .timeline-table td { display: block; text-align: right; padding-left: 50%; position: relative; }
-    .timeline-table td::before {
-        content: attr(data-label);
-        position: absolute;
-        left: 15px;
-        font-weight: bold;
-        text-transform: uppercase;
-        font-size: 0.7rem;
+
+    /* 1. Shrink the Gold Block and giant number */
+    .number-block { 
+        width: 100px !important;  /* Shorter width */
+        height: 100px !important; /* Forces the box to actually shrink */
+    }
+    
+    .number-block h1 { 
+        font-size: 3.5rem !important; /* Matches the smaller box */
+    }
+
+    /* 2. Scale down Headings */
+    #property-content h1 { font-size: 1.6rem !important; }
+    #property-content h2 { font-size: 1.3rem !important; }
+
+    /* 3. Fix the 'Broken' Table */
+    /* We will use a clean horizontal scroll so it stays a table */
+    .timeline-table {
+        display: block !important;
+        width: 100% !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch;
+        margin: 20px 0;
+    }
+
+    .timeline-table table {
+        width: 100% !important;
+        min-width: 480px !important; /* Ensures columns aren't squashed */
+    }
+
+    .timeline-table th, 
+    .timeline-table td {
+        padding: 10px 8px !important;
+        font-size: 0.85rem !important;
+    }
+    
+    /* Ensure the 'Occupant' column has room to wrap */
+    .timeline-table td:nth-child(2) {
+        white-space: normal !important;
     }
 }

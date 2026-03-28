@@ -1,10 +1,10 @@
 ---
 status: Demolished
 photo: placeholder.jpg
-key use: Public House
-year: ~1611-1898
-architect: TBC
-listing: TBC
+Period: Victorian (c. 1839)
+Character: 3-storey Classical style hotel
+Listing: Grade II
+Architect: T.H. Wyatt
 ---
 
 <p class="wiki-intro-text">Text to go here</p>

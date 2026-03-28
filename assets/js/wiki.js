@@ -56,21 +56,37 @@ async function loadPropertyHistory() {
 
             // 3. Fast Facts Table
             const table = document.getElementById('infobox-table');
-            if (table) {
+            const infobox = document.getElementById('property-infobox');
+
+            if (table && infobox) {
                 let tableHTML = '';
-                const ignoredKeys = ['status', 'photo', 'title', 'id', 'tenants'];
+                let characterHTML = '';
+                const ignoredKeys = ['status', 'photo', 'title', 'id', 'tenants', 'address'];
+
+                // Clear existing description if any exists from a previous load
+                const existingDesc = infobox.querySelector('.infobox-description');
+                if (existingDesc) existingDesc.remove();
+
                 lines.forEach(line => {
                     const parts = line.split(':');
                     if (parts.length >= 2) {
                         const key = parts[0].trim();
                         const value = parts.slice(1).join(':').trim();
-                        if (!ignoredKeys.includes(key.toLowerCase()) && value) {
-                            tableHTML += `<tr><th>${key}</th><td>${value}</td></tr>`;
+                        const keyLower = key.toLowerCase();
+
+                        if (!ignoredKeys.includes(keyLower) && value && value.toLowerCase() !== 'unknown') {
+                            if (keyLower === 'character' || keyLower === 'description') {
+                                characterHTML = `<div class="infobox-description"><h4>${key}</h4><p>${value}</p></div>`;
+                            } else {
+                                tableHTML += `<tr><th>${key}</th><td>${value}</td></tr>`;
+                            }
                         }
                     }
                 });
+
                 table.innerHTML = tableHTML;
-                document.getElementById('property-infobox').style.display = 'block';
+                if (characterHTML) infobox.insertAdjacentHTML('beforeend', characterHTML);
+                infobox.style.display = (tableHTML || characterHTML) ? 'block' : 'none';
             }
 
             // 4. Merchants & Residents
