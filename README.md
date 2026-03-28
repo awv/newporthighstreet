@@ -20,38 +20,44 @@ A digital archive and research ledger dedicated to the architectural and social 
 ## 🏗 Workflow: Adding or Updating a Property
 
 ### 1. The Metadata Block (Frontmatter)
-Every property file must start with a metadata block between `---` lines. This powers the **Fast Facts** table and the **Research Ledger**.
+Every property file must start with a metadata block. We prioritise **Period** and **Character** to capture the architectural identity of the building. 
 
-```markdown
 ---
-status: Victorian Rebuild
-photo: no32-main.jpg
-key use: Ironmongery
-year: 1892
-architect: Habershon & Fawckner
-listing: Grade II
+status: Standing
+photo: westgate-exterior.jpg
+Period: Victorian (c. 1839)
+Character: 3-storey Classical style hotel with ornate Bath stone dressings.
+Architect: T.H. Wyatt
+Listing: Grade II
 ---
-```
 
-*Note: The Fast Facts table is dynamic. Any custom field added here (e.g., `Basement: Vaulted stone`) will automatically appear in the sidebar table without further coding.*
+*Note: The sidebar table is "Smart." If a field is left blank or set to "Unknown," the system will automatically hide that row to keep the interface clean.*
 
 ### 2. The Intro Text
 To ensure a summary appears on the dashboard, wrap your opening paragraph in this specific tag:
 
-```html
 <p class="wiki-intro-text">
     Your historical summary goes here...
 </p>
-```
 
-### 3. Sub-divided Plots
+### 3. The Occupancy Timeline
+Below the intro text, use a standard Markdown table to track the history of the occupants. The system is optimised for this 3-column layout:
+
+| Years | Occupant | Trade |
+| :--- | :--- | :--- |
+| 1839–1890 | [Westgate Hotel](#) | Hotel |
+| 1921–Present | [King's Head](#) | Public House |
+
+*The table is fully responsive. On mobile devices, it enables horizontal scrolling to ensure "The Trade" column remains legible without squashing the text.*
+
+### 4. Sub-divided Plots
 If a historical plot has been split (e.g., 11a, 11b), create separate files. The Python script uses "natural sorting" to keep them in numerical order (11, 11a, 11b, 12).
 
 ---
 
 ## 🏷 Research Status Guide
 
-Use these exact terms in the `status:` field. The system automatically handles the styling for both the Dashboard and the Property pages by converting spaces to hyphens.
+Use these exact terms in the `status:` field. The system handles the styling for both the Dashboard and the Property pages by converting spaces to hyphens.
 
 | Status Label | Historical Context | Dashboard Colour |
 | :--- | :--- | :--- |
@@ -77,10 +83,19 @@ The **`research_ledger.json`** file is the engine for the dashboard. It must be 
 
 ---
 
+## 🖥 Technical Design Specs
+
+The site is designed for high-resolution research work:
+* **Desktop:** Optimised for 1400px widescreen displays (MacBook Air M4 target).
+* **Sidebar:** Fixed at 380px for better architectural description readability.
+* **Mobile:** Media queries trigger at 600px to resize headers and enable table scrolling.
+
+---
+
 ## 💾 Backup & Version Control
 
-Always commit your changes at the end of a session to ensure the history of Newport Cornucopia is preserved:
+Always commit your changes at the end of a session to ensure the history of Newport Cornucopia is preserved and the live site is updated:
 
 1.  `git add .`
 2.  `git commit -m "Update research for [building numbers]"`
-3.  `git push`
+3.  `git push origin main`
