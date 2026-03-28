@@ -1,12 +1,20 @@
 async function loadPropertyHistory() {
     const params = new URLSearchParams(window.location.search);
-    const propertyId = params.get('id');
+    let rawId = params.get('id');
     const contentArea = document.getElementById('property-content');
     const statusBadge = document.getElementById('bldg-status');
     const numberHeader = document.getElementById('bldg-number');
 
-    if (!propertyId || !contentArea) return;
-    if (numberHeader) { numberHeader.innerText = propertyId.replace('no', ''); }
+    if (!rawId || !contentArea) return;
+
+    // --- NORMALISATION ---
+    // Turns "No. 1a" or "no 1a" into "no1a" for file fetching
+    const propertyId = rawId.toLowerCase().replace(/[^a-z0-9]/g, '').trim();
+
+    // Set the Big Header (e.g., "1A")
+    if (numberHeader) { 
+        numberHeader.innerText = propertyId.replace('no', '').toUpperCase(); 
+    }
 
     try {
         const response = await fetch(`/content/${propertyId}.md`);
@@ -98,7 +106,11 @@ async function loadPropertyHistory() {
             text = text.replace(frontmatterRegex, '');
         }
 
+        // Render Markdown
         contentArea.innerHTML = marked.parse(text);
+
+        // TRIGGER JUMP AFTER RENDER
+        handleAnchorJump();
 
         // --- AUTOMATED GALLERIES ---
         const ledgerResponse = await fetch('/research_ledger.json');
@@ -131,6 +143,22 @@ async function loadPropertyHistory() {
     } catch (err) { console.error(err); }
 }
 
+// Ensure the scroll happens after images and content are likely settled
+function handleAnchorJump() {
+    const hash = window.location.hash;
+    if (hash) {
+        setTimeout(() => {
+            const target = document.querySelector(hash);
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                // Optional highlight
+                target.style.backgroundColor = '#fff9e6';
+                setTimeout(() => target.style.backgroundColor = 'transparent', 2000);
+            }
+        }, 300);
+    }
+}
+
 document.addEventListener("DOMContentLoaded", loadPropertyHistory);
 
 function addImage(building, type, filename, caption) {
@@ -140,33 +168,35 @@ function addImage(building, type, filename, caption) {
 }
 
 function openWikiLightbox(src, caption) {
-    document.getElementById('wiki-lightbox-img').src = src;
-    document.getElementById('wiki-lightbox-caption').innerText = caption;
-    document.getElementById('wiki-lightbox').style.display = 'flex';
+    const img = document.getElementById('wiki-lightbox-img');
+    const cap = document.getElementById('wiki-lightbox-caption');
+    const lb = document.getElementById('wiki-lightbox');
+    if (img && cap && lb) {
+        img.src = src;
+        cap.innerText = caption;
+        lb.style.display = 'flex';
+    }
 }
 
-function closeWikiLightbox() { document.getElementById('wiki-lightbox').style.display = 'none'; }
+function closeWikiLightbox() { 
+    const lb = document.getElementById('wiki-lightbox');
+    if (lb) lb.style.display = 'none'; 
+}
 
-// --- WIKI LIGHTBOX LOGIC ---
+// --- LIGHTBOX CLICKS ---
 document.addEventListener('click', function(e) {
-    // Check if the clicked element is an image inside a wiki-image figure
     if (e.target.closest('.wiki-image img')) {
         const clickedImg = e.target;
         const lightbox = document.getElementById('lightbox');
         const lightboxImg = lightbox.querySelector('.lightbox-content');
-
-        // Set the lightbox source to the clicked image's source
-        lightboxImg.src = clickedImg.src;
-        
-        // Show the lightbox
-        lightbox.style.display = 'flex';
+        if (lightbox && lightboxImg) {
+            lightboxImg.src = clickedImg.src;
+            lightbox.style.display = 'flex';
+        }
     }
-});
 
-// Close lightbox when clicking the 'X' or the background
-document.addEventListener('click', function(e) {
     const lightbox = document.getElementById('lightbox');
-    if (e.target.classList.contains('lightbox') || e.target.classList.contains('lightbox-close')) {
+    if (lightbox && (e.target.classList.contains('lightbox') || e.target.classList.contains('lightbox-close'))) {
         lightbox.style.display = 'none';
     }
 });

@@ -112,12 +112,19 @@ historyData.forEach(entry => {
                 <div class="year-box research-pattern" data-start="${entry.Start_Year}" data-end="${entry.End_Year}">
                      <div class="date-range">${yearDisplay}</div> <p>Records for this address<br>are currently being researched.</p>
                 </div>`;
-        } else {
+       } else {
             const businessTypeHTML = entry.Business_Type && entry.Business_Type.trim() !== "" ? `<p class="business-type">${entry.Business_Type}</p>` : '';
             const cleanId = entry.Address.replace("No. ", "no").toLowerCase();
 
+            // STEP 1: Create a slug for the anchor (e.g. "Westgate Hotel" -> "westgate-hotel")
+            // This strips special characters and replaces spaces with hyphens
+            const eraSlug = entry.Business_Name 
+                ? entry.Business_Name.toLowerCase().trim().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '') 
+                : '';
+            const anchor = eraSlug ? `#${eraSlug}` : '';
+
             cardHTML = `
-                <a href="property.html?id=${cleanId}" class="year-box-link">
+                <a href="property.html?id=${cleanId}${anchor}" class="year-box-link">
                     <div class="year-box" data-start="${entry.Start_Year}" data-end="${entry.End_Year}">
                         <div class="card-content">
                             <p class="year-range">${yearDisplay}</p>
@@ -126,7 +133,7 @@ historyData.forEach(entry => {
                             <p class="description">${entry.Description || ''}</p>
                             
                             <div class="card-footer">
-                                <span class="view-record-text">View Record</span>
+                                <span class="view-record-text">Explore Building History</span>
                                 <span class="view-record-arrow">→</span>
                             </div>
                         </div>

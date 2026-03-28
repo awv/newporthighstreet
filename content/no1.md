@@ -9,17 +9,30 @@ listing: TBC
 
 <p class="wiki-intro-text">Text to go here</p>
 
-## Key tenants
-* **Example** — 1949–1980s
+## Occupancy Timeline
 
+<div class="timeline-table">
+
+| Years | Occupant | Trade |
+| :--- | :--- | :--- |
+| 1839–1890 | [Westgate Hotel](#westgate-hotel) | Hotel |
+| 1890–1915 | J. Williams & Sons | Drapery |
+| 1921–Present | [King's Head](#kings-head) | Public House |
+
+</div>
 
 ## About the building
 
 ## Interesting facts
-Text to go here
 
-## Human element
-Text to go here
+<div id="heathcock-inn"></div>
+
+## The Heathcock Era (~1611 to ~1848)
+
+
+<div id="bridge-hotel"></div>
+
+## The Bridge Hotel Era (~1857 to ~1897)
 
 ## Adverts
 <figure class="wiki-image">
