@@ -146,3 +146,27 @@ function openWikiLightbox(src, caption) {
 }
 
 function closeWikiLightbox() { document.getElementById('wiki-lightbox').style.display = 'none'; }
+
+// --- WIKI LIGHTBOX LOGIC ---
+document.addEventListener('click', function(e) {
+    // Check if the clicked element is an image inside a wiki-image figure
+    if (e.target.closest('.wiki-image img')) {
+        const clickedImg = e.target;
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = lightbox.querySelector('.lightbox-content');
+
+        // Set the lightbox source to the clicked image's source
+        lightboxImg.src = clickedImg.src;
+        
+        // Show the lightbox
+        lightbox.style.display = 'flex';
+    }
+});
+
+// Close lightbox when clicking the 'X' or the background
+document.addEventListener('click', function(e) {
+    const lightbox = document.getElementById('lightbox');
+    if (e.target.classList.contains('lightbox') || e.target.classList.contains('lightbox-close')) {
+        lightbox.style.display = 'none';
+    }
+});

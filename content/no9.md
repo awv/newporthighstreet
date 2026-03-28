@@ -6,6 +6,17 @@ architect: Benjamin Lawrence
 tenants: 1881 | John Williams | Master Grocer, 1895 | Thomas & Sons | Drapers & Outfitters, 1910 | The London & Provincial Bank | Branch Office
 ---
 
-# 9 High Street
+<p class="wiki-intro-text">Text to go here</p>
 
-No. 9 is one of the finer examples of Victorian commercial architecture remaining on the street...
+## Key tenants
+* **Example** — 1949–1980s
+
+## About the building
+
+## Interesting facts
+Text to go here
+
+## Human element
+Text to go here
+
+## Adverts

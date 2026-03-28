@@ -7,7 +7,17 @@ architect: TBC
 listing: TBC
 ---
 
-<p class="wiki-intro-text">Research in progress</p>
+<p class="wiki-intro-text">Text to go here</p>
 
 ## Key tenants
-* **Old Green Hotel** — 1880s-1970s
+* **Example** — 1949–1980s
+
+## About the building
+
+## Interesting facts
+Text to go here
+
+## Human element
+Text to go here
+
+## Adverts
