@@ -17,7 +17,7 @@ async function loadPropertyHistory() {
     }
 
     try {
-        const response = await fetch(`/content/${propertyId}.md`);
+        const response = await fetch(`content/${propertyId}.md`);
         if (!response.ok) throw new Error("File not found");
         let text = await response.text();
 
@@ -48,7 +48,7 @@ async function loadPropertyHistory() {
             const photoContainer = document.getElementById('infobox-photo');
             if (photoContainer) {
                 if (photoValue && photoValue.toLowerCase() !== 'placeholder.jpg') {
-                    photoContainer.innerHTML = `<img src="/assets/images/properties/${propertyId}/present/${photoValue}" alt="View of ${propertyId}">`;
+                    photoContainer.innerHTML = `<img src="assets/images/properties/${propertyId}/present/${photoValue}" alt="View of ${propertyId}">`;
                 } else {
                     photoContainer.innerHTML = `<div class="photo-placeholder">No Photo Available</div>`;
                 }
@@ -129,7 +129,7 @@ async function loadPropertyHistory() {
         handleAnchorJump();
 
         // --- AUTOMATED GALLERIES ---
-        const ledgerResponse = await fetch('/research_ledger.json');
+        const ledgerResponse = await fetch('research_ledger.json');
         const ledgerData = await ledgerResponse.json();
         const propertyData = ledgerData.find(p => p.id === propertyId);
 
