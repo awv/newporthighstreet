@@ -1,7 +1,7 @@
 ---
 status: Demolished
 photo: placeholder.jpg
-Period: Victorian (c. 1839)
+Period: Late Victorian (1895)
 Character: 3-storey Classical style hotel
 Listing: Grade II
 Architect: T.H. Wyatt

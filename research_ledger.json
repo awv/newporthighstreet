@@ -2,17 +2,19 @@
     {
         "id": "no1",
         "status": "Demolished",
-        "intro": "No intro written yet.",
-        "key_use": "Public House",
-        "year": "~1611-1898",
+        "intro": "Text to go here",
+        "key_use": "TBC",
+        "year": "TBC",
         "has_photo": "No",
-        "adverts": [],
+        "adverts": [
+            "1-BridgeHotel-JD-1878.jpeg"
+        ],
         "photos": []
     },
     {
         "id": "no2",
         "status": "Demolished",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -22,7 +24,7 @@
     {
         "id": "no3",
         "status": "Demolished",
-        "intro": "Research in progress",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -32,7 +34,7 @@
     {
         "id": "no4",
         "status": "Demolished",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -42,7 +44,7 @@
     {
         "id": "no5",
         "status": "Demolished",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -52,7 +54,7 @@
     {
         "id": "no6",
         "status": "Demolished",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -62,17 +64,19 @@
     {
         "id": "no7",
         "status": "Redeveloped",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
-        "adverts": [],
+        "adverts": [
+            "7-NewportCreditAssoc-JD_1878.jpeg"
+        ],
         "photos": []
     },
     {
         "id": "no8",
         "status": "Redeveloped",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -82,11 +86,13 @@
     {
         "id": "no9",
         "status": "Original Fabric",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "1890",
         "has_photo": "Yes",
-        "adverts": [],
+        "adverts": [
+            "9-JohnDobell-JD01878.jpeg"
+        ],
         "photos": [
             "no9.jpg"
         ]
@@ -94,11 +100,13 @@
     {
         "id": "no10",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "Yes",
-        "adverts": [],
+        "adverts": [
+            "10-Jeffs-JD-1878.jpeg"
+        ],
         "photos": [
             "no10.jpg"
         ]
@@ -118,7 +126,7 @@
     {
         "id": "no12",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -128,7 +136,7 @@
     {
         "id": "no13",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -138,17 +146,19 @@
     {
         "id": "no14",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
-        "adverts": [],
+        "adverts": [
+            "14-EdwinDixon-JD-1878.jpeg"
+        ],
         "photos": []
     },
     {
         "id": "no15",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -158,7 +168,7 @@
     {
         "id": "no16",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -168,7 +178,7 @@
     {
         "id": "no17",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -178,7 +188,7 @@
     {
         "id": "no18",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -188,7 +198,7 @@
     {
         "id": "no19",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -198,7 +208,7 @@
     {
         "id": "no20",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -208,7 +218,7 @@
     {
         "id": "no21",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -218,7 +228,7 @@
     {
         "id": "no22",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -228,7 +238,7 @@
     {
         "id": "no23",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -238,17 +248,19 @@
     {
         "id": "no24",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
-        "adverts": [],
+        "adverts": [
+            "24-ChasParsons-JD-1878.jpeg"
+        ],
         "photos": []
     },
     {
         "id": "no25",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -258,7 +270,7 @@
     {
         "id": "no26",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -268,7 +280,7 @@
     {
         "id": "no27",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -278,17 +290,19 @@
     {
         "id": "no28",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
-        "adverts": [],
+        "adverts": [
+            "28-EdwinHall-JD-1878.jpeg"
+        ],
         "photos": []
     },
     {
         "id": "no29",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -298,7 +312,7 @@
     {
         "id": "no30",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -308,21 +322,24 @@
     {
         "id": "no31",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
-        "adverts": [],
+        "adverts": [
+            "31-DPDaviesClothHall-JD-1878.jpeg"
+        ],
         "photos": []
     },
     {
         "id": "no32",
-        "status": "Redeveloped",
-        "intro": "This prominent building on Commercial Street is best known to modern residents as the long-term home of Richard Shops, but its history stretches back much further into Newport's Victorian mercantile boom.",
+        "status": "TBC",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
-        "has_photo": "Yes",
+        "has_photo": "No",
         "adverts": [
+            "3233-AlfredTaylor-JD-1878.jpeg",
             "28-RichardShops-SWA-04051949.jpg"
         ],
         "photos": [
@@ -332,7 +349,7 @@
     {
         "id": "no33",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -342,7 +359,7 @@
     {
         "id": "no34",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -352,17 +369,19 @@
     {
         "id": "no35",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
-        "adverts": [],
+        "adverts": [
+            "35-Cordeys-JD-1878.jpeg"
+        ],
         "photos": []
     },
     {
         "id": "no36",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -372,7 +391,7 @@
     {
         "id": "no37",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -382,17 +401,19 @@
     {
         "id": "no38",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
-        "adverts": [],
+        "adverts": [
+            "3839-EnochGriffiths-JD-1878.jpeg"
+        ],
         "photos": []
     },
     {
         "id": "no39",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -402,7 +423,7 @@
     {
         "id": "no40",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -412,7 +433,7 @@
     {
         "id": "no41",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -422,7 +443,7 @@
     {
         "id": "no42",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -432,7 +453,7 @@
     {
         "id": "no43",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -442,7 +463,7 @@
     {
         "id": "no44",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -452,7 +473,7 @@
     {
         "id": "no45",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -462,7 +483,7 @@
     {
         "id": "no46",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -472,7 +493,7 @@
     {
         "id": "no47",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -482,7 +503,7 @@
     {
         "id": "no48",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -492,7 +513,7 @@
     {
         "id": "no49",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -502,7 +523,7 @@
     {
         "id": "no50",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -512,7 +533,7 @@
     {
         "id": "no51",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -522,7 +543,7 @@
     {
         "id": "no52",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -532,7 +553,7 @@
     {
         "id": "no53",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -542,7 +563,7 @@
     {
         "id": "no54",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -552,7 +573,7 @@
     {
         "id": "no55",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -562,7 +583,7 @@
     {
         "id": "no56",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -572,7 +593,7 @@
     {
         "id": "no57",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -582,7 +603,7 @@
     {
         "id": "no58",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -592,7 +613,7 @@
     {
         "id": "no59",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -602,17 +623,19 @@
     {
         "id": "no60",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
-        "adverts": [],
+        "adverts": [
+            "60-ThomasLewis-JD-1878.jpeg"
+        ],
         "photos": []
     },
     {
         "id": "no61",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -622,7 +645,7 @@
     {
         "id": "no62",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -632,7 +655,7 @@
     {
         "id": "no63",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -642,7 +665,7 @@
     {
         "id": "no64",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -652,7 +675,7 @@
     {
         "id": "no65",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -662,7 +685,7 @@
     {
         "id": "no66",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -672,17 +695,19 @@
     {
         "id": "no67",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
-        "adverts": [],
+        "adverts": [
+            "67-JamesGraham-JD-1878.jpeg"
+        ],
         "photos": []
     },
     {
         "id": "no68",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -692,7 +717,7 @@
     {
         "id": "no69",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -702,17 +727,19 @@
     {
         "id": "no70",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
-        "adverts": [],
+        "adverts": [
+            "70-JohnEveleigh-JD-1878.jpeg"
+        ],
         "photos": []
     },
     {
         "id": "no71",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -722,7 +749,7 @@
     {
         "id": "no72",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -732,7 +759,7 @@
     {
         "id": "no73",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -742,17 +769,19 @@
     {
         "id": "no74",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
-        "adverts": [],
+        "adverts": [
+            "74-GeorgeCarver-JD-1878.jpeg"
+        ],
         "photos": []
     },
     {
         "id": "no75",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -762,7 +791,7 @@
     {
         "id": "no76",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -772,7 +801,7 @@
     {
         "id": "no77",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -782,7 +811,7 @@
     {
         "id": "no78",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -792,7 +821,7 @@
     {
         "id": "no79",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -802,7 +831,7 @@
     {
         "id": "no80",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -812,7 +841,7 @@
     {
         "id": "no81",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -822,7 +851,7 @@
     {
         "id": "no82",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -832,7 +861,7 @@
     {
         "id": "no83",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
@@ -842,7 +871,7 @@
     {
         "id": "no84",
         "status": "TBC",
-        "intro": "No intro written yet.",
+        "intro": "Text to go here",
         "key_use": "TBC",
         "year": "TBC",
         "has_photo": "No",
