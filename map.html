@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <title>Newport Cornucopia - Property Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        body { font-family: 'Montserrat', sans-serif; margin: 0; padding: 20px; background-color: #f4f1ea; }
+        h1 { font-family: 'Georgia', serif; color: #111; margin-bottom: 20px; }
+        #map { height: 700px; width: 100%; border: 2px solid #e5a813; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        
+        /* Popup Styling */
+        .map-popup h3 { margin: 0 0 5px 0; font-size: 1.2em; color: #111; }
+        .map-popup ul { padding-left: 18px; margin: 10px 0; font-size: 0.9em; line-height: 1.5; color: #444; }
+        .map-popup hr { border: 0; border-top: 1px solid #ddd; margin: 10px 0; }
+        .map-popup a { color: #e5a813; font-weight: 700; text-decoration: none; display: inline-block; margin-top: 5px; }
+        .map-popup a:hover { text-decoration: underline; }
+    </style>
+    <script src="assets/js/data.js"></script>
+</head>
+<body>
+
+    <h1>High Street Property Map</h1>
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+    // 1. Map Layers
+    const modernStandard = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors',
+        maxZoom: 21,
+        maxNativeZoom: 19 
+    });
+
+    const modernMuted = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; OpenStreetMap &copy; CARTO',
+        subdomains: 'abcd',
+        maxZoom: 21,
+        maxNativeZoom: 18 
+    });
+
+    // 2. Initialise Map
+    const map = L.map('map', {
+        center: [51.58965, -2.99675], 
+        zoom: 19,
+        layers: [modernMuted] 
+    });
+
+    const baseMaps = {
+        "Clean Map": modernMuted,
+        "Standard Map": modernStandard
+    };
+    L.control.layers(baseMaps).addTo(map);
+
+    // 3. Polygon Data (No. 1)
+    const no1Coords = [
+        [51.5897109, -2.9967334],
+        [51.5896119, -2.9966113],
+        [51.5895704, -2.9967051],
+        [51.5896698, -2.9968218],
+        [51.5897109, -2.9967334]
+    ];
+
+    const no1Polygon = L.polygon(no1Coords, {
+        color: '#2D5F2D', 
+        fillColor: '#2D5F2D',
+        fillOpacity: 0.5,
+        weight: 2
+    }).addTo(map);
+
+    // 4. Popup Logic
+    function getPopupContent(addressName) {
+        if (typeof historyData === 'undefined') return "History records not found.";
+        
+        const historicalRecords = historyData.filter(entry => entry.Address === addressName);
+        let content = `<div class="map-popup"><h3>${addressName}</h3><hr><ul>`;
+        
+        if (historicalRecords.length > 0) {
+            historicalRecords.forEach(record => {
+                const years = (record.Start_Year == record.End_Year) ? record.Start_Year : `${record.Start_Year}–${record.End_Year}`;
+                content += `<li><strong>${years}:</strong> ${record.Business_Name || 'Unknown'}</li>`;
+            });
+        } else {
+            content += `<li>No records found.</li>`;
+        }
+        
+        content += `</ul><hr><a href="property.html?id=${addressName.toLowerCase().replace('no. ', 'no')}">Explore Building History →</a></div>`;
+        return content;
+    }
+
+    no1Polygon.bindPopup(getPopupContent("No. 1"));
+    </script>
+</body>
+</html>
