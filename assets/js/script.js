@@ -1,6 +1,6 @@
 // --- 1. THE STREET BUILDER ---
 const layout = [
-    "No. 1", "No. 1a", "No. 2", "|GHOST| Old Green", "No. 3", "No. 4", "No. 5", "No. 6", "No. 7", "No. 8",
+    "No. 1|D:~1897|", "No. 1a|D|", "No. 2|D|", "|GHOST| Old Green", "No. 3|D|", "No. 4|D|", "No. 5|D|", "No. 6|D|", "No. 7", "No. 8",
     "|STREET| Carpenter's Arms Lane", "No. 9", "No. 10", "No. 10a", "No. 11", "No. 11a", "No. 11c",
     "|ARCADE| Market Arcade (once Fennell's Arcade)", "No. 12", "No. 13", "No. 14", "No. 14a", "No. 15",
     "No. 16", "No. 17", "No. 18", "No. 19", "No. 20", "No. 21", "|STREET| Market Street", "No. 22",
@@ -12,8 +12,8 @@ const layout = [
     "No. 52", "No. 53", "No. 54", "No. 55", "No. 56", "No. 57", "|GHOST| Station Approach", "No. 58",
     "No. 59", "No. 60", "No. 61", "No. 62", "No. 63", "No. 64", "|GHOST| Thomas Street", "No. 65",
     "No. 66", "No. 67", "No. 68", "No. 68a", "No. 69", "No. 70", "No. 70a", "No. 71", "No. 72", "No. 73", 
-    "No. 74", "No. 75", "No. 76", "No. 77", "|RIVER| River Usk", "No. 78", "No. 79", "No. 80", "No. 81", 
-    "No. 82", "No. 83", "No. 84"
+    "No. 74", "No. 75", "No. 76", "No. 77", "|RIVER| River Usk", "No. 78|D|", "No. 79|D|", "No. 80|D|", "No. 81|D|", 
+    "No. 82|D|", "No. 83|D|", "No. 84|D|"
 ];
 
 const container = document.getElementById('street-container');
@@ -59,26 +59,50 @@ layout.forEach(item => {
                     <h2 class="street-name-vertical">${name}</h2>
                 </div>
             </div>`;
-} else {
-            const cleanNo = item.replace("No. ", "").trim();
+        } else {
+            // 1. Updated Regex to capture ~ and any characters between : and |
+            const demoMatch = item.match(/\|D(:([^|]+))?\|/);
+            const isDemolished = !!demoMatch;
+            const demoDate = (demoMatch && demoMatch[2]) ? demoMatch[2].trim() : null;
+
+            // 2. Create the ID for the column (keeping "no.-" for historyData)
+            const idFriendly = item.replace(/\|D(:([^|]+))?\|/, "").trim().replace(/\s+/g, '-').toLowerCase();
             
-            // This regex finds the digits and any following letters separately
+            // 3. Clean the number for visual display
+            let cleanNo = item.replace(/\|D(:([^|]+))?\|/, "").replace("No. ", "").trim();
+            
             const numberMatch = cleanNo.match(/^(\d+)([a-zA-Z]*)$/);
             let displayNo = cleanNo;
             
             if (numberMatch) {
                 const digits = numberMatch[1];
                 const alpha = numberMatch[2];
-                // Wrap the letter in a span if it exists
                 displayNo = alpha ? `${digits}<span class="number-suffix">${alpha}</span>` : digits;
             }
 
+            // 4. Prepare the Demolished Card HTML
+            let demoCardHTML = '';
+            if (isDemolished) {
+                // Only show the demo-year span if a date actually exists
+                const dateSpan = demoDate ? `<span class="demo-year">${demoDate}</span>` : '';
+                demoCardHTML = `
+                    <div class="demolished-card">
+                        <div class="demo-symbol">†</div>
+                        <span class="demo-label">Demolished</span>
+                        ${dateSpan}
+                    </div>`;
+            }
+
+            const statusClass = isDemolished ? 'status-demolished' : '';
+
             container.innerHTML += `
                 <div class="building-column">
-                    <div class="building-number-modern">${displayNo}</div>
+                    <div class="building-number-modern ${statusClass}">${displayNo}</div>
                     
-                    <div class="column-content" id="col-${item.replace(/\s+/g, '-').toLowerCase()}">
-                    </div>
+                    <div class="column-content" id="col-${idFriendly}">
+                        </div>
+
+                    ${demoCardHTML} 
                 </div>`;
         }
 });
@@ -234,7 +258,12 @@ document.addEventListener('change', function(event) {
 document.addEventListener("DOMContentLoaded", function() {
     const toggle = document.getElementById('view-switch') || document.getElementById('viewToggle');
     const slider = document.querySelector('.year-slider-container');
-    if (toggle && slider) { slider.style.display = toggle.checked ? 'flex' : 'none'; }
+    
+    // Only show it if the toggle is actually checked on load
+    // (e.g. if the browser remembered a 'checked' state from a refresh)
+    if (toggle && slider && toggle.checked) { 
+        slider.style.setProperty('display', 'flex', 'important'); 
+    }
 });
 
 // --- 8. ENHANCED SEARCH FUNCTIONALITY ---
@@ -289,10 +318,12 @@ clearBtn.addEventListener('click', () => { searchInput.value = ""; performSearch
 document.addEventListener('click', function(e) {
     const link = e.target.closest('.year-box-link');
     if (link) {
-        const urlParams = new URLSearchParams(link.href.split('?')[1]);
-        const propertyId = urlParams.get('id');
+        const url = new URL(link.href);
+        const propertyId = url.searchParams.get('id');
         if (propertyId) {
-            sessionStorage.setItem('returnToProperty', propertyId);
+            // Split at '#' to ensure we only save 'no3' and not 'no3#james-bown'
+            const cleanId = propertyId.split('#')[0];
+            sessionStorage.setItem('returnToProperty', cleanId);
         }
     }
 });
@@ -300,18 +331,33 @@ document.addEventListener('click', function(e) {
 // 2. Scroll back to the building when returning to the map
 window.addEventListener('load', function() {
     const returnId = sessionStorage.getItem('returnToProperty');
+    
     if (returnId) {
-        // This matches the ID format used in your layout loop (e.g., 'col-no.-50')
-        const targetColId = "col-" + returnId.replace('no', 'no.-');
-        const targetElement = document.getElementById(targetColId);
+        setTimeout(() => {
+            const formattedId = returnId.replace('no', 'no.-');
+            const targetColId = "col-" + formattedId;
+            const targetElement = document.getElementById(targetColId);
 
-        if (targetElement) {
-            const column = targetElement.closest('.building-column');
-            // 'inline: center' ensures the building is in the middle of the screen
-            column.scrollIntoView({ behavior: 'auto', inline: 'center' });
-            
-            // Clear the memory so it doesn't jump every time you refresh
-            sessionStorage.removeItem('returnToProperty');
-        }
+            if (targetElement) {
+                const column = targetElement.closest('.building-column');
+                
+                // 1. Calculate the horizontal center
+                const columnRect = column.getBoundingClientRect();
+                const absoluteColumnLeft = columnRect.left + window.pageXOffset;
+                const middleOfScreen = window.innerWidth / 2;
+                const columnWidthHalf = column.offsetWidth / 2;
+                
+                const targetX = absoluteColumnLeft - middleOfScreen + columnWidthHalf;
+
+                // 2. Scroll to the calculated X, but force Y to 0 (the top)
+                window.scrollTo({
+                    left: targetX,
+                    top: 0,
+                    behavior: 'auto'
+                });
+                
+                sessionStorage.removeItem('returnToProperty');
+            }
+        }, 50); // Shortened delay for a snappier feel
     }
 });
