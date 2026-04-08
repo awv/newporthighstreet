@@ -1632,7 +1632,7 @@ const historyData = [
   {
     "Address": "No. 14",
     "Start_Year": 1854,
-    "End_Year": 1854,
+    "End_Year": 1857,
     "Business_Name": "P.H. Morris",
     "Business_Type": "Chemist",
     "Description": "",
@@ -1641,21 +1641,11 @@ const historyData = [
   },
   {
     "Address": "No. 14",
-    "Start_Year": 1855,
-    "End_Year": 1862,
-    "Business_Name": "Unknown",
-    "Business_Type": "",
-    "Description": "",
-    "Status": "Researching",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 14",
-    "Start_Year": 1863,
+    "Start_Year": 1858,
     "End_Year": 1877,
     "Business_Name": "Henry Cromwell",
     "Business_Type": "Hosier, Glover, Outfitter",
-    "Description": "",
+    "Description": "Called Newport House",
     "Status": "",
     "Image_URL": ""
   },
@@ -2932,8 +2922,138 @@ const historyData = [
   {
     "Address": "No. 21",
     "Start_Year": 1830,
-    "End_Year": 1848,
+    "End_Year": 1875,
     "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 21",
+    "Start_Year": 1876,
+    "End_Year": 1925,
+    "Business_Name": "Old Ship",
+    "Business_Type": "Public House",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 21",
+    "Start_Year": 1926,
+    "End_Year": 1928,
+    "Business_Name": "Demolition and rebuilding",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 21",
+    "Start_Year": 1929,
+    "End_Year": 1939,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 21",
+    "Start_Year": 1940,
+    "End_Year": 1940,
+    "Business_Name": "Montague Burton Ltd",
+    "Business_Type": "Clothing",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 21",
+    "Start_Year": 1941,
+    "End_Year": 1952,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 21",
+    "Start_Year": 1953,
+    "End_Year": 1953,
+    "Business_Name": "Inland Revenue Valuation Office",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 21",
+    "Start_Year": 1954,
+    "End_Year": 1967,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 21",
+    "Start_Year": 1968,
+    "End_Year": 1974,
+    "Business_Name": "Montague Burton Ltd",
+    "Business_Type": "Clothing",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 21",
+    "Start_Year": 1975,
+    "End_Year": 2011,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 21",
+    "Start_Year": 2012,
+    "End_Year": 2012,
+    "Business_Name": "Anglian Windows",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 21",
+    "Start_Year": 2013,
+    "End_Year": 2016,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 21",
+    "Start_Year": 2017,
+    "End_Year": 2024,
+    "Business_Name": "New Pathways",
+    "Business_Type": "Rape crisis and sexual abuse support services",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 21",
+    "Start_Year": 2025,
+    "End_Year": 2026,
+    "Business_Name": "Void",
     "Business_Type": "",
     "Description": "",
     "Status": "Researching",
@@ -2942,11 +3062,21 @@ const historyData = [
   {
     "Address": "No. 22",
     "Start_Year": 1830,
-    "End_Year": 1848,
+    "End_Year": 1840,
     "Business_Name": "Unknown",
     "Business_Type": "",
     "Description": "",
     "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 22",
+    "Start_Year": 1841,
+    "End_Year": 1848,
+    "Business_Name": "",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "",
     "Image_URL": ""
   },
   {
