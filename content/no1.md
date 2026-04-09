@@ -15,9 +15,8 @@ Architect: T.H. Wyatt
 
 | Years | Occupant | Trade |
 | :--- | :--- | :--- |
-| 1839–1890 | [Westgate Hotel](#westgate-hotel) | Hotel |
-| 1890–1915 | J. Williams & Sons | Drapery |
-| 1921–Present | [King's Head](#kings-head) | Public House |
+| ~1611–1848 | [Heathcock Inn](#westgate-hotel) | Public House |
+| 1857–1898 | [Bridge Hotel](#bridge-hotel) | Public House |
 
 </div>
 

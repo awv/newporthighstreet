@@ -9,13 +9,24 @@ listing: TBC
 
 <p class="wiki-intro-text">Text to go here</p>
 
-## Key tenants
-* **Example** — 1949–1980s
+## Occupancy Timeline
+
+<div class="timeline-table">
+
+| Years | Occupant | Trade |
+| :--- | :--- | :--- |
+| 1848 | [George Masters](#george-masters) | Wines and Spirits|
+
+</div>
 
 ## About the building
 
 ## Interesting facts
 Text to go here
+
+<div id="george-masters"></div>
+
+
 
 ## Human element
 Text to go here
