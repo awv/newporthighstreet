@@ -8,8 +8,17 @@ tenants: 1881 | John Williams | Master Grocer, 1895 | Thomas & Sons | Drapers & 
 
 <p class="wiki-intro-text">Text to go here</p>
 
-## Key tenants
-* **Example** — 1949–1980s
+## Occupancy Timeline
+
+<div class="timeline-table">
+
+| Years | Occupant | Trade |
+| :--- | :--- | :--- |
+| 1873-1957 | John Dobell & Co. | Wine and Spirit Merchant |
+| 1958-1960 | Arthur Cooper | Wine and Spirit Merchant |
+| c18th-2026 | Carpenter's Arms | Public House |
+
+</div>
 
 ## About the building
 

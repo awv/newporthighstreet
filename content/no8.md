@@ -9,8 +9,16 @@ listing: TBC
 
 <p class="wiki-intro-text">Text to go here</p>
 
-## Key tenants
-* **Example** — 1949–1980s
+## Occupancy Timeline
+
+<div class="timeline-table">
+
+| Years | Occupant | Trade |
+| :--- | :--- | :--- |
+| c18th-2012 | Kings Head Hotel | Hotel |
+
+</div>
+
 
 ## About the building
 

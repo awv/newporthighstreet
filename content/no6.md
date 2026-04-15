@@ -9,8 +9,17 @@ listing: TBC
 
 <p class="wiki-intro-text">Text to go here</p>
 
-## Key tenants
-* **Example** — 1949–1980s
+## Occupancy Timeline
+
+<div class="timeline-table">
+
+| Years | Occupant | Trade |
+| :--- | :--- | :--- |
+| 1869-1946 | Great Western Eating House | Restaurant |
+| 1953-1971 | Western Mail |
+| 1927-1971 | Bannister and Thatcher | Chemist |
+
+</div>
 
 ## About the building
 

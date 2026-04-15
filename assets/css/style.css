@@ -494,111 +494,60 @@ input:checked + .toggle-slider {
     transform: translateX(5px); /* The subtle right-move animation */
 }
 
-/* --- 5.2 RESEARCHING PLACEHOLDERS --- */
-.research-pattern, 
-.research-card {
-    min-height: 200px; 
-    margin-bottom: 25px; /* Matches the standard cards */
-    border-radius: 12px;
-}
+/* --- 5.2 MINIMALIST RESEARCH THREADS --- */
 
-.research-pattern {
-    width: 100%;
-    min-height: 200px;
-    margin-bottom: 25px !important;
-    padding: 30px 20px;
-    box-sizing: border-box; 
-    background-color: rgba(0, 0, 0, 0.02);
-    border: 3px dashed #d1c7b7;
-    border-radius: 12px; 
+.research-thread {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
+    padding: 20px 0;
+    margin-bottom: 25px; /* Maintains vertical rhythm with business cards */
     text-align: center;
-    /* NEW: Removes the hand/pointer cursor */
-    cursor: default; 
+    cursor: default;
 }
 
-.research-pattern::before {
-    content: '?';
-    font-family: 'Georgia', serif;
-    font-size: 5rem;
-    color: rgba(0,0,0,0.03); 
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-}
-
-/* Internal text styling for Researching cards */
-.research-pattern .date-range {
+/* The Year Range at the top */
+.thread-dates {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    color: #666;
-    margin-bottom: 8px;
-    font-size: 0.85em;
-    z-index: 1;
-}
-
-.research-pattern h3 {
-    font-family: 'Georgia', serif;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 1.15rem;
     color: #999;
-    margin: 0 0 10px 0;
-    z-index: 1;
+    font-size: 0.8em;
+    margin-bottom: 6px;
 }
 
-.research-pattern p {
+/* The Vertical Line - faded at ends for a subtler look */
+.thread-line {
+    width: 2px;
+    height: 50px;
+    background: linear-gradient(to bottom, transparent, #d1c7b7 20%, #d1c7b7 80%, transparent);
+    margin: 8px 0;
+}
+
+/* The "Researching" label at the bottom */
+.thread-label {
     font-family: 'Georgia', serif;
-    font-size: 0.9rem;
-    line-height: 1.5;
-    color: #888;
-    margin: 0;
-    z-index: 1;
-}
-
-/* Simple fallback card for empty columns */
-.research-card {
-    border: 2px dashed #ccc; 
-    background-color: rgba(0,0,0,0.03); 
-    color: #888;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-}
-
-.research-card {
-    border: 2px dashed #ccc; 
-    background-color: rgba(0,0,0,0.03); 
-    color: #888;
-    box-sizing: border-box; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    margin-bottom: 25px;
-    border-radius: 4px;
-}
-
-.research-icon {
-    font-size: 2em;
-    margin-bottom: 10px;
-    opacity: 0.5;
-}
-
-.research-text {
-    font-size: 0.9em;
     font-style: italic;
-    font-weight: 500;
+    font-size: 0.75rem;
+    color: #aaa;
+    margin-top: 4px;
+    letter-spacing: 0.5px;
+}
+
+/* Strip the 'Card' look from the minimalist threads */
+.year-box.research-thread {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    min-height: 0 !important; /* Allows it to be short */
+    padding: 10px 0 !important;
+    cursor: default;
+}
+
+/* Disable the hover lift effect for these threads */
+.year-box.research-thread:hover {
+    transform: none !important;
+    box-shadow: none !important;
 }
 
 /* --- 6. STREET & SCENERY DIVIDERS --- */

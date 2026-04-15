@@ -133,10 +133,12 @@ historyData.forEach(entry => {
                 </div>`;
         } else if (status === 'researching') {
             cardHTML = `
-                <div class="year-box research-pattern" data-start="${entry.Start_Year}" data-end="${entry.End_Year}">
-                     <div class="date-range">${yearDisplay}</div> <p>Records for this address<br>are currently being researched.</p>
-                </div>`;
-       } else {
+            <div class="research-thread year-box" data-start="${entry.Start_Year}" data-end="${entry.End_Year}">
+                <span class="thread-dates">${yearDisplay}</span>
+                <div class="thread-line"></div>
+                <span class="thread-label">Researching</span>
+            </div>`;
+        }else {
             const businessTypeHTML = entry.Business_Type && entry.Business_Type.trim() !== "" ? `<p class="business-type">${entry.Business_Type}</p>` : '';
             const cleanId = entry.Address.replace("No. ", "no").toLowerCase();
 
@@ -172,9 +174,10 @@ historyData.forEach(entry => {
 document.querySelectorAll('.column-content').forEach(column => {
     if (column.children.length === 0) {
         column.innerHTML = `
-            <div class="year-box research-card" data-start="1800" data-end="2100">
-                <div class="research-icon">?</div>
-                <p class="research-text">Records for this address<br>are currently being researched.</p>
+            <div class="research-thread year-box" data-start="1800" data-end="2100">
+                <span class="thread-dates">1800–Present</span>
+                <div class="thread-line"></div>
+                <span class="thread-label">Under Research</span>
             </div>`;
     }
 });
