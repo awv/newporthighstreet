@@ -36,19 +36,34 @@ async function loadPropertyHistory() {
                 return null;
             };
 
-            // 1. Status
-            const statusValue = getMetaValue('status');
-            if (statusValue && statusBadge) {
-                statusBadge.innerText = statusValue;
-                statusBadge.className = 'status-badge ' + statusValue.toLowerCase().replace(/\s+/g, '-');
-            }
+// 1. Status Badge
+const statusValue = getMetaValue('status');
+if (statusValue && statusBadge) {
+    // Force clean the text
+    const cleanValue = statusValue.trim(); 
+    const cleanClass = cleanValue.toLowerCase().replace(/\s+/g, '-');
+
+    statusBadge.innerText = cleanValue;
+    
+    // Reset the classes completely to be sure
+    statusBadge.className = 'status-badge ' + cleanClass;
+
+    // Open your browser console (F12) to see this:
+    console.log("Status Found:", `"${cleanValue}"`);
+    console.log("Class Applied:", `"${cleanClass}"`);
+}
 
             // 2. Infobox Photo
             const photoValue = getMetaValue('photo');
             const photoContainer = document.getElementById('infobox-photo');
             if (photoContainer) {
                 if (photoValue && photoValue.toLowerCase() !== 'placeholder.jpg') {
-                    photoContainer.innerHTML = `<img src="assets/images/properties/${propertyId}/present/${photoValue}" alt="View of ${propertyId}">`;
+                    photoContainer.innerHTML = `
+                        <div class="wiki-image">
+                            <img src="assets/images/properties/${propertyId}/present/${photoValue}" 
+                                alt="View of ${propertyId}" 
+                                style="cursor: zoom-in;">
+                        </div>`;
                 } else {
                     photoContainer.innerHTML = `<div class="photo-placeholder">No Photo Available</div>`;
                 }
@@ -180,7 +195,13 @@ document.addEventListener("DOMContentLoaded", loadPropertyHistory);
 function addImage(building, type, filename, caption) {
     const container = document.getElementById(`${type === 'present' ? 'present' : 'adverts'}-gallery`);
     if (!container) return;
-    container.innerHTML += `<div class="gallery-item"><img src="/assets/images/properties/${building}/${type}/${filename}" alt="${caption}" onclick="openWikiLightbox(this.src, '${caption}')"><p class="gallery-caption">${caption}</p></div>`;
+    
+    // We use the 'wiki-image' class so the lightbox listener can find it
+    container.innerHTML += `
+        <div class="gallery-item wiki-image">
+            <img src="/assets/images/properties/${building}/${type}/${filename}" alt="${caption}">
+            <p class="gallery-caption">${caption}</p>
+        </div>`;
 }
 
 function openWikiLightbox(src, caption) {
@@ -199,18 +220,21 @@ function closeWikiLightbox() {
     if (lb) lb.style.display = 'none'; 
 }
 
-// --- LIGHTBOX CLICKS ---
+// --- UPDATED LIGHTBOX LISTENER ---
 document.addEventListener('click', function(e) {
-    if (e.target.closest('.wiki-image img')) {
-        const clickedImg = e.target;
+    // Check if the click was on an image inside a .wiki-image container
+    const clickedWikiImg = e.target.closest('.wiki-image img');
+    
+    if (clickedWikiImg) {
         const lightbox = document.getElementById('lightbox');
         const lightboxImg = lightbox.querySelector('.lightbox-content');
         if (lightbox && lightboxImg) {
-            lightboxImg.src = clickedImg.src;
+            lightboxImg.src = clickedWikiImg.src;
             lightbox.style.display = 'flex';
         }
     }
 
+    // Close logic for the background or 'X'
     const lightbox = document.getElementById('lightbox');
     if (lightbox && (e.target.classList.contains('lightbox') || e.target.classList.contains('lightbox-close'))) {
         lightbox.style.display = 'none';

@@ -1,6 +1,6 @@
 ---
 status: Redeveloped
-photo: placeholder.jpg
+photo: no7.jpeg
 key use: TBC
 year: TBC
 architect: TBC
