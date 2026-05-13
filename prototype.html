@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <title>Newport Cornucopia: Capped Pillar Lab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Playfair+Display:wght@700;900&family=Georgia&display=swap" rel="stylesheet">
+    <style>
+        :root { 
+            --gold: #e5a813; 
+            --bg: #f4f1ea; 
+            --card-bg: #fff; 
+            --pillar-tail: #eae7df; /* Faint parchment for the duration tail */
+            --text: #333; 
+            --grey-dim: #999;
+            --row-h: 200px; 
+            --header-h: 150px; 
+            --grid-offset: 60px; /* SYNCED OFFSET FOR BOTH RULER AND GRID */
+        }
+        body { margin: 0; font-family: 'Montserrat', sans-serif; background: var(--bg); color: var(--text); overflow: hidden; }
+
+        /* HEADERS */
+        .header-container { position: sticky; top: 0; z-index: 500; background: #000; }
+        .logo-bar { height: 90px; display: flex; align-items: center; padding: 0 30px; }
+        .logo-text { font-family: 'Playfair Display', serif; font-size: 2.2rem; font-weight: 900; color: var(--gold); text-transform: uppercase; }
+
+        .jump-container { height: 60px; background: #1a1a1a; display: flex; align-items: center; border-bottom: 2px solid var(--gold); }
+        .nav-arrow { width: 60px; height: 100%; background: #222; border: none; color: #fff; font-size: 1.5rem; cursor: pointer; }
+        .nav-arrow:hover:not(:disabled) { background: var(--gold); color: #000; }
+        .nav-arrow:disabled { opacity: 0.1; }
+
+        .jump-bar { flex-grow: 1; display: flex; gap: 6px; overflow-x: auto; padding: 0 15px; align-items: center; height: 100%; scroll-behavior: smooth; }
+        .jump-btn { min-width: 55px; height: 40px; background: #333; color: #eee; border: none; font-size: 0.9rem; font-weight: 700; cursor: pointer; border-radius: 4px; transition: 0.2s; }
+        .jump-btn:hover { background: var(--gold); color: #000; }
+
+        /* VIEWPORT */
+        .viewport { display: grid; grid-template-columns: 120px 1fr; height: calc(100vh - 150px); }
+        
+        .year-ruler { background: #111; color: var(--gold); border-right: 2px solid var(--gold); overflow: hidden; display: flex; flex-direction: column; padding-top: var(--grid-offset); }
+        .year-marker { min-height: var(--row-h); display: flex; align-items: center; justify-content: center; border-bottom: 1px solid #222; box-sizing: border-box; }
+        .year-text { writing-mode: vertical-rl; transform: rotate(180deg); font-weight: 900; font-size: 1.1rem; letter-spacing: 2px; }
+
+        .street-view { overflow: auto; display: flex; flex-direction: column; position: relative; scroll-behavior: smooth; }
+        
+        .building-headers { display: flex; position: sticky; top: 0; background: var(--bg); z-index: 400; border-bottom: 4px solid var(--gold); width: max-content; }
+        .building-col-header { min-width: 400px; padding: 20px; text-align: center; border-right: 1px solid #e2ded5; box-sizing: border-box; }
+        .building-col-header strong { font-family: 'Playfair Display', serif; font-size: 3.5rem; font-weight: 900; }
+        .header-open { color: var(--gold); }
+        .header-closed { color: var(--grey-dim); }
+
+        /* GRID CONTENT */
+        .grid-body { position: relative; display: flex; width: max-content; padding-top: var(--grid-offset); }
+        .column { min-width: 400px; border-right: 1px solid #e2ded5; position: relative; }
+        
+        /* THE PILLAR CARD */
+        .pillar-card { 
+            position: absolute; left: 30px; right: 30px; 
+            border: 1px solid #d1cdc2; border-radius: 8px;
+            background: var(--pillar-tail); /* THE SUBTLE TAIL COLOUR */
+            z-index: 2; overflow: visible; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+        }
+        
+        /* THE WHITE CONTENT "CAP" */
+        .content-cap { 
+            position: sticky; top: 124px; /* Offset to allow gap under gold line */
+            background: #fff; padding: 25px; border-radius: 8px;
+            border-bottom: 1px solid #d1cdc2;
+            z-index: 10;
+        }
+
+        .content-cap h4 { margin: 0; font-family: 'Georgia', serif; font-size: 1.3rem; font-weight: 900; color: #111; }
+        .content-cap .trade { font-size: 0.8rem; font-style: italic; color: var(--gold); margin-top: 6px; display: block; font-family: 'Georgia', serif; }
+        .content-cap .range { font-size: 0.75rem; color: #aaa; font-weight: 700; margin-bottom: 12px; display: block; }
+        .content-cap p { font-size: 0.9rem; color: #666; margin: 15px 0 0; line-height: 1.5; border-top: 1px solid #eee; padding-top: 15px; }
+
+        /* RESEARCHING (MATCHES UI01) */
+        .researching-box {
+            position: absolute; left: 30px; right: 30px;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+        }
+        .research-date { font-size: 0.7rem; color: var(--grey-dim); font-weight: 900; }
+        .research-line { width: 1px; height: 50px; background: #d1cdc2; margin: 10px 0; }
+        .research-label { font-size: 0.75rem; color: var(--grey-dim); text-transform: uppercase; letter-spacing: 2px; }
+
+        /* Scrollbar */
+        .street-view::-webkit-scrollbar { height: 18px; width: 8px; }
+        .street-view::-webkit-scrollbar-thumb { background: var(--gold); border: 5px solid var(--bg); border-radius: 10px; }
+
+    </style>
+</head>
+<body>
+
+    <div class="header-container">
+        <div class="logo-bar">
+            <div class="logo-text">The Newport Cornucopia</div>
+        </div>
+        <div class="jump-container">
+            <button class="nav-arrow" id="scroll-prev" disabled>&#10094;</button>
+            <div class="jump-bar" id="jump-bar"></div>
+            <button class="nav-arrow" id="scroll-next">&#10095;</button>
+        </div>
+    </div>
+
+    <div class="viewport">
+        <div class="year-ruler" id="ruler"></div>
+        <div class="street-view" id="street">
+            <div class="building-headers" id="header-row"></div>
+            <div class="grid-body" id="grid-body"></div>
+        </div>
+    </div>
+
+<script src="assets/js/data.js"></script>
+
+<script>
+window.onload = function() {
+    if (typeof historyData === 'undefined') return;
+
+    const street = document.getElementById('street');
+    const ruler = document.getElementById('ruler');
+    const headerRow = document.getElementById('header-row');
+    const gridBody = document.getElementById('grid-body');
+    const jumpBar = document.getElementById('jump-bar');
+
+    const addresses = [...new Set(historyData.map(d => d.Address))].sort((a, b) => 
+        a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
+    
+    const startYears = [...new Set(historyData.map(d => d.Start_Year))].sort((a,b) => a - b);
+    const rowHeight = 200;
+
+    // 1. HEADERS & NAVIGATION
+    addresses.forEach(addr => {
+        const id = addr.replace('No. ', '');
+        const history = historyData.filter(d => d.Address === addr);
+        const latest = history[history.length - 1];
+        const isClosed = latest.Business_Name.toLowerCase().includes('demolished') || latest.End_Year < 2024;
+
+        headerRow.innerHTML += `<div class="building-col-header" id="header-${id}"><strong class="${isClosed ? 'header-closed' : 'header-open'}">${id}</strong></div>`;
+        const btn = document.createElement('button');
+        btn.className = 'jump-btn'; btn.innerText = id;
+        btn.onclick = () => document.getElementById(`header-${id}`).scrollIntoView({ behavior: 'smooth', inline: 'start' });
+        jumpBar.appendChild(btn);
+    });
+
+    // 2. RULER
+    startYears.forEach(year => {
+        ruler.innerHTML += `<div class="year-marker"><span class="year-text">${year}</span></div>`;
+    });
+
+    // 3. PILLARS
+    addresses.forEach((addr) => {
+        const col = document.createElement('div');
+        col.className = 'column';
+        gridBody.appendChild(col);
+
+        const history = historyData.filter(d => d.Address === addr);
+        history.forEach(record => {
+            const startIdx = startYears.indexOf(record.Start_Year);
+            let endIdx = startYears.findIndex(y => y >= record.End_Year);
+            if (endIdx === -1) endIdx = startYears.length; 
+
+            const rowsSpan = Math.max(1, endIdx - startIdx);
+            const topPos = startIdx * rowHeight;
+            const height = rowsSpan * rowHeight;
+
+            const isResearching = record.Status === "Researching" || record.Business_Name.toLowerCase() === "unknown";
+            
+            if (isResearching) {
+                const rBox = document.createElement('div');
+                rBox.className = 'researching-box';
+                rBox.style.top = topPos + 'px';
+                rBox.style.height = height + 'px';
+                rBox.innerHTML = `<div class="research-date">${record.Start_Year}</div><div class="research-line"></div><div class="research-label">Researching</div><div class="research-line"></div><div class="research-date">${record.End_Year}</div>`;
+                col.appendChild(rBox);
+            } else {
+                const card = document.createElement('div');
+                card.className = 'pillar-card';
+                card.style.top = (topPos + 10) + 'px'; 
+                card.style.height = (height - 20) + 'px';
+                
+                card.innerHTML = `
+                    <div class="content-cap">
+                        <span class="range">${record.Start_Year} — ${record.End_Year}</span>
+                        <h4>${record.Business_Name}</h4>
+                        <span class="trade">${record.Business_Type}</span>
+                        ${record.Description ? `<p>${record.Description}</p>` : ''}
+                    </div>
+                `;
+                col.appendChild(card);
+            }
+        });
+    });
+
+    // Sync Scroll
+    street.addEventListener('scroll', () => { ruler.scrollTop = street.scrollTop; });
+};
+</script>
+</body>
+</html>

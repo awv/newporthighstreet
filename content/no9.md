@@ -1,6 +1,6 @@
 ---
 status: Original Fabric
-photo: no9.jpg
+photo: no0910.jpeg
 year: 1890
 architect: Benjamin Lawrence
 tenants: 1881 | John Williams | Master Grocer, 1895 | Thomas & Sons | Drapers & Outfitters, 1910 | The London & Provincial Bank | Branch Office

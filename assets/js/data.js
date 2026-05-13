@@ -22,7 +22,7 @@ const historyData = [
   {
     "Address": "No. 1",
     "Start_Year": 1857,
-    "End_Year": 1897,
+    "End_Year": 1896,
     "Business_Name": "Bridge Hotel",
     "Business_Type": "Public House",
     "Description": "Various owners including Mrs Allen, J.H. Young, W.J. Herbert, Henry Duckham and David Jenkins",
@@ -31,8 +31,18 @@ const historyData = [
   },
   {
     "Address": "No. 1a",
-    "Start_Year": 1830,
-    "End_Year": 1848,
+    "Start_Year": 1878,
+    "End_Year": 1878,
+    "Business_Name": "A. Morgan",
+    "Business_Type": "Butcher",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 1a",
+    "Start_Year": 1879,
+    "End_Year": 1881,
     "Business_Name": "Unknown",
     "Business_Type": "",
     "Description": "",
@@ -40,19 +50,19 @@ const historyData = [
     "Image_URL": ""
   },
   {
-    "Address": "No. 2",
-    "Start_Year": 1830,
-    "End_Year": 1848,
-    "Business_Name": "Unknown",
-    "Business_Type": "",
+    "Address": "No. 1a",
+    "Start_Year": 1882,
+    "End_Year": 1882,
+    "Business_Name": "Bradbury & Co. Ltd",
+    "Business_Type": "Sewing Machine Depot",
     "Description": "",
-    "Status": "Researching",
+    "Status": "",
     "Image_URL": ""
   },
   {
     "Address": "No. 2",
-    "Start_Year": 1848,
-    "End_Year": 1848,
+    "Start_Year": 1844,
+    "End_Year": 1857,
     "Business_Name": "George Masters",
     "Business_Type": "Wine & Spirit Merchants",
     "Description": "",
@@ -60,9 +70,99 @@ const historyData = [
     "Image_URL": ""
   },
   {
+    "Address": "No. 2",
+    "Start_Year": 1858,
+    "End_Year": 1859,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 2",
+    "Start_Year": 1860,
+    "End_Year": 1860,
+    "Business_Name": "To Let",
+    "Business_Type": "Wine & Spirit Vaults",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 2",
+    "Start_Year": 1861,
+    "End_Year": 1861,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 2",
+    "Start_Year": 1862,
+    "End_Year": 1862,
+    "Business_Name": "Joseph Waters?",
+    "Business_Type": "Wine & Spirit Vaults",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 2",
+    "Start_Year": 1863,
+    "End_Year": 1863,
+    "Business_Name": "George Harris",
+    "Business_Type": "Wine & Spirit Vaults",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 2",
+    "Start_Year": 1864,
+    "End_Year": 1869,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 2",
+    "Start_Year": 1870,
+    "End_Year": 1882,
+    "Business_Name": "Old Green Tavern",
+    "Business_Type": "Public House",
+    "Description": "Various owners including J Welbourn, David Harrhy and Samuel Fry",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 2",
+    "Start_Year": 1883,
+    "End_Year": 1885,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 2",
+    "Start_Year": 1886,
+    "End_Year": 1890,
+    "Business_Name": "Bradbury & Co. Ltd",
+    "Business_Type": "Sewing Machine Depot",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
     "Address": "No. 3",
     "Start_Year": 1830,
-    "End_Year": 1875,
+    "End_Year": 1873,
     "Business_Name": "Unknown",
     "Business_Type": "",
     "Description": "",
@@ -71,32 +171,22 @@ const historyData = [
   },
   {
     "Address": "No. 3",
-    "Start_Year": 1876,
+    "Start_Year": 1874,
     "End_Year": 1876,
     "Business_Name": "James Bown?",
-    "Business_Type": "Grocer",
+    "Business_Type": "Baker and Confectioner",
     "Description": "",
     "Status": "",
     "Image_URL": ""
   },
   {
     "Address": "No. 3",
-    "Start_Year": 1877,
-    "End_Year": 1877,
+    "Start_Year": 1879,
+    "End_Year": 1881,
     "Business_Name": "Unknown",
     "Business_Type": "",
     "Description": "",
     "Status": "Researching",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 3",
-    "Start_Year": 1878,
-    "End_Year": 1878,
-    "Business_Name": "Benj. James?",
-    "Business_Type": "Grocer",
-    "Description": "",
-    "Status": "",
     "Image_URL": ""
   },
   {
@@ -105,7 +195,7 @@ const historyData = [
     "End_Year": 1971,
     "Business_Name": "Old Green Hotel",
     "Business_Type": "Public House & Hotel",
-    "Description": "",
+    "Description": "Various owners including T Barrett, M.A. Watkins, Thomas Francis, E.P. Hayden, Frank Alford, John E. Morgan and Francis Welsher",
     "Status": "",
     "Image_URL": ""
   },
@@ -122,7 +212,7 @@ const historyData = [
   {
     "Address": "No. 4",
     "Start_Year": 1848,
-    "End_Year": 1848,
+    "End_Year": 1855,
     "Business_Name": "S Munday",
     "Business_Type": "Grocer",
     "Description": "",
@@ -131,7 +221,7 @@ const historyData = [
   },
   {
     "Address": "No. 4",
-    "Start_Year": 1849,
+    "Start_Year": 1856,
     "End_Year": 1875,
     "Business_Name": "Unknown",
     "Business_Type": "",
@@ -143,7 +233,7 @@ const historyData = [
     "Address": "No. 4",
     "Start_Year": 1876,
     "End_Year": 1920,
-    "Business_Name": "Bristol Dining Rooms",
+    "Business_Name": "Bristol Dining Rooms (Bristol House)",
     "Business_Type": "Restaurant & Hotel",
     "Description": "Called Bristol and South Wales Dining Rooms, Bristol Dining Rooms and Bristol Dining Rooms & Commercial Hotel",
     "Status": "",
@@ -201,8 +291,18 @@ const historyData = [
   },
   {
     "Address": "No. 5",
-    "Start_Year": 1830,
-    "End_Year": 1867,
+    "Start_Year": 1850,
+    "End_Year": 1850,
+    "Business_Name": "Mrs Martha Evans",
+    "Business_Type": "Chemist?",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 5",
+    "Start_Year": 1851,
+    "End_Year": 1854,
     "Business_Name": "Unknown",
     "Business_Type": "",
     "Description": "",
@@ -211,7 +311,17 @@ const historyData = [
   },
   {
     "Address": "No. 5",
-    "Start_Year": 1868,
+    "Start_Year": 1855,
+    "End_Year": 1868,
+    "Business_Name": "Thomas Jones",
+    "Business_Type": "Chemist",
+    "Description": "At some point was in a partnership with James Edmunds and that partnership dissolved in 1868",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 5",
+    "Start_Year": 1869,
     "End_Year": 1882,
     "Business_Name": "James Edmunds",
     "Business_Type": "Chemist",
@@ -261,18 +371,8 @@ const historyData = [
   },
   {
     "Address": "No. 6",
-    "Start_Year": 1830,
-    "End_Year": 1868,
-    "Business_Name": "Unknown",
-    "Business_Type": "",
-    "Description": "",
-    "Status": "Researching",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 6",
     "Start_Year": 1869,
-    "End_Year": 1946,
+    "End_Year": 1947,
     "Business_Name": "Great Western Eating House",
     "Business_Type": "Restaurant",
     "Description": "Various owners including James Thomas, Edward Samuels, J. Spencer, W. Spencer, Alex Ross, Frank Welsher, William George and Henry Dowdall",
@@ -281,7 +381,27 @@ const historyData = [
   },
   {
     "Address": "No. 6",
-    "Start_Year": 1947,
+    "Start_Year": 1948,
+    "End_Year": 1949,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 6",
+    "Start_Year": 1950,
+    "End_Year": 1950,
+    "Business_Name": "Poppy Depot & Labour HQ",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 6",
+    "Start_Year": 1951,
     "End_Year": 1952,
     "Business_Name": "Unknown",
     "Business_Type": "",
@@ -321,10 +441,10 @@ const historyData = [
   },
   {
     "Address": "No. 9",
-    "Start_Year": 1839,
+    "Start_Year": 1785,
     "End_Year": 1872,
-    "Business_Name": "Unknown",
-    "Business_Type": "",
+    "Business_Name": "Carpenter's Arms",
+    "Business_Type": "Public House",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -352,18 +472,18 @@ const historyData = [
   {
     "Address": "No. 9",
     "Start_Year": 1961,
-    "End_Year": 1967,
-    "Business_Name": "Unknown",
-    "Business_Type": "",
+    "End_Year": 1984,
+    "Business_Name": "Carpenter's Arms",
+    "Business_Type": "Public House",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
   },
   {
     "Address": "No. 9",
-    "Start_Year": 1968,
-    "End_Year": 1974,
-    "Business_Name": "Carpenter's Arms",
+    "Start_Year": 1985,
+    "End_Year": 1993,
+    "Business_Name": "Carpenter's Arms (Hall of Fame)",
     "Business_Type": "Public House",
     "Description": "",
     "Status": "",
@@ -371,8 +491,8 @@ const historyData = [
   },
   {
     "Address": "No. 9",
-    "Start_Year": 1975,
-    "End_Year": 2007,
+    "Start_Year": 1994,
+    "End_Year": 1994,
     "Business_Name": "Unknown",
     "Business_Type": "",
     "Description": "",
@@ -381,19 +501,29 @@ const historyData = [
   },
   {
     "Address": "No. 9",
-    "Start_Year": 2008,
-    "End_Year": 2008,
-    "Business_Name": "For Sale",
-    "Business_Type": "",
+    "Start_Year": 1995,
+    "End_Year": 1995,
+    "Business_Name": "Dooley's",
+    "Business_Type": "Public House",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 9",
+    "Start_Year": 1996,
+    "End_Year": 1998,
+    "Business_Name": "Frog & Bucket",
+    "Business_Type": "Public House",
     "Description": "",
     "Status": "",
     "Image_URL": ""
   },
   {
     "Address": "No. 9",
-    "Start_Year": 2009,
-    "End_Year": 2011,
-    "Business_Name": "Unknown",
+    "Start_Year": 1999,
+    "End_Year": 2002,
+    "Business_Name": "Vacant",
     "Business_Type": "",
     "Description": "",
     "Status": "Researching",
@@ -401,7 +531,7 @@ const historyData = [
   },
   {
     "Address": "No. 9",
-    "Start_Year": 2012,
+    "Start_Year": 2003,
     "End_Year": 2026,
     "Business_Name": "Carpenter's Arms",
     "Business_Type": "Public House",
@@ -411,12 +541,22 @@ const historyData = [
   },
   {
     "Address": "No. 10",
-    "Start_Year": 1848,
+    "Start_Year": 1844,
     "End_Year": 1848,
     "Business_Name": "Joseph Capon",
     "Business_Type": "Fishmonger",
     "Description": "",
     "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 10",
+    "Start_Year": 1849,
+    "End_Year": 1855,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
     "Image_URL": ""
   },
   {
@@ -452,7 +592,7 @@ const historyData = [
   {
     "Address": "No. 10",
     "Start_Year": 1895,
-    "End_Year": 1905,
+    "End_Year": 1908,
     "Business_Name": "W.J. Pinnell",
     "Business_Type": "Butcher",
     "Description": "",
@@ -461,17 +601,7 @@ const historyData = [
   },
   {
     "Address": "No. 10",
-    "Start_Year": 1906,
-    "End_Year": 1909,
-    "Business_Name": "Unknown",
-    "Business_Type": "",
-    "Description": "",
-    "Status": "Researching",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 10",
-    "Start_Year": 1910,
+    "Start_Year": 1909,
     "End_Year": 1910,
     "Business_Name": "Vacant",
     "Business_Type": "",
@@ -612,61 +742,41 @@ const historyData = [
   {
     "Address": "No. 10",
     "Start_Year": 1999,
-    "End_Year": 2001,
-    "Business_Name": "Plaid Cymru",
+    "End_Year": 2002,
+    "Business_Name": "South Wales Engravers",
     "Business_Type": "",
-    "Description": "Upstairs",
+    "Description": "Plaid Cymru upstairs",
     "Status": "",
     "Image_URL": ""
   },
   {
     "Address": "No. 10",
-    "Start_Year": 2002,
-    "End_Year": 2007,
-    "Business_Name": "Unknown",
-    "Business_Type": "",
-    "Description": "",
-    "Status": "Researching",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 10",
-    "Start_Year": 2008,
-    "End_Year": 2012,
+    "Start_Year": 2003,
+    "End_Year": 2013,
     "Business_Name": "Da Vinci",
     "Business_Type": "Coffee house then bar and club",
-    "Description": "",
+    "Description": "Plaid Cymru upstairs",
     "Status": "",
     "Image_URL": ""
   },
   {
     "Address": "No. 10",
-    "Start_Year": 2013,
-    "End_Year": 2016,
-    "Business_Name": "Unknown",
-    "Business_Type": "",
+    "Start_Year": 2014,
+    "End_Year": 2015,
+    "Business_Name": "Dirty South",
+    "Business_Type": "BBQ Restaurant",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
   },
   {
     "Address": "No. 10",
-    "Start_Year": 2017,
+    "Start_Year": 2016,
     "End_Year": 2026,
     "Business_Name": "McCann's Rock and Ale Bar",
     "Business_Type": "",
     "Description": "",
     "Status": "",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 10a",
-    "Start_Year": 1830,
-    "End_Year": 1875,
-    "Business_Name": "Unknown",
-    "Business_Type": "",
-    "Description": "",
-    "Status": "Researching",
     "Image_URL": ""
   },
   {
@@ -822,7 +932,7 @@ const historyData = [
   {
     "Address": "No. 11",
     "Start_Year": 1925,
-    "End_Year": 1936,
+    "End_Year": 1937,
     "Business_Name": "H. Phillips",
     "Business_Type": "Tobacconist",
     "Description": "",
@@ -831,7 +941,17 @@ const historyData = [
   },
   {
     "Address": "No. 11",
-    "Start_Year": 1937,
+    "Start_Year": 1938,
+    "End_Year": 1938,
+    "Business_Name": "1st Rifle Battalion, the Monmouthshire Regiment",
+    "Business_Type": "Recruitment office",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 11",
+    "Start_Year": 1939,
     "End_Year": 1939,
     "Business_Name": "Unknown",
     "Business_Type": "",
@@ -842,7 +962,7 @@ const historyData = [
   {
     "Address": "No. 11",
     "Start_Year": 1940,
-    "End_Year": 1953,
+    "End_Year": 1960,
     "Business_Name": "Bollom of Bristol",
     "Business_Type": "Dyers and Cleaners",
     "Description": "",
@@ -851,17 +971,17 @@ const historyData = [
   },
   {
     "Address": "No. 11",
-    "Start_Year": 1954,
-    "End_Year": 1967,
-    "Business_Name": "Unknown",
-    "Business_Type": "",
+    "Start_Year": 1961,
+    "End_Year": 1966,
+    "Business_Name": "Josef Winter",
+    "Business_Type": "International Hair Stylist",
     "Description": "",
-    "Status": "Researching",
+    "Status": "",
     "Image_URL": ""
   },
   {
     "Address": "No. 11",
-    "Start_Year": 1968,
+    "Start_Year": 1967,
     "End_Year": 1971,
     "Business_Name": "Johnson Cleaners",
     "Business_Type": "",
@@ -871,19 +991,9 @@ const historyData = [
   },
   {
     "Address": "No. 11",
-    "Start_Year": 1972,
-    "End_Year": 1973,
-    "Business_Name": "Unknown",
-    "Business_Type": "",
-    "Description": "",
-    "Status": "Researching",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 11",
     "Start_Year": 1974,
-    "End_Year": 1974,
-    "Business_Name": "John I. Kennedy",
+    "End_Year": 1989,
+    "Business_Name": "John I. Kenney",
     "Business_Type": "Jeweller and Watch and Clock Maker",
     "Description": "",
     "Status": "",
@@ -891,8 +1001,8 @@ const historyData = [
   },
   {
     "Address": "No. 11",
-    "Start_Year": 1975,
-    "End_Year": 1976,
+    "Start_Year": 1990,
+    "End_Year": 2002,
     "Business_Name": "Unknown",
     "Business_Type": "",
     "Description": "",
@@ -2021,16 +2131,6 @@ const historyData = [
   },
   {
     "Address": "No. 16",
-    "Start_Year": 1848,
-    "End_Year": 1848,
-    "Business_Name": "Signor Morosini (Milan)",
-    "Business_Type": "Portrait Painter",
-    "Description": "",
-    "Status": "",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 16",
     "Start_Year": 1857,
     "End_Year": 1865,
     "Business_Name": "William Graham",
@@ -2441,7 +2541,7 @@ const historyData = [
   },
   {
     "Address": "No. 18",
-    "Start_Year": 2008,
+    "Start_Year": 2006,
     "End_Year": 2008,
     "Business_Name": "Leo Abse & Cohen",
     "Business_Type": "Solicitors",
@@ -2452,7 +2552,7 @@ const historyData = [
   {
     "Address": "No. 18",
     "Start_Year": 2009,
-    "End_Year": 2016,
+    "End_Year": 2015,
     "Business_Name": "Unknown",
     "Business_Type": "",
     "Description": "",
@@ -2461,7 +2561,7 @@ const historyData = [
   },
   {
     "Address": "No. 18",
-    "Start_Year": 2017,
+    "Start_Year": 2016,
     "End_Year": 2019,
     "Business_Name": "Anglian Windows",
     "Business_Type": "Double Glazing",
@@ -2512,16 +2612,6 @@ const historyData = [
   {
     "Address": "No. 19",
     "Start_Year": 1877,
-    "End_Year": 1877,
-    "Business_Name": "Unknown",
-    "Business_Type": "",
-    "Description": "",
-    "Status": "Researching",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 19",
-    "Start_Year": 1878,
     "End_Year": 1882,
     "Business_Name": "Waters & Arnold",
     "Business_Type": "Ironmongers",
@@ -2533,16 +2623,16 @@ const historyData = [
     "Address": "No. 19",
     "Start_Year": 1883,
     "End_Year": 1885,
-    "Business_Name": "Unknown",
-    "Business_Type": "",
-    "Description": "",
+    "Business_Name": "Arnold",
+    "Business_Type": "Ironmongers",
+    "Description": "Unknown if Waters & Arnold or A.G. Arnold",
     "Status": "Researching",
     "Image_URL": ""
   },
   {
     "Address": "No. 19",
     "Start_Year": 1886,
-    "End_Year": 1901,
+    "End_Year": 1902,
     "Business_Name": "A. G. Arnold & Co.",
     "Business_Type": "Ironmongers",
     "Description": "",
@@ -2551,8 +2641,8 @@ const historyData = [
   },
   {
     "Address": "No. 19",
-    "Start_Year": 1902,
-    "End_Year": 1902,
+    "Start_Year": 1903,
+    "End_Year": 1903,
     "Business_Name": "Auction",
     "Business_Type": "",
     "Description": "Auction of A.G. Arnold's stock",
@@ -2561,7 +2651,7 @@ const historyData = [
   },
   {
     "Address": "No. 19",
-    "Start_Year": 1902,
+    "Start_Year": 1903,
     "End_Year": 1923,
     "Business_Name": "E.P. Lawlor",
     "Business_Type": "House Furniture",
@@ -2582,16 +2672,6 @@ const historyData = [
   {
     "Address": "No. 19",
     "Start_Year": 1925,
-    "End_Year": 1925,
-    "Business_Name": "Empty",
-    "Business_Type": "",
-    "Description": "",
-    "Status": "Void",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 19",
-    "Start_Year": 1926,
     "End_Year": 1926,
     "Business_Name": "Unknown",
     "Business_Type": "",
@@ -2612,7 +2692,7 @@ const historyData = [
   {
     "Address": "No. 19",
     "Start_Year": 1927,
-    "End_Year": 1929,
+    "End_Year": 1930,
     "Business_Name": "The London Hosiery Co.",
     "Business_Type": "",
     "Description": "",
@@ -2652,11 +2732,21 @@ const historyData = [
   {
     "Address": "No. 19",
     "Start_Year": 1979,
-    "End_Year": 1988,
+    "End_Year": 1987,
     "Business_Name": "Unknown",
     "Business_Type": "",
     "Description": "",
     "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 19",
+    "Start_Year": 1988,
+    "End_Year": 1988,
+    "Business_Name": "Refurbishment",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "",
     "Image_URL": ""
   },
   {
@@ -2672,16 +2762,6 @@ const historyData = [
   {
     "Address": "No. 19",
     "Start_Year": 1990,
-    "End_Year": 1991,
-    "Business_Name": "Unknown",
-    "Business_Type": "",
-    "Description": "",
-    "Status": "Researching",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 19",
-    "Start_Year": 1992,
     "End_Year": 1994,
     "Business_Name": "Davis & Sons",
     "Business_Type": "Estate Agents",
@@ -2713,7 +2793,7 @@ const historyData = [
     "Address": "No. 19",
     "Start_Year": 1997,
     "End_Year": 1997,
-    "Business_Name": "Unknown",
+    "Business_Name": "Refurbishment",
     "Business_Type": "",
     "Description": "",
     "Status": "Researching",
@@ -2762,7 +2842,7 @@ const historyData = [
   {
     "Address": "No. 20",
     "Start_Year": 1830,
-    "End_Year": 1847,
+    "End_Year": 1842,
     "Business_Name": "Unknown",
     "Business_Type": "",
     "Description": "",
@@ -2771,8 +2851,8 @@ const historyData = [
   },
   {
     "Address": "No. 20",
-    "Start_Year": 1848,
-    "End_Year": 1848,
+    "Start_Year": 1843,
+    "End_Year": 1859,
     "Business_Name": "E.J Phillips",
     "Business_Type": "Chemist",
     "Description": "",
@@ -2781,8 +2861,8 @@ const historyData = [
   },
   {
     "Address": "No. 20",
-    "Start_Year": 1849,
-    "End_Year": 1869,
+    "Start_Year": 1860,
+    "End_Year": 1868,
     "Business_Name": "Unknown",
     "Business_Type": "",
     "Description": "",
@@ -2791,7 +2871,7 @@ const historyData = [
   },
   {
     "Address": "No. 20",
-    "Start_Year": 1870,
+    "Start_Year": 1869,
     "End_Year": 1903,
     "Business_Name": "John Young",
     "Business_Type": "Pharmaceutical Chemist",
@@ -2802,21 +2882,11 @@ const historyData = [
   {
     "Address": "No. 20",
     "Start_Year": 1904,
-    "End_Year": 1905,
+    "End_Year": 1906,
     "Business_Name": "Henry Ward & Co.",
     "Business_Type": "Tailors",
     "Description": "",
     "Status": "",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 20",
-    "Start_Year": 1906,
-    "End_Year": 1906,
-    "Business_Name": "Unknown",
-    "Business_Type": "",
-    "Description": "",
-    "Status": "Researching",
     "Image_URL": ""
   },
   {
@@ -2842,17 +2912,7 @@ const historyData = [
   {
     "Address": "No. 20",
     "Start_Year": 1929,
-    "End_Year": 1931,
-    "Business_Name": "Unknown",
-    "Business_Type": "",
-    "Description": "",
-    "Status": "Researching",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 20",
-    "Start_Year": 1932,
-    "End_Year": 1940,
+    "End_Year": 1974,
     "Business_Name": "Montague Burton Ltd",
     "Business_Type": "Tailors",
     "Description": "",
@@ -2861,18 +2921,18 @@ const historyData = [
   },
   {
     "Address": "No. 20",
-    "Start_Year": 1941,
-    "End_Year": 1974,
-    "Business_Name": "Unknown",
-    "Business_Type": "",
-    "Description": "",
-    "Status": "Researching",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 20",
     "Start_Year": 1975,
-    "End_Year": 2011,
+    "End_Year": 1975,
+    "Business_Name": "Gwent Bridge Academy",
+    "Business_Type": "",
+    "Description": "Met on the second floor in 1974 and 1975 then moved around the corner to Market Street",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 20",
+    "Start_Year": 1976,
+    "End_Year": 1977,
     "Business_Name": "Unknown",
     "Business_Type": "",
     "Description": "",
@@ -2881,7 +2941,37 @@ const historyData = [
   },
   {
     "Address": "No. 20",
-    "Start_Year": 2012,
+    "Start_Year": 1978,
+    "End_Year": 1979,
+    "Business_Name": "Pearl Assurance Co. Ltd",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 20",
+    "Start_Year": 1980,
+    "End_Year": 1992,
+    "Business_Name": "Gamlins",
+    "Business_Type": "Music Instruments",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 20",
+    "Start_Year": 1993,
+    "End_Year": 1993,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 20",
+    "Start_Year": 1994,
     "End_Year": 2012,
     "Business_Name": "Anglian Windows",
     "Business_Type": "Double Glazing",
@@ -2892,11 +2982,21 @@ const historyData = [
   {
     "Address": "No. 20",
     "Start_Year": 2013,
-    "End_Year": 2016,
+    "End_Year": 2015,
     "Business_Name": "Unknown",
     "Business_Type": "",
     "Description": "",
     "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 20",
+    "Start_Year": 2016,
+    "End_Year": 2016,
+    "Business_Name": "The Curtain Co",
+    "Business_Type": "Haberdashery",
+    "Description": "",
+    "Status": "",
     "Image_URL": ""
   },
   {
@@ -2952,56 +3052,6 @@ const historyData = [
   {
     "Address": "No. 21",
     "Start_Year": 1929,
-    "End_Year": 1939,
-    "Business_Name": "Unknown",
-    "Business_Type": "",
-    "Description": "",
-    "Status": "Researching",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 21",
-    "Start_Year": 1940,
-    "End_Year": 1940,
-    "Business_Name": "Montague Burton Ltd",
-    "Business_Type": "Clothing",
-    "Description": "",
-    "Status": "",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 21",
-    "Start_Year": 1941,
-    "End_Year": 1952,
-    "Business_Name": "Unknown",
-    "Business_Type": "",
-    "Description": "",
-    "Status": "Researching",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 21",
-    "Start_Year": 1953,
-    "End_Year": 1953,
-    "Business_Name": "Inland Revenue Valuation Office",
-    "Business_Type": "",
-    "Description": "",
-    "Status": "",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 21",
-    "Start_Year": 1954,
-    "End_Year": 1967,
-    "Business_Name": "Unknown",
-    "Business_Type": "",
-    "Description": "",
-    "Status": "Researching",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 21",
-    "Start_Year": 1968,
     "End_Year": 1974,
     "Business_Name": "Montague Burton Ltd",
     "Business_Type": "Clothing",
@@ -3010,9 +3060,9 @@ const historyData = [
     "Image_URL": ""
   },
   {
-    "Address": "No. 21",
-    "Start_Year": 1975,
-    "End_Year": 2011,
+    "Address": "No. 20",
+    "Start_Year": 1976,
+    "End_Year": 1977,
     "Business_Name": "Unknown",
     "Business_Type": "",
     "Description": "",
@@ -3020,19 +3070,29 @@ const historyData = [
     "Image_URL": ""
   },
   {
-    "Address": "No. 21",
-    "Start_Year": 2012,
-    "End_Year": 2012,
-    "Business_Name": "Anglian Windows",
+    "Address": "No. 20",
+    "Start_Year": 1978,
+    "End_Year": 1979,
+    "Business_Name": "Pearl Assurance Co. Ltd",
     "Business_Type": "",
     "Description": "",
     "Status": "",
     "Image_URL": ""
   },
   {
-    "Address": "No. 21",
-    "Start_Year": 2013,
-    "End_Year": 2016,
+    "Address": "No. 20",
+    "Start_Year": 1980,
+    "End_Year": 1992,
+    "Business_Name": "Gamlins",
+    "Business_Type": "Music Instruments",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 20",
+    "Start_Year": 1993,
+    "End_Year": 1993,
     "Business_Name": "Unknown",
     "Business_Type": "",
     "Description": "",
@@ -3040,7 +3100,37 @@ const historyData = [
     "Image_URL": ""
   },
   {
-    "Address": "No. 21",
+    "Address": "No. 20",
+    "Start_Year": 1994,
+    "End_Year": 2012,
+    "Business_Name": "Anglian Windows",
+    "Business_Type": "Double Glazing",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 20",
+    "Start_Year": 2013,
+    "End_Year": 2015,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 20",
+    "Start_Year": 2016,
+    "End_Year": 2016,
+    "Business_Name": "The Curtain Co",
+    "Business_Type": "Haberdashery",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 20",
     "Start_Year": 2017,
     "End_Year": 2024,
     "Business_Name": "New Pathways",
@@ -3050,30 +3140,10 @@ const historyData = [
     "Image_URL": ""
   },
   {
-    "Address": "No. 21",
+    "Address": "No. 20",
     "Start_Year": 2025,
     "End_Year": 2026,
-    "Business_Name": "Void",
-    "Business_Type": "",
-    "Description": "",
-    "Status": "Researching",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 22",
-    "Start_Year": 1830,
-    "End_Year": 1840,
-    "Business_Name": "Unknown",
-    "Business_Type": "",
-    "Description": "",
-    "Status": "Researching",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 22",
-    "Start_Year": 1841,
-    "End_Year": 1848,
-    "Business_Name": "",
+    "Business_Name": "Vacant",
     "Business_Type": "",
     "Description": "",
     "Status": "",
@@ -3082,11 +3152,71 @@ const historyData = [
   {
     "Address": "No. 22a",
     "Start_Year": 1830,
-    "End_Year": 1848,
+    "End_Year": 1874,
     "Business_Name": "Unknown",
     "Business_Type": "",
     "Description": "",
     "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 22a",
+    "Start_Year": 1875,
+    "End_Year": 1878,
+    "Business_Name": "Simmonds and Sons",
+    "Business_Type": "Hatters",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 22a",
+    "Start_Year": 1879,
+    "End_Year": 1904,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 22a",
+    "Start_Year": 1905,
+    "End_Year": 1905,
+    "Business_Name": "Void",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 22a",
+    "Start_Year": 1906,
+    "End_Year": 1911,
+    "Business_Name": "A.J. Esdaile",
+    "Business_Type": "Optician",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 22a",
+    "Start_Year": 1912,
+    "End_Year": 1912,
+    "Business_Name": "Auction Rooms",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 22a",
+    "Start_Year": 1913,
+    "End_Year": 1925,
+    "Business_Name": "Eric Rees",
+    "Business_Type": "Opticians",
+    "Description": "",
+    "Status": "",
     "Image_URL": ""
   },
   {
@@ -3102,11 +3232,241 @@ const historyData = [
   {
     "Address": "No. 23",
     "Start_Year": 1830,
-    "End_Year": 1848,
+    "End_Year": 1843,
     "Business_Name": "Unknown",
     "Business_Type": "",
     "Description": "",
     "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 23",
+    "Start_Year": 1844,
+    "End_Year": 1882,
+    "Business_Name": "The Crown",
+    "Business_Type": "Public House",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 23",
+    "Start_Year": 1883,
+    "End_Year": 1885,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 23",
+    "Start_Year": 1886,
+    "End_Year": 1890,
+    "Business_Name": "John Williams",
+    "Business_Type": "Draper",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 23",
+    "Start_Year": 1891,
+    "End_Year": 1891,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 23",
+    "Start_Year": 1892,
+    "End_Year": 1905,
+    "Business_Name": "Stead and Simpon",
+    "Business_Type": "Boot Manufacturers",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 23",
+    "Start_Year": 1905,
+    "End_Year": 1908,
+    "Business_Name": "C.H. Burcham",
+    "Business_Type": "Outfitter",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 23",
+    "Start_Year": 1909,
+    "End_Year": 1909,
+    "Business_Name": "A.J. Biddle",
+    "Business_Type": "Jeweller",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 23",
+    "Start_Year": 1910,
+    "End_Year": 1921,
+    "Business_Name": "H Samuels",
+    "Business_Type": "Jeweller",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 23",
+    "Start_Year": 1922,
+    "End_Year": 1932,
+    "Business_Name": "Stead and Simpson",
+    "Business_Type": "Boot Manufacturers",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 23",
+    "Start_Year": 1933,
+    "End_Year": 1939,
+    "Business_Name": "Void",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 23",
+    "Start_Year": 1934,
+    "End_Year": 1939,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 23",
+    "Start_Year": 1940,
+    "End_Year": 1959,
+    "Business_Name": "Milk Bar",
+    "Business_Type": "Restaurant",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 23",
+    "Start_Year": 1960,
+    "End_Year": 1980,
+    "Business_Name": "Wimpy bar",
+    "Business_Type": "Restaurant",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 23",
+    "Start_Year": 1981,
+    "End_Year": 1984,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 23",
+    "Start_Year": 1985,
+    "End_Year": 1992,
+    "Business_Name": "Great British Burger",
+    "Business_Type": "Restaurant",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 23",
+    "Start_Year": 1993,
+    "End_Year": 2011,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 23",
+    "Start_Year": 2012,
+    "End_Year": 2012,
+    "Business_Name": "The Red Onion",
+    "Business_Type": "Fried Chicken and Pizza",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 23",
+    "Start_Year": 2013,
+    "End_Year": 2014,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 23",
+    "Start_Year": 2015,
+    "End_Year": 2016,
+    "Business_Name": "Urban tap House",
+    "Business_Type": "Public House",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 23",
+    "Start_Year": 2017,
+    "End_Year": 2024,
+    "Business_Name": "TIny Rebel",
+    "Business_Type": "Public House",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 23",
+    "Start_Year": 2024,
+    "End_Year": 2024,
+    "Business_Name": "Newport Game Bar",
+    "Business_Type": "Public House",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 23",
+    "Start_Year": 2025,
+    "End_Year": 2025,
+    "Business_Name": "Vacant",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 23",
+    "Start_Year": 2026,
+    "End_Year": 2026,
+    "Business_Name": "Low and Slow",
+    "Business_Type": "BBQ Restaurant",
+    "Description": "",
+    "Status": "",
     "Image_URL": ""
   },
   {
@@ -3132,11 +3492,311 @@ const historyData = [
   {
     "Address": "No. 24",
     "Start_Year": 1830,
-    "End_Year": 1848,
+    "End_Year": 1847,
     "Business_Name": "Unknown",
     "Business_Type": "",
     "Description": "",
     "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 24",
+    "Start_Year": 1848,
+    "End_Year": 1848,
+    "Business_Name": "Thomas Clarke",
+    "Business_Type": "Grocer and Provision Dealer",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 24",
+    "Start_Year": 1849,
+    "End_Year": 1850,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 24",
+    "Start_Year": 1851,
+    "End_Year": 1860,
+    "Business_Name": "Thomas Davies",
+    "Business_Type": "Tailor",
+    "Description": "Moved here from 11 High Street and became insolvent in 1860",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 24",
+    "Start_Year": 1861,
+    "End_Year": 1875,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 24",
+    "Start_Year": 1876,
+    "End_Year": 1876,
+    "Business_Name": "J Bryan",
+    "Business_Type": "Tailor",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 24",
+    "Start_Year": 1877,
+    "End_Year": 1878,
+    "Business_Name": "Charles E. Parsons",
+    "Business_Type": "Auctioneers",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 24",
+    "Start_Year": 1879,
+    "End_Year": 1885,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 24",
+    "Start_Year": 1886,
+    "End_Year": 1910,
+    "Business_Name": "W Evans",
+    "Business_Type": "Saddler and Harness Maker",
+    "Description": "Bankrupt in 1910",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 24",
+    "Start_Year": 1911,
+    "End_Year": 1911,
+    "Business_Name": "Void",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 24",
+    "Start_Year": 1912,
+    "End_Year": 1919,
+    "Business_Name": "O.G. Bland",
+    "Business_Type": "Confectioners",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 24",
+    "Start_Year": 1920,
+    "End_Year": 1925,
+    "Business_Name": "W.A. Bland",
+    "Business_Type": "Confectioners",
+    "Description": "Crown Cafe",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 24",
+    "Start_Year": 1926,
+    "End_Year": 1930,
+    "Business_Name": "Esdaile",
+    "Business_Type": "Opticians",
+    "Description": "Had been operating there since at elast 1912 but may have been upstairs",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 24",
+    "Start_Year": 1931,
+    "End_Year": 1931,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 24",
+    "Start_Year": 1932,
+    "End_Year": 1932,
+    "Business_Name": "L.R. Crouch",
+    "Business_Type": "Jeweller",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 24",
+    "Start_Year": 1933,
+    "End_Year": 1935,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 24",
+    "Start_Year": 1936,
+    "End_Year": 1936,
+    "Business_Name": "Void",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 24",
+    "Start_Year": 1937,
+    "End_Year": 1952,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 24",
+    "Start_Year": 1953,
+    "End_Year": 1971,
+    "Business_Name": "Rediffusion (Wales) ltd",
+    "Business_Type": "Televisions",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 24",
+    "Start_Year": 1972,
+    "End_Year": 1973,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 24",
+    "Start_Year": 1974,
+    "End_Year": 1974,
+    "Business_Name": "Void",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 24",
+    "Start_Year": 1975,
+    "End_Year": 1990,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 24",
+    "Start_Year": 1991,
+    "End_Year": 1997,
+    "Business_Name": "Smiths",
+    "Business_Type": "Footwear Repair",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 24",
+    "Start_Year": 1998,
+    "End_Year": 2011,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 24",
+    "Start_Year": 2012,
+    "End_Year": 2012,
+    "Business_Name": "Footnotes",
+    "Business_Type": "Shoe Repairs",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 24",
+    "Start_Year": 2013,
+    "End_Year": 2015,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 24",
+    "Start_Year": 2016,
+    "End_Year": 2016,
+    "Business_Name": "Urban Tap House",
+    "Business_Type": "Public House",
+    "Description": "Tiny Rebel popup",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 24",
+    "Start_Year": 2017,
+    "End_Year": 2024,
+    "Business_Name": "Tiny Rebel",
+    "Business_Type": "Public House",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 24",
+    "Start_Year": 2024,
+    "End_Year": 2024,
+    "Business_Name": "Newport Game Bar",
+    "Business_Type": "Arcade and Bar",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 24",
+    "Start_Year": 2025,
+    "End_Year": 2025,
+    "Business_Name": "Void",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 24",
+    "Start_Year": 2026,
+    "End_Year": 2026,
+    "Business_Name": "Low and Slow",
+    "Business_Type": "BBQ Restaurant",
+    "Description": "",
+    "Status": "",
     "Image_URL": ""
   },
   {
@@ -3157,6 +3817,56 @@ const historyData = [
     "Business_Type": "",
     "Description": "",
     "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 25",
+    "Start_Year": 2013,
+    "End_Year": 2015,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 25",
+    "Start_Year": 2016,
+    "End_Year": 2016,
+    "Business_Name": "Urban Tap House",
+    "Business_Type": "Public House",
+    "Description": "Tiny Rebel popup",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 25",
+    "Start_Year": 2017,
+    "End_Year": 2024,
+    "Business_Name": "Tiny Rebel",
+    "Business_Type": "Public House",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 25",
+    "Start_Year": 2025,
+    "End_Year": 2025,
+    "Business_Name": "Void",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 25",
+    "Start_Year": 2026,
+    "End_Year": 2026,
+    "Business_Name": "Low and Slow",
+    "Business_Type": "BBQ Restaurant",
+    "Description": "",
+    "Status": "",
     "Image_URL": ""
   },
   {
@@ -3273,7 +3983,7 @@ const historyData = [
     "Address": "No. 27",
     "Start_Year": 1911,
     "End_Year": 1974,
-    "Business_Name": "Cecil & Co. Ltd.",
+    "Business_Name": "Cecil & Co. Ltd. (Cecil's Bargain Stores)",
     "Business_Type": "Outfitters and Drapers",
     "Description": "",
     "Status": "",
@@ -3282,6 +3992,46 @@ const historyData = [
   {
     "Address": "No. 27",
     "Start_Year": 1975,
+    "End_Year": 1990,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 27",
+    "Start_Year": 1991,
+    "End_Year": 1991,
+    "Business_Name": "1st Image",
+    "Business_Type": "Clothing",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No.. 27",
+    "Start_Year": 1992,
+    "End_Year": 1996,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 27",
+    "Start_Year": 1997,
+    "End_Year": 1997,
+    "Business_Name": "French Connection",
+    "Business_Type": "Clothing",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 27",
+    "Start_Year": 1998,
     "End_Year": 2007,
     "Business_Name": "Unknown",
     "Business_Type": "",

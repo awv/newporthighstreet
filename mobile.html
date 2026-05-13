@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newport Cornucopia: Street Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Playfair+Display:wght@700;900&family=Georgia&display=swap" rel="stylesheet">
+    <style>
+        :root { 
+            --gold: #e5a813; 
+            --bg: #f4f1ea; 
+            --text: #1a1a1a; 
+            --grey: #888;
+        }
+        body { 
+            margin: 0; font-family: 'Montserrat', sans-serif; background: var(--bg); color: var(--text); 
+            line-height: 1.6; padding-bottom: 50px;
+        }
+
+        /* HEADER */
+        header { background: #000; color: var(--gold); padding: 25px 20px; text-align: center; border-bottom: 4px solid var(--gold); }
+        h1 { font-family: 'Playfair Display', serif; margin: 0; font-size: 1.5rem; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* SEARCH AREA */
+        .search-box { padding: 30px 20px; background: #fff; border-bottom: 1px solid #d1cdc2; text-align: center; }
+        label { display: block; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; margin-bottom: 10px; color: var(--grey); }
+        .input-group { display: flex; max-width: 300px; margin: 0 auto; gap: 10px; }
+        input { 
+            flex: 1; padding: 12px; border: 2px solid #ddd; border-radius: 4px; font-size: 1.2rem; font-weight: 700; text-align: center;
+        }
+        button { 
+            background: var(--gold); border: none; padding: 10px 20px; border-radius: 4px; font-weight: 900; cursor: pointer; text-transform: uppercase;
+        }
+
+        /* RESULTS AREA */
+        #results { max-width: 500px; margin: 0 auto; padding: 20px; }
+        .property-title { font-family: 'Playfair Display', serif; font-size: 3rem; text-align: center; margin-bottom: 40px; color: var(--gold); }
+
+        /* TIMELINE STRUCTURE */
+        .timeline { position: relative; padding-left: 40px; }
+        .timeline::before { content: ''; position: absolute; left: 10px; top: 0; bottom: 0; width: 2px; background: var(--gold); opacity: 0.3; }
+
+        /* TIMELINE ITEM */
+        .entry { position: relative; margin-bottom: 40px; background: #fff; padding: 20px; border-radius: 8px; border: 1px solid #d1cdc2; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        .entry::after { content: ''; position: absolute; left: -36px; top: 25px; width: 14px; height: 14px; background: var(--gold); border-radius: 50%; border: 4px solid var(--bg); }
+        
+        .year-label { font-size: 0.75rem; font-weight: 900; color: var(--grey); margin-bottom: 5px; display: block; }
+        .biz-name { font-family: 'Georgia', serif; font-size: 1.2rem; font-weight: 900; margin: 0; }
+        .biz-type { color: var(--gold); font-size: 0.8rem; font-style: italic; font-family: 'Georgia', serif; margin-bottom: 10px; display: block; }
+        .desc { font-size: 0.9rem; color: #555; margin-top: 10px; border-top: 1px solid #eee; padding-top: 10px; }
+
+        /* RESEARCHING STYLE */
+        .researching { background: none; border: 1px dashed #d1cdc2; box-shadow: none; opacity: 0.7; }
+        .researching::after { background: #d1cdc2; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Newport Cornucopia</h1>
+    </header>
+
+    <div class="search-box">
+        <label>Enter Building Number</label>
+        <div class="input-group">
+            <input type="text" id="propertyInput" placeholder="e.g. 8" autofocus>
+            <button onclick="findHistory()">Go</button>
+        </div>
+    </div>
+
+    <div id="results">
+        <!-- History will appear here -->
+    </div>
+
+<script src="assets/js/data.js"></script>
+
+<script>
+    function findHistory() {
+        const input = document.getElementById('propertyInput').value.trim();
+        const resultsDiv = document.getElementById('results');
+        
+        if (!input) return;
+
+        // Clear previous
+        resultsDiv.innerHTML = '';
+
+        // Match input (e.g. "8") to "No. 8" in your data
+        const searchKey = input.toLowerCase().startsWith('no.') ? input : `No. ${input}`;
+        
+        const filtered = historyData.filter(d => d.Address.toLowerCase() === searchKey.toLowerCase());
+
+        if (filtered.length === 0) {
+            resultsDiv.innerHTML = '<p style="text-align:center; color: #888;">No records found for that number.</p>';
+            return;
+        }
+
+        // Sort chronologically
+        filtered.sort((a,b) => a.Start_Year - b.Start_Year);
+
+        // Header for the specific building
+        resultsDiv.innerHTML = `<div class="property-title">${input}</div><div class="timeline" id="timelineList"></div>`;
+        const list = document.getElementById('timelineList');
+
+        filtered.forEach(record => {
+            const isResearching = record.Status === "Researching" || record.Business_Name.toLowerCase() === "unknown";
+            
+            const entry = document.createElement('div');
+            entry.className = `entry ${isResearching ? 'researching' : ''}`;
+            
+            entry.innerHTML = `
+                <span class="year-label">${record.Start_Year} — ${record.End_Year}</span>
+                <h3 class="biz-name">${record.Business_Name}</h3>
+                <span class="biz-type">${record.Business_Type}</span>
+                ${record.Description ? `<p class="desc">${record.Description}</p>` : ''}
+            `;
+            list.appendChild(entry);
+        });
+    }
+
+    // Allow 'Enter' key to trigger search
+    document.getElementById('propertyInput').addEventListener('keypress', function (e) {
+        if (e.key === 'Enter') findHistory();
+    });
+</script>
+
+</body>
+</html>
