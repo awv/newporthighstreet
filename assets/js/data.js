@@ -5491,10 +5491,10 @@ const historyData = [
   },
   {
     "Address": "No. 47",
-    "Start_Year": 1830,
+    "Start_Year": 1839,
     "End_Year": 1847,
-    "Business_Name": "Unknown",
-    "Business_Type": "",
+    "Business_Name": "Thomas Hawkins",
+    "Business_Type": "Ironmonger",
     "Description": "",
     "Status": "Researching",
     "Image_URL": ""
@@ -5505,7 +5505,7 @@ const historyData = [
     "End_Year": 1853,
     "Business_Name": "Hawkins and Webb",
     "Business_Type": "Ironmongers",
-    "Description": "",
+    "Description": "Thomas Hawkins partnered with Robert Webb",
     "Status": "",
     "Image_URL": ""
   },
@@ -5522,19 +5522,9 @@ const historyData = [
   {
     "Address": "No. 47",
     "Start_Year": 1856,
-    "End_Year": 1862,
-    "Business_Name": "Unknown",
-    "Business_Type": "",
-    "Description": "",
-    "Status": "Researching",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 47",
-    "Start_Year": 1863,
     "End_Year": 1863,
     "Business_Name": "Joseph Bothomley",
-    "Business_Type": "Unknown",
+    "Business_Type": "Furniture, Sculptures, Vases",
     "Description": "",
     "Status": "",
     "Image_URL": ""
@@ -5542,11 +5532,21 @@ const historyData = [
   {
     "Address": "No. 47",
     "Start_Year": 1864,
-    "End_Year": 1875,
+    "End_Year": 1868,
     "Business_Name": "Unknown",
     "Business_Type": "",
     "Description": "",
     "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 47",
+    "Start_Year": 1869,
+    "End_Year": 1873,
+    "Business_Name": "George Fothergill",
+    "Business_Type": "Tobacconist",
+    "Description": "",
+    "Status": "",
     "Image_URL": ""
   },
   {
@@ -5556,22 +5556,12 @@ const historyData = [
     "Business_Name": "Samuel Clement",
     "Business_Type": "Grocer",
     "Description": "",
-    "Status": "",
-    "Image_URL": ""
-  },
-  {
-    "Address": "No. 47",
-    "Start_Year": 1896,
-    "End_Year": 1896,
-    "Business_Name": "Unknown",
-    "Business_Type": "",
-    "Description": "",
     "Status": "Researching",
     "Image_URL": ""
   },
   {
     "Address": "No. 47",
-    "Start_Year": 1897,
+    "Start_Year": 1896,
     "End_Year": 1905,
     "Business_Name": "John Williams",
     "Business_Type": "Draper",
@@ -5582,8 +5572,8 @@ const historyData = [
   {
     "Address": "No. 47",
     "Start_Year": 1906,
-    "End_Year": 1909,
-    "Business_Name": "Unknown",
+    "End_Year": 1906,
+    "Business_Name": "Stock Clearance and Lease for Sale",
     "Business_Type": "",
     "Description": "",
     "Status": "Researching",
@@ -5591,7 +5581,7 @@ const historyData = [
   },
   {
     "Address": "No. 47",
-    "Start_Year": 1910,
+    "Start_Year": 1907,
     "End_Year": 1910,
     "Business_Name": "J.J. Richards & Co. Ltd",
     "Business_Type": "Drapers",
@@ -5612,7 +5602,7 @@ const historyData = [
   {
     "Address": "No. 47",
     "Start_Year": 1925,
-    "End_Year": 1953,
+    "End_Year": 1964,
     "Business_Name": "G.F. Lovell & Co. Ltd",
     "Business_Type": "Lounge",
     "Description": "",
@@ -5621,9 +5611,9 @@ const historyData = [
   },
   {
     "Address": "No. 47",
-    "Start_Year": 1954,
-    "End_Year": 1967,
-    "Business_Name": "Unknown",
+    "Start_Year": 1965,
+    "End_Year": 1965,
+    "Business_Name": "Abbeyfield Newport Society's White Elephant Shop",
     "Business_Type": "",
     "Description": "",
     "Status": "Researching",
@@ -5632,7 +5622,7 @@ const historyData = [
   {
     "Address": "No. 47",
     "Start_Year": 1968,
-    "End_Year": 1974,
+    "End_Year": 1980,
     "Business_Name": "Ratners",
     "Business_Type": "Jewellers",
     "Description": "",
@@ -5640,9 +5630,9 @@ const historyData = [
     "Image_URL": ""
   },
   {
-    "Address": "No. 48",
-    "Start_Year": 1830,
-    "End_Year": 1847,
+    "Address": "No. 47",
+    "Start_Year": 1981,
+    "End_Year": 1986,
     "Business_Name": "Unknown",
     "Business_Type": "",
     "Description": "",
@@ -5650,10 +5640,50 @@ const historyData = [
     "Image_URL": ""
   },
   {
+    "Address": "No. 47",
+    "Start_Year": 1987,
+    "End_Year": 1995,
+    "Business_Name": "Vacant",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 47",
+    "Start_Year": 1996,
+    "End_Year": 2003,
+    "Business_Name": "Pricerite",
+    "Business_Type": "Discount household goods",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 47",
+    "Start_Year": 2004,
+    "End_Year": 2007,
+    "Business_Name": "Government Building",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 47",
+    "Start_Year": 2008,
+    "End_Year": 2026,
+    "Business_Name": "Careers Wales",
+    "Business_Type": "Employment Agency",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
     "Address": "No. 48",
-    "Start_Year": 1848,
+    "Start_Year": 1831,
     "End_Year": 1848,
-    "Business_Name": "J. Llewelling Brown",
+    "Business_Name": "J. Lewlelyn Brown",
     "Business_Type": "Saddler and Harness Maker",
     "Description": "",
     "Status": "",
@@ -5662,7 +5692,7 @@ const historyData = [
   {
     "Address": "No. 48",
     "Start_Year": 1849,
-    "End_Year": 1869,
+    "End_Year": 1867,
     "Business_Name": "Unknown",
     "Business_Type": "",
     "Description": "",
@@ -5712,16 +5742,16 @@ const historyData = [
   {
     "Address": "No. 48",
     "Start_Year": 1887,
-    "End_Year": 1894,
-    "Business_Name": "Unknown",
-    "Business_Type": "",
-    "Description": "",
-    "Status": "Researching",
+    "End_Year": 1891,
+    "Business_Name": "W.J. Hollingdale",
+    "Business_Type": "Grocery",
+    "Description": "The Household Supply Stores",
+    "Status": "",
     "Image_URL": ""
   },
   {
     "Address": "No. 48",
-    "Start_Year": 1895,
+    "Start_Year": 1982,
     "End_Year": 1895,
     "Business_Name": "G Galsworthy",
     "Business_Type": "Confectioner",
@@ -5733,10 +5763,10 @@ const historyData = [
     "Address": "No. 48",
     "Start_Year": 1896,
     "End_Year": 1896,
-    "Business_Name": "Unknown",
+    "Business_Name": "Auction of clothing",
     "Business_Type": "",
-    "Description": "",
-    "Status": "Researching",
+    "Description": "Clothing from shops in Neath and Swansea",
+    "Status": "",
     "Image_URL": ""
   },
   {
@@ -5762,7 +5792,7 @@ const historyData = [
   {
     "Address": "No. 48",
     "Start_Year": 1899,
-    "End_Year": 1933,
+    "End_Year": 1934,
     "Business_Name": "Watkins Provider",
     "Business_Type": "General Merchants",
     "Description": "",
@@ -5782,7 +5812,7 @@ const historyData = [
   {
     "Address": "No. 48",
     "Start_Year": 1936,
-    "End_Year": 1974,
+    "End_Year": 1987,
     "Business_Name": "G.A. Dunn & Co.",
     "Business_Type": "Outfitters",
     "Description": "",
@@ -5790,9 +5820,9 @@ const historyData = [
     "Image_URL": ""
   },
   {
-    "Address": "No. 49",
-    "Start_Year": 1830,
-    "End_Year": 1875,
+    "Address": "No. 48",
+    "Start_Year": 1988,
+    "End_Year": 1990,
     "Business_Name": "Unknown",
     "Business_Type": "",
     "Description": "",
@@ -5800,8 +5830,98 @@ const historyData = [
     "Image_URL": ""
   },
   {
+    "Address": "No. 48",
+    "Start_Year": 1991,
+    "End_Year": 1991,
+    "Business_Name": "Relate",
+    "Business_Type": "Charity Shop",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 48",
+    "Start_Year": 1992,
+    "End_Year": 1994,
+    "Business_Name": "Unknown",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "Researching",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 48",
+    "Start_Year": 1995,
+    "End_Year": 2005,
+    "Business_Name": "Shamrock",
+    "Business_Type": "Travel Agency",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 48",
+    "Start_Year": 2006,
+    "End_Year": 2006,
+    "Business_Name": "Vacant",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 48",
+    "Start_Year": 2007,
+    "End_Year": 2007,
+    "Business_Name": "Joanna'a Attic",
+    "Business_Type": "Interior Decorations",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 48",
+    "Start_Year": 2008,
+    "End_Year": 2010,
+    "Business_Name": "Vacant",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 48",
+    "Start_Year": 2011,
+    "End_Year": 2012,
+    "Business_Name": "Life Music Foundation",
+    "Business_Type": "Charity",
+    "Description": "There in 2011, not sure about 2012",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 48",
+    "Start_Year": 2013,
+    "End_Year": 2015,
+    "Business_Name": "Vacant",
+    "Business_Type": "",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
+    "Address": "No. 48",
+    "Start_Year": 2016,
+    "End_Year": 2026,
+    "Business_Name": "VJ Nails",
+    "Business_Type": "Beauty Salon",
+    "Description": "",
+    "Status": "",
+    "Image_URL": ""
+  },
+  {
     "Address": "No. 49",
-    "Start_Year": 1876,
+    "Start_Year": 1843,
     "End_Year": 2024,
     "Business_Name": "The Greyhound",
     "Business_Type": "Public House",
@@ -5811,9 +5931,9 @@ const historyData = [
   },
   {
     "Address": "No. 49",
-    "Start_Year": 2025,
+    "Start_Year": 2024,
     "End_Year": 2026,
-    "Business_Name": "Lagacy Lounge",
+    "Business_Name": "Legacy Lounge",
     "Business_Type": "Nightclub",
     "Description": "",
     "Status": "",
