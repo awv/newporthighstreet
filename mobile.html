@@ -13,83 +13,199 @@
             --grey: #888;
         }
         body { 
-            margin: 0; font-family: 'Montserrat', sans-serif; background: var(--bg); color: var(--text); 
-            line-height: 1.6; padding-bottom: 80px;
+            margin: 0; 
+            font-family: 'Montserrat', sans-serif; 
+            background: var(--bg); 
+            color: var(--text); 
+            line-height: 1.6; 
+            padding-bottom: 80px;
         }
 
-        /* HEADER */
+        /* HEADER SECTION */
         header { 
-            background: #000; color: var(--gold); padding: 30px 20px; 
-            text-align: center; border-bottom: 4px solid var(--gold);
+            background: #000; 
+            color: var(--gold); 
+            padding: 30px 20px; 
+            text-align: center; 
+            border-bottom: 4px solid var(--gold);
         }
-        .header-title { font-family: 'Playfair Display', serif; margin: 0; font-size: 1.6rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 900; }
-        .header-dates { display: block; font-size: 0.8rem; font-weight: 600; color: #fff; margin-top: 5px; opacity: 0.8; letter-spacing: 3px; }
+        .header-title { 
+            font-family: 'Playfair Display', serif; 
+            margin: 0; 
+            font-size: 1.6rem; 
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
+            font-weight: 900; 
+        }
+        .header-dates { 
+            display: block; 
+            font-size: 0.8rem; 
+            font-weight: 600; 
+            color: #fff; 
+            margin-top: 5px; 
+            opacity: 0.8; 
+            letter-spacing: 3px; 
+        }
 
-        /* SEARCH AREA */
-        .search-container { padding: 40px 20px; background: #fff; border-bottom: 1px solid #d1cdc2; }
+        /* SEARCH INTERFACE */
+        .search-container { 
+            padding: 40px 20px; 
+            background: #fff; 
+            border-bottom: 1px solid #d1cdc2; 
+        }
         .input-wrapper { 
-            display: flex; max-width: 400px; margin: 0 auto; 
-            border: 2px solid #000; border-radius: 6px; overflow: hidden;
+            display: flex; 
+            max-width: 400px; 
+            margin: 0 auto; 
+            border: 2px solid #000; 
+            border-radius: 6px; 
+            overflow: hidden;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
         input { 
-            flex: 1; padding: 15px; border: none; font-size: 1rem; font-weight: 600; outline: none; font-family: 'Montserrat', sans-serif;
+            flex: 1; 
+            padding: 15px; 
+            border: none; 
+            font-size: 1rem; 
+            font-weight: 600; 
+            outline: none; 
+            font-family: 'Montserrat', sans-serif;
         }
         .go-btn { 
-            background: var(--gold); border: none; padding: 0 25px; color: #fff;
-            font-weight: 900; cursor: pointer; text-transform: uppercase; font-size: 0.9rem;
+            background: var(--gold); 
+            border: none; 
+            padding: 0 25px; 
+            color: #fff;
+            font-weight: 900; 
+            cursor: pointer; 
+            text-transform: uppercase; 
+            font-size: 0.9rem;
+            transition: background 0.2s;
         }
+        .go-btn:active { background: #000; }
 
-        /* RESULTS */
-        #results { max-width: 600px; margin: 0 auto; padding: 20px; }
-        
-        /* THE HERITAGE PLAQUE STYLE */
-        .plaque-container {
-            margin: 30px 0 60px;
-            display: flex;
-            justify-content: center;
+        /* PROPERTY HEADER (TYPOGRAPHIC ANCHOR) */
+        .property-header {
+            padding: 60px 20px 40px;
+            text-align: center;
         }
-        .heritage-plaque { 
-            background: var(--bg);
-            padding: 10px 30px;
-            border: 1px solid var(--gold);
-            outline: 3px solid var(--bg); /* Creates a gap between borders */
-            box-shadow: 0 0 0 4px var(--gold); /* The outer frame */
+        .property-no-label {
+            display: block;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            font-size: 0.7rem;
+            letter-spacing: 4px;
+            color: var(--gold);
+            margin-bottom: 10px;
+            font-weight: 900;
+        }
+        .property-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 4.5rem;
+            font-weight: 900;
+            line-height: 1;
+            margin: 0;
+            color: var(--text);
+            position: relative;
             display: inline-block;
         }
-        .property-label { 
-            font-family: 'Playfair Display', serif; 
-            font-size: 2rem; 
-            font-style: italic; 
-            margin: 0; 
-            color: #000;
-            text-transform: lowercase;
+        .property-number::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 20%;
+            right: 20%;
+            height: 2px;
+            background: var(--gold);
+            opacity: 0.6;
         }
 
-        /* TIMELINE */
-        .timeline { position: relative; padding-left: 50px; }
+        /* TIMELINE STRUCTURE */
+        #results { 
+            max-width: 600px; 
+            margin: 0 auto; 
+            padding: 20px; 
+        }
+        .timeline { 
+            position: relative; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+        }
+        /* The gold central stem line */
         .timeline::before { 
-            content: ''; position: absolute; left: 19px; top: 0; bottom: 0; 
-            width: 2px; background: var(--gold); opacity: 0.4; 
+            content: ''; 
+            position: absolute; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            top: 0; 
+            bottom: 0; 
+            width: 3px; 
+            background: var(--gold); 
+            opacity: 0.8; 
+            z-index: 1;
         }
 
-        /* ENTRIES */
-        .entry { position: relative; margin-bottom: 50px; background: #fff; padding: 30px; border-radius: 12px; border: 1px solid #e2ded5; box-shadow: 0 10px 25px rgba(0,0,0,0.04); }
-        
-        /* CENTERED DOT */
-        .entry::after { 
-            content: ''; position: absolute; left: -41px; top: 35px; 
-            width: 16px; height: 16px; background: var(--gold); 
-            border-radius: 50%; border: 4px solid var(--bg); z-index: 2;
+        /* CARD DESIGN */
+        .entry { 
+            position: relative; 
+            width: 100%;
+            margin-bottom: 50px; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 20px;
+            border: none;
+            box-shadow: 0 15px 45px rgba(0,0,0,0.1); 
+            z-index: 2; /* Sits in front of the line */
+            box-sizing: border-box;
         }
         
-        .year-range { font-size: 0.8rem; font-weight: 700; color: var(--gold); margin-bottom: 10px; display: block; letter-spacing: 1px; }
-        .biz-name { font-family: 'Georgia', serif; font-size: 1.4rem; font-weight: 900; margin: 0; color: #111; }
-        .biz-trade { font-size: 0.85rem; font-style: italic; color: var(--grey); font-family: 'Georgia', serif; margin-bottom: 15px; display: block; }
-        .biz-desc { font-size: 0.95rem; color: #444; margin-top: 20px; border-top: 1px solid #f0f0f0; padding-top: 15px; line-height: 1.7; }
+        .date-badge {
+            background: var(--gold);
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 6px 14px;
+            border-radius: 8px;
+            display: inline-block;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+        }
 
-        .researching { background: none; border: 2px dashed #d1cdc2; box-shadow: none; opacity: 0.8; }
-        .researching::after { background: var(--grey); }
+        .biz-name { 
+            font-family: 'Playfair Display', serif; 
+            font-size: 1.6rem; 
+            font-weight: 900; 
+            margin: 0; 
+            color: #111; 
+            line-height: 1.2;
+        }
+        .biz-trade { 
+            font-size: 1rem; 
+            font-style: italic; 
+            color: var(--grey); 
+            font-family: 'Georgia', serif; 
+            margin-bottom: 15px; 
+            display: block; 
+        }
+        .biz-desc { 
+            font-size: 0.95rem; 
+            color: #555; 
+            margin: 20px 0 0; 
+            border-top: 1px solid #f0f0f0; 
+            padding-top: 15px; 
+            line-height: 1.7; 
+        }
+
+        /* RESEARCHING CARDS */
+        .researching { 
+            background: var(--bg); /* Solid cream background to hide the line */
+            border: 2px dashed #d1cdc2; 
+            box-shadow: none; 
+            opacity: 0.8; 
+            z-index: 2; /* Ensure it stays in front of the stem line */
+        }
+        .researching .date-badge { background: #d1cdc2; }
     </style>
 </head>
 <body>
@@ -101,14 +217,13 @@
 
     <div class="search-container">
         <div class="input-wrapper">
-            <input type="text" id="propertyInput" placeholder="Enter building number (e.g. 8)" autofocus>
+            <input type="text" id="propertyInput" placeholder="Enter building number eg 8" autofocus>
             <button class="go-btn" onclick="lookupHistory()">Go</button>
         </div>
     </div>
 
     <div id="results" style="text-align: center;">
-        <!-- Records load here -->
-    </div>
+        </div>
 
 <script src="assets/js/data.js"></script>
 
@@ -116,38 +231,45 @@
     function lookupHistory() {
         const input = document.getElementById('propertyInput').value.trim();
         const resultsArea = document.getElementById('results');
+        
         if (!input) return;
 
+        // Reset the view
         resultsArea.innerHTML = '';
+
+        // Prepare the search key (handles "8" vs "No. 8")
         const searchTag = input.toLowerCase().startsWith('no.') ? input : `No. ${input}`;
+        
+        // Filter the data.js file
         const data = historyData.filter(d => d.Address.toLowerCase() === searchTag.toLowerCase());
 
         if (data.length === 0) {
-            resultsArea.innerHTML = '<p style="color: #999; margin-top: 30px; font-weight: 600;">No historical records found for this property.</p>';
+            resultsArea.innerHTML = '<p style="color: #999; margin-top: 40px; font-weight: 600;">No historical records found.</p>';
             return;
         }
 
-        // LATEST DATES FIRST
+        // LATEST DATES FIRST (Newest entries at the top)
         data.sort((a, b) => b.Start_Year - a.Start_Year);
 
+        // Inject the Property Header and the Timeline container
         resultsArea.innerHTML = `
-            <div class="plaque-container">
-                <div class="heritage-plaque">
-                    <h2 class="property-label">no. ${input}</h2>
-                </div>
+            <div class="property-header">
+                <span class="property-no-label">Building No.</span>
+                <h2 class="property-number">${input}</h2>
             </div>
             <div class="timeline" id="timelineList" style="text-align: left;"></div>
         `;
         
         const list = document.getElementById('timelineList');
 
+        // Build the cards
         data.forEach(record => {
             const isUnknown = record.Status === "Researching" || record.Business_Name.toLowerCase() === "unknown";
             const entryDiv = document.createElement('div');
             entryDiv.className = `entry ${isUnknown ? 'researching' : ''}`;
             
             entryDiv.innerHTML = `
-                <span class="year-range">${record.Start_Year} — ${record.End_Year}</span>
+                <div class="date-badge">${record.Start_Year} — ${record.End_Year}</div>
                 <h3 class="biz-name">${record.Business_Name}</h3>
                 <span class="biz-trade">${record.Business_Type}</span>
                 ${record.Description ? `<p class="biz-desc">${record.Description}</p>` : ''}
@@ -156,6 +278,7 @@
         });
     }
 
+    // Trigger lookup on Enter key
     document.getElementById('propertyInput').addEventListener('keypress', (e) => {
         if (e.key === 'Enter') lookupHistory();
     });
